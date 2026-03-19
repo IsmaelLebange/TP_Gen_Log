@@ -11,10 +11,15 @@ class UserManager(BaseUserManager):
         # Supporte la compatibilité avec first_name / last_name
         first_name = extra_fields.pop('first_name', None)
         last_name = extra_fields.pop('last_name', None)
+        postnom = extra_fields.pop('postnom', None)
         if first_name:
             extra_fields.setdefault('prenom', first_name)
+
         if last_name:
             extra_fields.setdefault('nom', last_name)
+
+        if postnom:
+            extra_fields.setdefault('postnom', postnom)
 
         email = self.normalize_email(email)
         user = self.model(email=email, nin=nin, **extra_fields)

@@ -21,6 +21,9 @@ class CitoyenRepositoryInterface(ABC):
     def get_by_nin(self, nin: str) -> Optional["User"]:
         """Récupère un citoyen par son NIN"""
         pass
+    def get_by_email(self, email: str) -> Optional["User"]:
+        """Récupère un citoyen par son email"""
+        pass
 
     @abstractmethod
     def get_all_citoyens(self) -> List["User"]:

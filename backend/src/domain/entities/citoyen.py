@@ -3,6 +3,10 @@ from src.domain.value_objects.nin import NIN
 from src.domain.value_objects.email import Email  # on va créer Email plus tard
 from datetime import date
 from typing import Optional
+from dataclasses import dataclass
+from datetime import datetime
+from typing import Optional
+from src.domain.value_objects.biometrics import BiometricType
 
 @dataclass(frozen=True)
 class EnrollmentData:
@@ -54,3 +58,7 @@ class Citoyen:
         if today.month < self.date_naissance.month or (today.month == self.date_naissance.month and today.day < self.date_naissance.day):
             age -= 1
         return age >= 18
+    
+
+
+

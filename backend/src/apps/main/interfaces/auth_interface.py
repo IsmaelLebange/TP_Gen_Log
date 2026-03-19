@@ -12,7 +12,7 @@ class AuthenticationServiceInterface(ABC):
 
     @abstractmethod
     def register(self, email: str, password: str, first_name: str, 
-                 last_name: str, nin: str, request=None, role: str = "CITOYEN") -> Dict[str, Any]:
+                 last_name: str, nin: str, request=None, role: str = "CITOYEN", date_naissance: str = None) -> Dict[str, Any]:
         """Inscrit un nouvel utilisateur"""
         pass
 

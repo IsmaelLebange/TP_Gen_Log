@@ -41,15 +41,15 @@ class AuthenticationService(AuthenticationServiceInterface):
             'user': self._format_user_data(user)
         }
 
-    def register(self, email: str, password: str, first_name: str, last_name: str, 
-                 nin: str, request=None, role: str = User.Role.CITOYEN) -> Dict[str, Any]:
+    def register(self, email: str, password: str, nom: str, prenom: str, 
+                 nin: str, request=None, role: str = User.Role.CITOYEN,date_naissance: str=None) -> Dict[str, Any]:
         
         if User.objects.filter(email__iexact=email).exists() or User.objects.filter(nin=nin).exists():
             raise AuthenticationException("Email ou NIN déjà utilisé")
 
         user = User.objects.create_user(
             email=email, nin=nin, password=password,
-            first_name=first_name, last_name=last_name, role=role
+            prenom=prenom, nom=nom, role=role, date_naissance=date_naissance
         )
 
         if request:

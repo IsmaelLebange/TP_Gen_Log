@@ -34,3 +34,28 @@ class Document(models.Model):
     
     class Meta:
         db_table = 'documents'
+
+
+
+
+class BiometricData(models.Model):
+    BIOMETRIC_TYPES = [
+        ('face', 'Visage'),
+        ('fingerprint', 'Empreinte digitale'),
+        ('iris', 'Iris'),
+    ]
+
+    citoyen = models.ForeignKey(User, on_delete=models.CASCADE, related_name='biometric_data')
+    biometric_type = models.CharField(max_length=20, choices=BIOMETRIC_TYPES)
+    image = models.ImageField(upload_to='biometrics/%Y/%m/%d/', null=True, blank=True)
+    template = models.BinaryField(null=True, blank=True)  # features extraits sérialisés (pickle)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    is_active = models.BooleanField(default=True)
+
+    class Meta:
+        unique_together = ['citoyen', 'biometric_type', 'is_active']
+        db_table = 'citoyen_biometric_data'  # optionnel, mais cohérent avec Document
+
+    def __str__(self):
+        return f"{self.citoyen.username} - {self.biometric_type}"
