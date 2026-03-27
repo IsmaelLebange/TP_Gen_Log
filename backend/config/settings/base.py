@@ -30,7 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-AUTH_USER_MODEL = 'main.User'
+AUTH_USER_MODEL = 'src.User'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -42,9 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'corsheaders',
-    'src.apps.main',
-    'src.apps.citoyen',
-    'src.apps.administration',
+    'src',
     'tests',
 ]
 
