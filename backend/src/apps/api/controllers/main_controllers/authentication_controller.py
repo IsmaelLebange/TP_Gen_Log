@@ -25,11 +25,11 @@ class LoginController(BaseAuthController):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
         try:
+            # Appel au service avec le champ 'login'
             result = self.auth_service.login(
-                email=serializer.validated_data['email'],
+                login_input=serializer.validated_data['login'],
                 password=serializer.validated_data['password'],
-                request=request,
-                otp=serializer.validated_data.get('otp')
+                request=request
             )
             return Response(result, status=status.HTTP_200_OK)
         except AuthenticationException as e:

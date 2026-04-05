@@ -1,7 +1,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 
@@ -14,11 +14,12 @@ from src.apps.api.serializers.citoyen_serializers.biometric_serializer import (
 
 @method_decorator(csrf_exempt, name='dispatch')
 class BiometricController(APIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        # Initialisation sécurisée pour le provider
+        # Initialisation sécurisée pour le 
+        
         self._biometric_service = None
 
     @property
@@ -49,14 +50,20 @@ class BiometricController(APIView):
         if not serializer.is_valid():
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+        # On utilise l'ID envoyé par le mobile
+        citoyen_id = serializer.validated_data['citoyen_id']
+
         result = self.biometric_service.enroll(
-            citoyen_id=request.user.id,
+            citoyen_id=citoyen_id, 
             biometric_type=serializer.validated_data['type'],
             image_base64=serializer.validated_data['image']
         )
         
         if result.get('success'):
-            return Response(result, status=status.HTTP_201_CREATED)
+            # Utilise aussi l'ID ici
+            enrollment_service = CitoyenProvider.get_enrollment_service()
+            enrollment_service.update_biometric_complete(citoyen_id, True)
+            return Response(result, status=201)
         return Response(result, status=status.HTTP_400_BAD_REQUEST)
 
     def _verify(self, request):

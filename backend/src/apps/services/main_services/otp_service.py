@@ -19,14 +19,38 @@ class OTPSenderSms(OTPSenderInterface):
         return self.sms_gateway.send_sms(user.telephone, message)
     
 
-# src/apps/services/main_services/otp_service.py
 class OTPSenderEmail(OTPSenderInterface):
     def send(self, user, code: str) -> bool:
-        subject = "Votre code de vérification"
-        message = f"Bonjour,\n\nVotre code OTP est: {code}\nIl expire dans 5 minutes."
-        send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [user.email])
-        return True
-    
+        try:
+            subject = "🛡️ Alerte de sécurité - Connexion SEIP"
+            
+            # On personnalise le message avec les données du user
+            message = (
+                f"Bonjour {user.prenom} {user.nom},\n\n"
+                f"Une nouvelle connexion a été détectée sur votre compte Agent SEIP.\n"
+                f"Votre code de session actuel est : {code}\n\n"
+                "Si vous n'êtes pas à l'origine de cette action, veuillez contacter l'administrateur.\n\n"
+                "Système d'Identification Électronique de la Population."
+            )
+            
+            # send_mail va puiser les infos (HOST, PORT, USER, PASSWORD) 
+            # directement dans ton fichier settings.py que tu viens de modifier.
+            send_mail(
+                subject=subject,
+                message=message,
+                from_email=settings.DEFAULT_FROM_EMAIL,
+                recipient_list=[user.email],
+                fail_silently=False, 
+            )
+            
+            print(f"✅ Mail de sécurité envoyé avec succès à : {user.email}")
+            return True
+            
+        except Exception as e:
+            # Si le mot de passe de 16 caractères est faux ou pas d'internet, 
+            # l'erreur s'affichera ici dans ton terminal Ubuntu.
+            print(f"❌ Erreur SMTP critique : {str(e)}")
+            return False
 
 # src/apps/services/main_services/otp_service.py
 class OTPService:

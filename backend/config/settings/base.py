@@ -25,7 +25,16 @@ SECRET_KEY = 'django-insecure-k$3em7@d)m0n!zlo4#&=b=w=n%c8xsu@doq#kw$-=b+09m2mr=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+
+EMAIL_HOST_USER = 'ismaellebange596@gmail.com'
+EMAIL_HOST_PASSWORD = 'asjreovzukaegbjc' # Les 16 caractères sans espaces
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True  # Indispensable pour la sécurité
+DEFAULT_FROM_EMAIL = 'SEIP Système <ismaellebange596@gmail.com>'
 
 
 # Application definition
@@ -33,6 +42,7 @@ ALLOWED_HOSTS = []
 AUTH_USER_MODEL = 'src.User'
 
 INSTALLED_APPS = [
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,7 +51,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_simplejwt',
-    'corsheaders',
+    
+    'drf_spectacular',
     'src',
     'tests',
 ]
@@ -50,17 +61,23 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny', # Permet l'enrôlement public
+    ],
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'src.apps.middleware.audit_middleware.AuditMiddleware'
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -80,7 +97,11 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'config.wsgi.application'
+
+ASGI_APPLICATION = 'src.asgi.application'
+
+
+WSGI_APPLICATION = 'src.wsgi.application'
 
 
 # Database
@@ -141,3 +162,16 @@ SILENCED_SYSTEM_CHECKS = ['urls.W002']
 
 # Disable checks framework
 CHECK_FRAMEWORK = False
+
+
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'SEIP - Système Électronique d\'Identification de la Population',
+    'DESCRIPTION': 'API Backend pour l\'enrôlement biométrique et l\'audit sécurisé - RDC',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+}
+
+
+
+CORS_ALLOW_ALL_ORIGINS = True

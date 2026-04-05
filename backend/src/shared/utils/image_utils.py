@@ -5,14 +5,24 @@ import numpy as np
 from django.core.files.base import ContentFile
 
 def base64_to_cv2(base64_str: str):
-    """
-    Convertit une chaîne base64 (avec ou sans header data:image/...) en image OpenCV.
-    """
-    if 'base64,' in base64_str:
-        base64_str = base64_str.split('base64,')[1]
-    img_data = base64.b64decode(base64_str)
-    np_arr = np.frombuffer(img_data, np.uint8)
-    return cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
+    
+    try:
+        if 'base64,' in base64_str:
+            base64_str = base64_str.split('base64,')[1]
+
+        img_data = base64.b64decode(base64_str)
+        np_arr = np.frombuffer(img_data, np.uint8)
+        img = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
+
+        # 💥 CHECK CRITIQUE
+        if img is None:
+            raise ValueError("Image décodée = None (format invalide)")
+
+        return img
+
+    except Exception as e:
+        print("❌ ERREUR BASE64 → CV2:", str(e))
+        return None
 
 def base64_to_django_file(base64_str: str, filename_prefix: str) -> ContentFile:
     """

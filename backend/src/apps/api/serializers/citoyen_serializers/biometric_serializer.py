@@ -5,6 +5,7 @@ from src.domain.value_objects.biometrics import BiometricType
 class BiometricEnrollSerializer(serializers.Serializer):
     type = serializers.ChoiceField(choices=[t.value for t in BiometricType])
     image = serializers.CharField()
+    citoyen_id = serializers.IntegerField()
 
     def to_domain(self, citoyen_id: int):
         try:

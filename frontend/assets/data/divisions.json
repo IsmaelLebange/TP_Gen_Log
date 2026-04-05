@@ -1,0 +1,1022 @@
+{
+  "Kongo-Central": {
+    "Kasangulu": [
+      "Kasangulu",
+      "Luila",
+      "Lukunga-Mputu"
+    ],
+    "Kimvula": [
+      "Benga",
+      "Lubisi",
+      "Lula-Lumene"
+    ],
+    "Lukula": [
+      "Fubu",
+      "Kakongo",
+      "Patu",
+      "Tsanga-Sud",
+      "Tsundi-Sud"
+    ],
+    "Luozi": [
+      "Balari",
+      "Kenge",
+      "Kimbanza",
+      "Kimumba",
+      "Kinkenge",
+      "Kivunda",
+      "Mbanza Mona",
+      "Mbanza Mwembe",
+      "Mbanza Ngoyo",
+      "Mongo Luala"
+    ],
+    "Madimba": [
+      "Kinkosi (Luidi)",
+      "Mfidi Malele",
+      "Mfuma-Kibambi",
+      "Ngeba",
+      "Ngufu",
+      "Wungu"
+    ],
+    "Mbanza-Ngungu": [
+      "Boko",
+      "Gombe-Matadi",
+      "Gombe-Sud",
+      "Kivulu",
+      "Kwilu-Ngongo",
+      "Lunzadi",
+      "Ntimansi"
+    ],
+    "Moanda": [
+      "Assolongo",
+      "Boma-Bungu",
+      "la Mer"
+    ],
+    "Seke-Banza": [
+      "Bundi",
+      "Isangila",
+      "Lufu",
+      "Mbavu",
+      "Sumbi"
+    ],
+    "Songololo": [
+      "Bamboma",
+      "Kimpese",
+      "Luima",
+      "Palabala",
+      "Wombo"
+    ],
+    "Tshela": [
+      "Bula-Naku",
+      "Loango",
+      "Lubolo",
+      "Lubuzi",
+      "Maduda",
+      "Nganda-Tsundi",
+      "Nzobe Luzi",
+      "Tshela Banga"
+    ]
+  },
+  "Kwango": {
+    "Feshi": [
+      "Feshi Maziamo",
+      "Ganaketi",
+      "Lobo",
+      "Mukoso"
+    ],
+    "Kahemba": [
+      "Muloshi",
+      "Mwa-Mushiko",
+      "Mwendjila",
+      "Bangu",
+      "Bindu",
+      "Kulindji"
+    ],
+    "Kasongo-Lunda": [
+      "Kasa",
+      "Kasongo-Lunda",
+      "Kibunda",
+      "Kingulu",
+      "Kizamba",
+      "Mawanga",
+      "Panzi",
+      "Swa-Tenda"
+    ],
+    "Kenge": [
+      "Pelende-Nord",
+      "Bukanga-Lonzo",
+      "Dinga",
+      "Kolokoso",
+      "Mosamba"
+    ],
+    "Popokabaka": [
+      "Lufuma",
+      "Popokabaka",
+      "Yonso"
+    ]
+  },
+  "Kwilu": {
+    "Bagata": [
+      "Kidzweme",
+      "Kwango-Kasai",
+      "Kwilu-Ntober",
+      "Manzasay",
+      "Wamba-Fatundu"
+    ],
+    "Bulungu": [
+      "Dwe",
+      "Imbongo",
+      "Kilunda",
+      "Kipuka",
+      "Kwenge",
+      "Kwilu-Kimbata",
+      "Luniungu",
+      "Mikwi",
+      "Niadi-Nkara",
+      "Nko"
+    ],
+    "Gungu": [
+      "Gungu",
+      "Kandale",
+      "Kilamba",
+      "Kilembe",
+      "Kisunzu",
+      "Kobo (Mosala)",
+      "Kondo",
+      "Lozo",
+      "Lukamba",
+      "Mudikalunga",
+      "Mungindu",
+      "Ngudi",
+      "Banga",
+      "Belo",
+      "Bulwem",
+      "Kalanganda",
+      "Kanga",
+      "Kapia",
+      "Kipuku",
+      "Madimbi",
+      "Mateko",
+      "Musanga-Idiofa",
+      "Sedzo",
+      "Yasa-Lokwa"
+    ],
+    "Masi-Manimba": [
+      "Bindungi",
+      "Kibolo",
+      "Kinzenga",
+      "Kinzenzengo",
+      "Kitoy",
+      "Masi-Manimba",
+      "Mokamo",
+      "Mosango",
+      "Pay-Kongila",
+      "Sungu"
+    ]
+  },
+  "Mai-Ndombe": {
+    "Bolobo": [
+      "Bateke-Nord",
+      "Basengele",
+      "Bolia",
+      "Inongo"
+    ],
+    "Kiri": [
+      "Beronge",
+      "Lotoy (Lutoy)",
+      "Pendjwa"
+    ],
+    "Kutu": [
+      "Badia",
+      "Batere",
+      "Kemba",
+      "Lwabo (Luabu)",
+      "Mfimi"
+    ],
+    "Kwamouth": [
+      "Bateke-Sud/Twa"
+    ],
+    "Mushie": [
+      "Baboma-Nord",
+      "Kangara",
+      "Lokolama",
+      "Lukenie"
+    ],
+    "Yumbi": [
+      "Mongama"
+    ]
+  },
+  "Equateur": {
+    "Basankusu": [
+      "Basankusu",
+      "Gombalo",
+      "Waka-Bokeka"
+    ],
+    "Bikoro": [
+      "Ekonda",
+      "Elanga",
+      "Lac Ntomba"
+    ],
+    "Bolomba": [
+      "Dianga",
+      "Bolomba",
+      "Busira",
+      "Losanganya",
+      "Mampoko"
+    ],
+    "Bomongo": [
+      "Djamba",
+      "Ngiri",
+      "Bokatola",
+      "Duali",
+      "Eungu"
+    ],
+    "Lukolela": [
+      "Banunu",
+      "Lusakani",
+      "Mpama"
+    ],
+    "Makanza": [
+      "Bangala",
+      "Mweko (Moeko)",
+      "Ndobo"
+    ]
+  },
+  "Nord-Ubangi": {
+    "Bosobolo": [
+      "Bandas",
+      "Bili",
+      "Bosobolo"
+    ],
+    "Businga": [
+      "Bodangabo",
+      "Businga",
+      "Karawa"
+    ],
+    "Mobayi-Mbongo": [
+      "Mobayi-Mbongo",
+      "Oto-Mbanza"
+    ],
+    "Yakoma": [
+      "Abumombazi",
+      "Wapinda",
+      "Yakoma"
+    ]
+  },
+  "Sud-Ubangi": {
+    "Budjala": [
+      "Banza",
+      "Bolingo",
+      "Mongala-Motima",
+      "Ndolo-Liboko",
+      "Ngombe-Ndoko (Likini)"
+    ],
+    "Gemena": [
+      "Banga-Kungu",
+      "Bowase",
+      "Mbari",
+      "Nguya"
+    ],
+    "Kungu": [
+      "Bomboma",
+      "Dongo",
+      "Lwa",
+      "Mwanda",
+      "Songo"
+    ],
+    "Libenge": [
+      "Libenge-Centre",
+      "Libenge-Nord",
+      "Libenge-Sud"
+    ]
+  },
+  "Mongala": {
+    "Bongandanga": [
+      "Bongandanga",
+      "Boso-Djano",
+      "Boso-Melo",
+      "Boso-Simba"
+    ],
+    "Bumba": [
+      "Banda Yowa (Banda Yoka)",
+      "Itimbiri",
+      "Loeka",
+      "Modjamboli",
+      "Molwa",
+      "Yandongi"
+    ],
+    "Lisala": [
+      "Mongala Motima",
+      "Ngombe Doko",
+      "Ngombe Mobangi"
+    ]
+  },
+  "Tshuapa": {
+    "Befale": [
+      "Befumbo",
+      "Duale",
+      "Lomako"
+    ],
+    "Boende": [
+      "Bolua",
+      "Djera",
+      "Lofoy",
+      "Wini"
+    ],
+    "Bokungu": [
+      "Nkole",
+      "Lolaka",
+      "Loombo",
+      "Luando",
+      "Luay"
+    ],
+    "Djolu": [
+      "Djolu",
+      "Lingomo",
+      "Luo",
+      "Yala"
+    ],
+    "Ikela": [
+      "Lofome",
+      "Loile",
+      "Lokina (Lokima)",
+      "Tshuapa",
+      "Tumbenga"
+    ],
+    "Monkoto": [
+      "Bianga",
+      "Monkoto",
+      "Nongo"
+    ]
+  },
+  "Tshopo": {
+    "Bafwasende": [
+      "Bafwandaka",
+      "Bakumu d'Angumu",
+      "Bakundumu",
+      "Barumbi-Opienge",
+      "Bekeni-Kondolole",
+      "Bemili"
+    ],
+    "Banalia": [
+      "Baboro",
+      "Baboa de Kole",
+      "Bamanga",
+      "Banalia-Bangba",
+      "Popoy"
+    ],
+    "Basoko": [
+      "Wahanga",
+      "Yaliwasa",
+      "Yamandundu",
+      "Bangelema",
+      "Bomenge",
+      "Lukutu (Lokutu)",
+      "Mobango Itimbiri",
+      "Turumbu",
+      "Baluolambila",
+      "Bolomboki",
+      "Kombe",
+      "Liutua",
+      "Yalihila (Yalikila)",
+      "Yalikoka-Mboso",
+      "Bambelota",
+      "Lokombe (Lukombe)",
+      "Luete (Lueta)",
+      "Turumbu",
+      "Yalikandja-Yanonge",
+      "Yaokandja",
+      "Yawembe-Basoa",
+      "Kembe",
+      "Mongo",
+      "Yalingo",
+      "Yamaie (Yomaie)",
+      "Yapandu",
+      "Yeyango",
+      "Balinga-Lindja",
+      "Iye",
+      "Lobaie",
+      "Tooli",
+      "Yawende-Loolo",
+      "Kirundu",
+      "Bakumu d'Obiatuku",
+      "Bakumu-Kilinga",
+      "Bakumu-Mandombe",
+      "Bakumu-Mangongo",
+      "Mituku-Bamoya",
+      "Mituku-Basikate",
+      "Walengola-Babira",
+      "Walengola-Baleka",
+      "Walengola-Lilo",
+      "Walengola-Lowa"
+    ],
+    "Yahuma": [
+      "Mombesa",
+      "Bolinga",
+      "Bosoku (Bosoko)",
+      "Buma"
+    ]
+  },
+  "Bas-Uele": {
+    "Bambesa": [
+      "Bakete",
+      "Bokapo",
+      "Bokiba",
+      "Bolungwa",
+      "Makere 1",
+      "Makere 2",
+      "Bakere-Bakete",
+      "Mange",
+      "Mondongwale"
+    ],
+    "Bondo": [
+      "Boso",
+      "Deni",
+      "Duaru",
+      "Gama",
+      "Gaya",
+      "Goa (Goya)",
+      "Kasa",
+      "Mobenge-Mondila",
+      "Soa"
+    ],
+    "Buta": [
+      "Bayeu Bogongea",
+      "Bayeu Bogbama",
+      "Mobati",
+      "Mongazulu",
+      "Nguru"
+    ],
+    "Poko": [
+      "Babena",
+      "Bakengai-Avuru",
+      "Gamu",
+      "Kipate",
+      "Kumendeni",
+      "Mabanga",
+      "Madi",
+      "Malele",
+      "Ngbaradi (Ngbarandi)",
+      "Soronga",
+      "Zune",
+      "Abarambo",
+      "Kembisa"
+    ]
+  },
+  "Haut-Uele": {
+    "Dungu": [
+      "Malingindu",
+      "Ndolomo (Duruma)",
+      "Wando"
+    ],
+    "Faradje": [
+      "Dongo",
+      "Kakwa-Lamada",
+      "Logo-Bagela",
+      "Logo-Doka",
+      "Logo-Lolia",
+      "Logo-Obeleba",
+      "Logo-Ogambi",
+      "Mondo"
+    ],
+    "Niangara": [
+      "Boemi",
+      "Kereboro (Kerebobe)",
+      "Kopa",
+      "Mangbere (Mangbele)",
+      "Mangbetu (Mangbetu-Mabisanga)",
+      "Manziga (Manzinga)",
+      "Okoda (Okondo)"
+    ],
+    "Rungu": [
+      "Azanga",
+      "Mayogo-Mabozo",
+      "Mayogo-Magbay (Mayoyo-",
+      "Mboli",
+      "Medje-Mango",
+      "Mongo-Masi (Mengo Mosi)",
+      "Ndey"
+    ],
+    "Wamba": [
+      "Bafwagada (Bafwangada)",
+      "Bafwakoy",
+      "Maha",
+      "Makoda",
+      "Malamba",
+      "Malika Toriko (Balika-Toriko)",
+      "Malikala (Malika)",
+      "Mangbele",
+      "Timoniko",
+      "Wadimbisa-Mabudu",
+      "Mabudu Malika Babero/Babeyru"
+    ],
+    "Watsa": [
+      "Andikofa",
+      "Andobi",
+      "Ateru",
+      "Kebo",
+      "Walese (Walesa)",
+      "Gombari",
+      "Kibali",
+      "Mangbutu",
+      "Mari-Minza"
+    ]
+  },
+  "Ituri": {
+    "Djugu": [
+      "Bahema-Badjere",
+      "Bahema-Banywagi",
+      "Bahema-Nord",
+      "Mabendi (Mabengi)",
+      "Mambisa",
+      "Ndo-Okebo",
+      "Walendu-Djatshi",
+      "Walendu-Pitshi",
+      "Walendu-Tatsi",
+      "Andisoma",
+      "Babelebe",
+      "Baboa-Bakoe",
+      "Bahema d'Irumu",
+      "Bahema Mitego (Bahema Mitega)",
+      "Bahema-Boga",
+      "Baniari-Tchiabi",
+      "Basili",
+      "Mobala",
+      "Walendu-Bindi",
+      "Walese Vonkutu",
+      "Bahema Sud"
+    ],
+    "Mahagi": [
+      "Alur-Djuganda",
+      "Anghal 1 & 2",
+      "Djukoth 1 & 2",
+      "Mokambo",
+      "Pandoro",
+      "Walendu-Watshi",
+      "Wangongo",
+      "War-Palara"
+    ],
+    "Mambasa": [
+      "Babila Babombi",
+      "Babila-Bakwanza",
+      "Bandaka",
+      "Bombo-Bagumba (-Baguma)",
+      "Mambasa",
+      "Walese-Dese",
+      "Walese-Karo (-Koro)"
+    ]
+  },
+  "Nord-Kivu": {
+    "Lubero": [
+      "Bamate",
+      "Baswaga",
+      "Batangi",
+      "Bapere"
+    ],
+    "Masisi": [
+      "Bahunde",
+      "Bashali",
+      "Osso (Banyungu)",
+      "Katoy"
+    ],
+    "Nyiragongo": [
+      "Bukumu"
+    ],
+    "Oicha (Ex-Beni)": [
+      "Bashu",
+      "Watalinga",
+      "Beni-Mbau",
+      "Ruwenzori"
+    ],
+    "Rutshuru": [
+      "Bwisha",
+      "Bwito"
+    ],
+    "Walikale": [
+      "Bakano",
+      "Wanianga"
+    ]
+  },
+  "Sud-Kivu": {
+    "Fizi": [
+      "Lulenge",
+      "Mutambala",
+      "Ngandja",
+      "Tanganyika",
+      "Ntambuka",
+      "Rubenga"
+    ],
+    "Kabare": [
+      "Kabare",
+      "Nindja"
+    ],
+    "Kalehe": [
+      "Buhavu",
+      "Buloho"
+    ],
+    "Mwenga": [
+      "Basile",
+      "Burhinyi",
+      "Luhwindja",
+      "Luindi",
+      "Wamuzimu",
+      "Itombwe"
+    ],
+    "Shabunda": [
+      "Bakisi",
+      "Wakabongo 1",
+      "Bafulero",
+      "Bavira",
+      "Plaine de la Ruzizi"
+    ],
+    "Walungu": [
+      "Kaziba",
+      "Ngweshe"
+    ]
+  },
+  "Maniema": {
+    "Kabambare": [
+      "Bahemba",
+      "Babuyu",
+      "Bahombo (Bangu-Bangu)",
+      "Lulindi",
+      "Salamabila",
+      "Wamaza"
+    ],
+    "Kailo": [
+      "Bangengele",
+      "Ambwe",
+      "Balanga",
+      "Wasongola"
+    ],
+    "Kasongo": [
+      "Bakwange",
+      "Basonge 1",
+      "Benya Samba (Benia-Samba)",
+      "Nonda",
+      "Wagenia",
+      "Wazula",
+      "Basonge 2 Mweho",
+      "Mamba Kasenga",
+      "Wazimba-wa-Maringa",
+      "Wazimba-wa-Mulu"
+    ],
+    "Kibombo": [
+      "Aluba",
+      "Ankutshu",
+      "Bahina",
+      "Bakongola",
+      "Matapa"
+    ],
+    "Lubutu": [
+      "Obokote",
+      "Bitule"
+    ],
+    "Pangi": [
+      "Babene",
+      "Beia",
+      "Ikama",
+      "Wakabongo 2"
+    ],
+    "Punia": [
+      "Babira-Bakwame",
+      "Baleka",
+      "Ulindi"
+    ]
+  },
+  "Haut-Katanga": {
+    "Kambove": [
+      "Basanga",
+      "Lufira",
+      "Source du Congo"
+    ],
+    "Kasenga": [
+      "Bakunda",
+      "Kafira",
+      "Kisamamba",
+      "Luapula"
+    ],
+    "Kipushi": []
+  },
+  "Chefferie de Kaponda": {},
+  "Chefferie de Kinyama": {
+    "Mitwaba": [
+      "Kiona-Ngoie",
+      "Balomotwa",
+      "Bamweshi"
+    ],
+    "Pweto": [
+      "Kiona-Nzini",
+      "Mwenge",
+      "M'Pweto",
+      "Moero"
+    ],
+    "Sakania": [
+      "Balala",
+      "Balamba",
+      "Baushi-Mwenda"
+    ]
+  },
+  "Haut-Lomami": {
+    "Bukama": [
+      "Butumba",
+      "Kabondo-Dianda",
+      "Kibanda",
+      "Kinkondja",
+      "Kapamay",
+      "Lualaba"
+    ],
+    "Kabongo": [
+      "Kabongo",
+      "Kayamba",
+      "Nord-Baluba"
+    ],
+    "Kamina": [
+      "Kasongo-Nyembo",
+      "Kinda"
+    ],
+    "Kaniama": [
+      "Mutombo-Mukulu"
+    ],
+    "Malemba-Nkulu": [
+      "Kayumba",
+      "Mulongo",
+      "Museka",
+      "Nkulu",
+      "Badia",
+      "Mwanza"
+    ]
+  },
+  "Lualaba": {
+    "Dilolo": [
+      "Muyeye",
+      "Mwaka Ndala",
+      "Mwatshisenge",
+      "Ndumba",
+      "Saluseke",
+      "Tshisangama",
+      "Luena",
+      "Lulua Lukoshi",
+      "Mutanda"
+    ],
+    "Kapanga": [
+      "Mwant-Yav"
+    ],
+    "Lubudi": [
+      "Bayeke",
+      "Mazangule",
+      "Mulumbu",
+      "Mwana-Muadi"
+    ],
+    "Mutshatsha": [
+      "Lufupa",
+      "Luilu",
+      "Mukuleshi"
+    ],
+    "Sandoa": [
+      "Kayembe Mukulu",
+      "Lumanga",
+      "Mbako",
+      "Muteba",
+      "Sakundundu",
+      "Samutoma",
+      "Tshibamba",
+      "Tshipao"
+    ]
+  },
+  "Tanganyka": {
+    "Kabalo": [
+      "Luela-Luvunguyi",
+      "Lukuswa"
+    ],
+    "Kalemie": [
+      "Benze",
+      "Rutuku",
+      "Tumbwe"
+    ],
+    "Kongolo": [
+      "Bayashi",
+      "Lubunda",
+      "Mambwe",
+      "Muhona",
+      "Nkuvu",
+      "Nyembo",
+      "Yambula",
+      "Baluba",
+      "Basonge",
+      "Munono"
+    ],
+    "Manono": [
+      "Bakongolo",
+      "Kiluba",
+      "Kamalondo",
+      "Kiofwe",
+      "Luvua",
+      "Nyemba"
+    ],
+    "Moba": [
+      "Bena-Tanga",
+      "Kansabala",
+      "Kayabala",
+      "Manda",
+      "Nganie (Nganye)",
+      "Bena Kamanya"
+    ],
+    "Nyunzu": [
+      "Nord-Lukuga",
+      "Sud-Lukuga"
+    ]
+  },
+  "Lomami": {
+    "Kabinda": [
+      "Baluba-Lubangule",
+      "Kabinda",
+      "Ludimbi-Lukula",
+      "Lufubu-Lomami",
+      "Lukashi-Lualu",
+      "Vunayi"
+    ],
+    "Kamiji": [
+      "Kamiji",
+      "Luekeshi"
+    ],
+    "Lubau": [
+      "Bekalebwe",
+      "Kisengwa",
+      "Lubao",
+      "Tshofa"
+    ],
+    "Luilu": [
+      "Kanutshina (In-Kan)",
+      "Katshisungu (Kanyoka de…)",
+      "Mulundu (Kanyoka de Mulundu )",
+      "Kanda-Kanda"
+    ],
+    "Ngandajika": [
+      "Bakwa-Mulumba",
+      "Bena-Kalambayi (Kalambayi)",
+      "Baluba-Shankadi",
+      "Ngandajika",
+      "Tshiyamba (Bena-Tshiyamba)"
+    ]
+  },
+  "Sankuru": {
+    "Katako-Kombe": [
+      "Basambala",
+      "Batetela arabisés (Lomami)",
+      "Djalo",
+      "Lonya",
+      "Lukumbe",
+      "Ngandu Katako (Est/Ouest)",
+      "Ukulungu",
+      "Watambulu-Nord",
+      "Watambulu-Sud"
+    ],
+    "Kole": [
+      "Atshuru",
+      "Bankutsu-Dibele",
+      "Bankutsu-Lukenie",
+      "Basho",
+      "Batetela-Dibele",
+      "Ohindo"
+    ],
+    "Lodja": [
+      "Ahamba-Mange",
+      "Batetela-Lukenie",
+      "Kondo-Tshumbe",
+      "Lukfungu",
+      "Lutshimba-Eduo-Piete-Kolombe",
+      "Nambelo-Lohembe (Nambelu-",
+      "Olemba",
+      "Vunge (Vungi)",
+      "Watambulu"
+    ],
+    "Lomela": [
+      "Djonga",
+      "Bahamba 1",
+      "Bahamba 2",
+      "Bakela",
+      "Batetela-Lomela",
+      "Okutu"
+    ],
+    "Lubefu": [
+      "Basonge",
+      "Mondja-Ngandu",
+      "Ndjovu",
+      "Ngandu-Wuma"
+    ],
+    "Lusambo": [
+      "Basonge",
+      "Batetela",
+      "Kashindi",
+      "Lubi",
+      "MPania-Mutombo",
+      "Sankuru"
+    ]
+  },
+  "Kasai Oriental": {
+    "Kabeya-Kamwanga": [
+      "Kalela",
+      "Lac Munkamba",
+      "Mpemba",
+      "Ndomba"
+    ],
+    "Katanda": [
+      "Baluba-Lubilandji",
+      "Bena-Tshitolo",
+      "Mutuayi",
+      "Nsangu"
+    ],
+    "Lupatapata": [
+      "Kabala",
+      "Mudiba",
+      "Mukumbi",
+      "Mulenda"
+    ],
+    "Miabi": [
+      "Kakangayi",
+      "Movo-Nkatshia",
+      "Tshijiba",
+      "Tshilundu"
+    ],
+    "Tshilenge": [
+      "Kampatshi",
+      "Kalelu",
+      "Kalonji-Sud",
+      "Lukalaba",
+      "Tshipuka (Tshouka)"
+    ]
+  },
+  "Kasai": {
+    "Dekese": [
+      "Dekese-Ikolombe-Isolu",
+      "Yaelima",
+      "Basongo",
+      "Malu-Malu",
+      "Mapangu (Ell: Entre Loange-",
+      "Sud-Banga",
+      "Bakwa-Nyambi",
+      "Bapende",
+      "Kasadi-Sadi",
+      "Kasai-Kabambaie",
+      "Kasai-Longatshimo",
+      "Kasai-Lunyeka",
+      "Lovua-Longatshimo",
+      "Lovua-Lushiku",
+      "Tshikapa"
+    ],
+    "Luebo": [
+      "Luebo-Kabambaie",
+      "Luebo-Lulengele",
+      "Luebo-Wedi",
+      "NDjoko-Punda"
+    ],
+    "Mweka": [
+      "Bakuba"
+    ]
+  },
+  "Kasai Central": {
+    "Demba": [
+      "Bena Mamba",
+      "Diofwa",
+      "Lombelo",
+      "Lusonge",
+      "Mwanza-Ngoma",
+      "Tshibote",
+      "Tshibungu"
+    ],
+    "Dibaya": [
+      "Dibanda",
+      "Dibataie",
+      "Kamwandu",
+      "Kasangidi",
+      "Tshishilu"
+    ],
+    "Dimbelenge": [
+      "Kunduyi",
+      "Lubi",
+      "Lubudi",
+      "Lukibu",
+      "Mashala"
+    ],
+    "Kazumba": [
+      "Bashi-Mboie",
+      "Bena-Ngoshi (Mutefu)",
+      "Bulungu",
+      "Kafuba",
+      "Kavula",
+      "Matamba",
+      "Miao",
+      "Muswaswa",
+      "Tshitadi"
+    ],
+    "Luiza": [
+      "Bambaie",
+      "Kabelekese",
+      "Kalunga",
+      "Loatshi",
+      "Lueta",
+      "Lusanza",
+      "Mbushimaie (Bushimaie)"
+    ]
+  }
+}

@@ -17,9 +17,14 @@ Including another URLconf
 # src/urls.py
 from django.urls import path, include
 from src.apps.api.routes import main_routes, citoyen_routes, admin_routes
+from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
+
 
 urlpatterns = [
     path('main_', include(main_routes)),
     path('citoyen_', include(citoyen_routes)),
     path('admin_', include(admin_routes)),
+    path('schema/', SpectacularAPIView.as_view(), name='schema'),
+    path('docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
+    path('redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
 ]

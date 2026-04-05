@@ -1,7 +1,11 @@
+# src/apps/api/routes/admin_routes.py
 from django.urls import path
-# Importe tes controllers ici
+from src.apps.api.controllers.admin_controllers.audit_controller import AuditController
+from src.apps.api.controllers.admin_controllers.statistics_controller import StatisticsController
+from src.apps.api.controllers.admin_controllers.validation_workflow_controller import ValidationWorkflowController
 
 urlpatterns = [
-    # path('stats/', AdminStatsController.as_view(), name='admin-stats'),
-    # Même si c'est vide pour l'instant, la liste DOIT exister :
+    path('validation/', ValidationWorkflowController.as_view(), name='admin_validation'),
+    path('stats/', StatisticsController.as_view(), name='admin_stats'),
+    path('audit/', AuditController.as_view(), name='admin_audit'),
 ]

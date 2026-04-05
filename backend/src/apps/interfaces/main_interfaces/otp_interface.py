@@ -32,3 +32,14 @@ class OTPSenderInterface(ABC):
     def send(self, user: User, code: str) -> bool:
         """Envoie le code OTP à l'utilisateur (SMS ou email)."""
         pass
+
+
+
+class OTPServiceInterface(ABC):
+    @abstractmethod
+    def request_otp(self, email: str, purpose: str) -> dict:
+        pass
+
+    @abstractmethod
+    def verify_otp(self, email: str, code: str, purpose: str) -> dict:
+        pass

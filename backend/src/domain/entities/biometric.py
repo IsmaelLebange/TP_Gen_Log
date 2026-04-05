@@ -7,7 +7,7 @@ from src.domain.value_objects.biometrics import BiometricType, BiometricTemplate
 class BiometricEntity:
     citoyen_id: int
     biometric_type: BiometricType
-    image_base64: str  # Donnée brute pour le traitement
+    image_base64: Optional[str] = None  # Donnée brute pour le traitement
     template: Optional[BiometricTemplate] = None
     image_path: Optional[str] = None
     created_at: Optional[datetime] = None
@@ -17,7 +17,7 @@ class BiometricEntity:
 
     def __post_init__(self):
         # On garde ta validation cruciale
-        if not self.image_base64.startswith('data:image/'):
+        if not self.id and  not self.image_base64.startswith('data:image/'): 
             raise ValueError("L'image doit être au format Data URI (base64).")
 
     def activate(self):

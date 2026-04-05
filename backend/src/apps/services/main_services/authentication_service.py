@@ -29,41 +29,44 @@ class AuthenticationService(AuthenticationServiceInterface):
             'expires_in': 3600,
         }
 
-    def login(self, email: str, password: str, request=None, otp: str = None) -> Dict[str, Any]:
-        # 1. Vérifier identifiants
-        user = authenticate(request, email=email, password=password) if request else authenticate(email=email, password=password)
+    def login(self, login_input: str, password: str, request=None) -> Dict[str, Any]:
+        # 1. Identification NIN ou Email (Détection automatique)
+        if "@" in login_input:
+            user = authenticate(request, email=login_input, password=password)
+        else:
+            # On utilise 'username' car Django mappe souvent le NIN sur ce champ
+            user = authenticate(request, username=login_input, password=password)
+
+        # Si l'auth échoue
         if not user or not user.is_active:
-            logger.warning(f"Échec connexion: {email}")
+            logger.warning(f"Échec connexion pour : {login_input}")
             raise AuthenticationException("Identifiants invalides ou compte inactif")
 
-        # 2. Si OTP absent, envoyer un code
-        if not otp:
-            if not self.otp_service:
-                raise AuthenticationException("Service OTP non configuré")
-            result = self.otp_service.request_otp(email=email, purpose="LOGIN")
-            if not result['success']:
-                raise AuthenticationException(result['message'])
-            raise {'otp_required': True, 'message': 'Code OTP envoyé'}
+        # 2. LE TRUC POUR LE MAIL (Ton OTPService)
+        if self.otp_service:
+            try:
+                # On appelle ton service pour générer et envoyer le mail via Gmail
+                self.otp_service.request_otp(email=user.email, purpose="LOGIN_NOTIFICATION")
+                print(f"🚀 [SMTP] Mail de sécurité envoyé à : {user.email}")
+            except Exception as e:
+                # On log l'erreur mais on ne bloque pas le login de l'agent
+                logger.error(f"Erreur envoi mail : {str(e)}")
+                print(f"❌ [SMTP] Erreur d'envoi : {str(e)}")
+        else:
+            logger.warning("OTPService non disponible, mail de sécurité non envoyé")                
 
-        # 3. OTP présent : vérifier
-        if not self.otp_service:
-            raise AuthenticationException("Service OTP non configuré")
-        verify_result = self.otp_service.verify_otp(email=email, code=otp, purpose="LOGIN")
-        if not verify_result['success']:
-            raise AuthenticationException(verify_result['message'])
-
-        # 4. OTP valide : générer tokens
+        # 3. Génération des tokens et retour des données
         tokens = self._generate_tokens(user)
+        
         if request:
             self._log_audit(user, 'LOGIN', request)
 
         return {
             **tokens,
-            'user': self._format_user_data(user)
+            'user': self._format_user_data(user),
+            'message': "Connexion réussie. Un mail de sécurité a été envoyé."
         }
-
-    # Les autres méthodes (register, logout, refresh, etc.) restent inchangées
-
+    
     def register(self, email: str, password: str, nom: str, prenom: str, 
                  nin: str, request=None, role: str = User.Role.CITOYEN,date_naissance: str=None) -> Dict[str, Any]:
         

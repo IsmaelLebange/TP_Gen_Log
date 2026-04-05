@@ -31,3 +31,7 @@ class BiometricRepositoryInterface(ABC):
     def delete(self, entity: BiometricEntity) -> None:
         """Supprime logiquement (soft delete) une entité."""
         pass
+
+    @abstractmethod
+    def list_active_by_citoyen(self, citoyen_id: int) -> List[BiometricEntity]:
+        pass

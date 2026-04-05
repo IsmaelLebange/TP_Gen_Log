@@ -1,5 +1,6 @@
 from rest_framework import serializers
 
+from src.domain.value_objects.biometrics import BiometricType
 from src.domain.entities.citoyen import Citoyen
 from src.models import User
 
@@ -19,6 +20,11 @@ class EnrollmentSerializer(serializers.Serializer):
     nom_du_pere = serializers.CharField()
     nom_de_la_mere = serializers.CharField()
     telephone = serializers.CharField(required=False)
+    adresse_province = serializers.CharField(required=False, allow_blank=True)
+    adresse_commune = serializers.CharField(required=False, allow_blank=True)
+    adresse_quartier = serializers.CharField(required=False, allow_blank=True)
+    adresse_avenue = serializers.CharField(required=False, allow_blank=True)
+    adresse_numero = serializers.CharField(required=False, allow_blank=True)
 
     def validate(self, data):
         if data['mot_de_passe'] != data['password_confirm']:
@@ -30,6 +36,11 @@ class EnrollmentSerializer(serializers.Serializer):
             return Citoyen.from_request(self.validated_data)
         except ValueError as e:
             raise serializers.ValidationError(str(e))
+
+class EnrollmentCompleteSerializer(EnrollmentSerializer):
+    # On ajoute ce que BiometricEnrollSerializer demandait
+    biometric_image = serializers.CharField() 
+    biometric_type = serializers.ChoiceField(choices=[t.value for t in BiometricType], default="face")
         
 class CitoyenProfileSerializer(serializers.ModelSerializer):
     full_name = serializers.SerializerMethodField()
@@ -39,7 +50,7 @@ class CitoyenProfileSerializer(serializers.ModelSerializer):
         model = User
         fields = [
             'id', 'nin', 'email', 'nom', 'postnom', 'prenom', 'full_name', 
-            'age', 'province_origine', 'territoire_origine', 'secteur_origine'
+            'age', 'province_origine', 'territoire_origine', 'secteur_origine','nom_du_pere', 'nom_de_la_mere', 'date_naissance','telephone', 'adresse_province', 'adresse_commune', 'adresse_quartier', 'adresse_avenue', 'adresse_numero'
         ]
 
     def get_full_name(self, obj):

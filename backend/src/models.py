@@ -33,15 +33,21 @@ class SecteurChefferie(models.Model):
 
 class Adresse(models.Model):
     citoyen = models.OneToOneField('User', on_delete=models.CASCADE, related_name='adresse_actuelle')
+    province = models.ForeignKey('Province', on_delete=models.SET_NULL, null=True, blank=True)
     commune = models.CharField(max_length=100, blank=True)
     quartier = models.CharField(max_length=100, blank=True)
     avenue = models.CharField(max_length=100, blank=True)
     numero = models.CharField(max_length=20, blank=True)
-    code_postal = models.CharField(max_length=10, blank=True)
+    
 
     def __str__(self):
-        parts = [self.avenue, self.numero, self.quartier, self.commune]
-        return ", ".join(p for p in parts if p) or "Adresse non renseignée"
+        parts = []
+        if self.avenue: parts.append(self.avenue)
+        if self.numero: parts.append(self.numero)
+        if self.quartier: parts.append(self.quartier)
+        if self.commune: parts.append(self.commune)
+        elif self.province: parts.append(str(self.province))
+        return ", ".join(parts) or "Adresse non renseignée"
 
 class UserManager(BaseUserManager):
     def create_user(self, email, nin, password=None, **extra_fields):
@@ -99,6 +105,8 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_staff = models.BooleanField(default=False)
     date_joined = models.DateTimeField(auto_now_add=True)
     last_login = models.DateTimeField(null=True, blank=True)
+    is_validated = models.BooleanField(default=False)
+    biometric_completed = models.BooleanField(default=False)
     
     groups = models.ManyToManyField(
         Group,
@@ -194,6 +202,7 @@ class Document(models.Model):
     date_validation = models.DateTimeField(null=True, blank=True)
     commentaire_rejet = models.TextField(blank=True)
     
+    
     def __str__(self):
         return f"{self.type} - {self.numero} - {self.user.nin}"
     
@@ -227,6 +236,22 @@ class BiometricData(models.Model):
 
 
 
+
+
+
+
+class Partenaire(models.Model):
+    nom = models.CharField(max_length=200)
+    email = models.EmailField(unique=True)
+    token = models.CharField(max_length=64, unique=True)  # token pour l'API
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.nom
+
+    class Meta:
+        db_table = 'partenaires'
 
 
 

@@ -49,3 +49,8 @@ class CitoyenRepositoryInterface(ABC):
     def get_citoyens_by_age_range(self, min_age: int, max_age: int) -> List["User"]:
         """Récupère les citoyens dans une tranche d'âge"""
         pass
+    
+    @abstractmethod
+    def update_biometric_complete(self, user_id: int, completed: bool) -> None:
+        """Met à jour le statut de complétion biométrique d'un citoyen"""
+        pass

@@ -54,6 +54,10 @@ class BiometricRepository(BiometricRepositoryInterface):
     def delete(self, entity: BiometricEntity) -> None:
         # Soft delete
         BiometricData.objects.filter(id=entity.id).update(is_active=False)
+        
+    def list_active_by_citoyen(self, citoyen_id: int) -> List[BiometricEntity]:
+        instances = BiometricData.objects.filter(citoyen_id=citoyen_id, is_active=True)
+        return [self._to_entity(inst) for inst in instances]
 
     def _to_entity(self, instance: BiometricData) -> BiometricEntity:
         """Convertit une instance Django en entité du domaine."""
@@ -61,6 +65,7 @@ class BiometricRepository(BiometricRepositoryInterface):
             id=instance.id,
             citoyen_id=instance.citoyen_id,
             biometric_type=BiometricType.from_string(instance.biometric_type),
+            image_base64="",  # On ne stocke pas l'image brute dans l'entité retournée
             template=BiometricTemplate(features=pickle.loads(instance.template)),
             image_path=instance.image.name if instance.image else None,
             created_at=instance.created_at,

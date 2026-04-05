@@ -44,7 +44,11 @@ class Citoyen:
     territoire_origine: Optional[str] = None
     secteur_origine: Optional[str] = None
     telephone: Optional[str] = None
-    adresse_actuelle: Optional[str] = None
+    adresse_province: Optional[str] = None
+    adresse_commune: Optional[str] = None
+    adresse_quartier: Optional[str] = None
+    adresse_avenue: Optional[str] = None
+    adresse_numero: Optional[str] = None
     id: Optional[int] = None
     nin: Optional[NIN] = None
 
@@ -90,7 +94,12 @@ class Citoyen:
             province_origine=data.get('province_origine'),
             territoire_origine=data.get('territoire_origine'),
             secteur_origine=data.get('secteur_origine'),
-            telephone=data.get('telephone')
+            telephone=data.get('telephone'),
+            adresse_province=data.get('adresse_province'),
+            adresse_commune=data.get('adresse_commune'),
+            adresse_quartier=data.get('adresse_quartier'),
+            adresse_avenue=data.get('adresse_avenue'),
+            adresse_numero=data.get('adresse_numero'),
         )
 
     def to_dict(self):

@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 class LoginSerializer(serializers.Serializer):
-    email = serializers.EmailField(required=True)
+    login = serializers.CharField(required=True)
     password = serializers.CharField(required=True, write_only=True, min_length=4)
     otp = serializers.CharField(required=False, max_length=6, allow_blank=True)
 
