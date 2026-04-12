@@ -8,117 +8,105 @@ import {
   Alert,
   ActivityIndicator,
 } from "react-native";
-import { CameraView, useCameraPermissions } from "expo-camera";
+import { CameraView, useCameraPermissions } from "expo-camera"; 
 import * as LocalAuthentication from "expo-local-authentication";
 import * as FileSystem from "expo-file-system/legacy";
-import * as ImageManipulator from 'expo-image-manipulator';
+import * as ImageManipulator from "expo-image-manipulator";
 import { COLORS } from "../../constants/theme";
 import client from "../../api/client";
 import { ENDPOINTS } from "../../constants/config";
 import Button from "../../components/atoms/Button";
 
 export default function BiometricScreen({ route, navigation }) {
-  // On récupère les données civiles de l'écran précédent
   const { enrollmentData } = route.params;
-  
+
   const [permission, requestPermission] = useCameraPermissions();
   const [photoUri, setPhotoUri] = useState(null);
   const [fingerprintDone, setFingerprintDone] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [facing, setFacing] = useState("front"); 
+  const [flash, setFlash] = useState("off"); 
   const cameraRef = useRef(null);
 
-  // 1. Validation Empreinte (Locale au téléphone)
+  // 1. Validation Empreinte (Locale)
   const handleFingerprint = async () => {
     const hasHardware = await LocalAuthentication.hasHardwareAsync();
     if (!hasHardware) {
-      return Alert.alert("Erreur", "Capteur d'empreinte non détecté.");
+      return Alert.alert("Erreur", "Capteur d'empreinte non détecté sur ce HP/Téléphone.");
     }
     const result = await LocalAuthentication.authenticateAsync({
       promptMessage: "Validation biométrique SEIP",
     });
     if (result.success) {
       setFingerprintDone(true);
-      Alert.alert("Succès", "Empreinte validée localement.");
+      Alert.alert("Succès", "Empreinte validée.");
     }
   };
 
-  
+  // 2. Traitement Image (Crop & Resize)
+  const resizeAndCrop = async (uri) => {
+    const result = await ImageManipulator.manipulateAsync(
+      uri,
+      [{ resize: { width: 800 } }], // Resize simple pour garder le ratio
+      { compress: 0.7, format: ImageManipulator.SaveFormat.JPEG }
+    );
+    return result.uri;
+  };
 
-const resizeAndCrop = async (uri) => {
-  const result = await ImageManipulator.manipulateAsync(
-    uri,
-    [{ resize: { width: 800, height: 600 } }], // redimensionnement
-    { compress: 0.8, format: ImageManipulator.SaveFormat.JPEG }
-  );
-  return result.uri;
-};
-
-  // 2. Capture de la photo
+  // 3. Capture
   const takePicture = async () => {
     if (cameraRef.current) {
-      const photo = await cameraRef.current.takePictureAsync({
-        quality: 0.8, // On compresse un peu pour le réseau
-        skipProcessing: false, // On veut que l'image soit traitée pour la redimension
-      });
-const resizedUri = await resizeAndCrop(photo.uri); // On redimensionne et recadre l'image avant de l'envoyer
-setPhotoUri(resizedUri);
+      try {
+        const photo = await cameraRef.current.takePictureAsync({
+          quality: 0.7,
+        });
+        const resizedUri = await resizeAndCrop(photo.uri);
+        setPhotoUri(resizedUri);
+      } catch (e) {
+        Alert.alert("Erreur", "Impossible de prendre la photo.");
+      }
     }
   };
 
-  // 3. LE GRAND FINAL : Envoi Atomique (Civil + Bio)
+  // 4. Envoi Final à Django
   const handleFinalSubmit = async () => {
     if (!photoUri || !fingerprintDone) {
-      return Alert.alert("Attention", "La photo et l'empreinte sont obligatoires.");
+      return Alert.alert("Attention", "Photo et Empreinte obligatoires !");
     }
 
     setLoading(true);
     try {
-      console.log("🚀 Conversion de la photo...");
       const base64Content = await FileSystem.readAsStringAsync(photoUri, {
-        encoding: "base64",
+        encoding: FileSystem.EncodingType ? FileSystem.EncodingType.Base64 : 'base64',
       });
-      const dataUri = `data:image/jpeg;base64,${base64Content}`;
 
-      // On prépare le paquet complet pour le EnrollmentCompleteController
       const finalPayload = {
-        ...enrollmentData,        // Nom, Prénom, Email, etc.
-        biometric_image: dataUri, // La photo face
-        biometric_type: "face"    // Type par défaut
+        ...enrollmentData,
+        biometric_image: `data:image/jpeg;base64,${base64Content}`,
+        biometric_type: "face",
       };
 
-      console.log("📡 Envoi de l'enrôlement complet à :", ENDPOINTS.enrollmentComplete);
-      
       const response = await client.post(ENDPOINTS.enrollmentComplete, finalPayload);
-
-      console.log("✅ Réponse Serveur :", response.data);
-
+      
       Alert.alert(
-        "Félicitations", 
-        `Citoyen ${response.data.prenom} enrôlé avec succès !\nNIN : ${response.data.nin}`,
-        [{ text: "OK", onPress: () => navigation.navigate("SuccessScreen") }]
+        "Félicitations",
+        `Citoyen enrôlé ! NIN : ${response.data.nin || 'Généré'}`,
+        [{ text: "Terminer", onPress: () => navigation.navigate("SuccessScreen") }]
       );
-
     } catch (error) {
-      console.log("❌ Erreur Enrôlement :", error.response?.data || error.message);
-      
-      // Si Django renvoie une erreur (ex: Email déjà pris ou Visage non détecté)
-      const serverError = error.response?.data?.error || "Une erreur est survenue.";
-      Alert.alert("Erreur", JSON.stringify(serverError));
-      
+      console.error("Erreur Envoi:", error.response?.data || error.message);
+      Alert.alert("Erreur Serveur", "Vérifie ton IP dans config.js ou ta console Django.");
     } finally {
       setLoading(false);
     }
   };
 
-  // --- RENDU UI ---
-
-  if (!permission) return <View style={styles.center}><ActivityIndicator size="large" /></View>;
-  
+  if (!permission) return <View style={styles.center}><ActivityIndicator size="large" color={COLORS.primary} /></View>;
   if (!permission.granted) {
     return (
       <View style={styles.center}>
-        <Text style={styles.textInfo}>L'accès caméra est requis.</Text>
-        <Button title="Autoriser" onPress={requestPermission} />
+        <Text style={styles.textInfo}>L'accès caméra est requis pour le SEIP.</Text>
+        <Button title="Autoriser la caméra" onPress={requestPermission} />
       </View>
     );
   }
@@ -127,10 +115,37 @@ setPhotoUri(resizedUri);
     <View style={styles.container}>
       {!photoUri ? (
         <View style={{ flex: 1 }}>
-          <CameraView style={StyleSheet.absoluteFillObject} facing="front" ref={cameraRef} />
+          <CameraView
+            style={StyleSheet.absoluteFillObject}
+            facing={facing}
+            flash={flash}
+            ref={cameraRef}
+          />
+          
           <View style={styles.overlay}>
+            {/* Guide Visage */}
             <View style={styles.faceGuide} />
-            <Text style={styles.guideText}>Cadrez votre visage</Text>
+            
+            {/* Contrôles Haut */}
+            <View style={styles.topControls}>
+              <TouchableOpacity
+                style={styles.iconBtn}
+                onPress={() => setFacing(prev => prev === "front" ? "back" : "front")}
+              >
+                <Text style={styles.iconText}>🔄</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                style={styles.iconBtn}
+                onPress={() => setFlash(prev => prev === "off" ? "on" : "off")}
+              >
+                <Text style={styles.iconText}>{flash === "on" ? "⚡" : "🌑"}</Text>
+              </TouchableOpacity>
+            </View>
+
+            <Text style={styles.guideText}>Cadrez le visage du citoyen</Text>
+
+            {/* Bouton Capture */}
             <TouchableOpacity style={styles.snap} onPress={takePicture}>
               <View style={styles.snapInner} />
             </TouchableOpacity>
@@ -139,7 +154,7 @@ setPhotoUri(resizedUri);
       ) : (
         <View style={styles.reviewContainer}>
           <Text style={styles.title}>Vérification Biométrique</Text>
-
+          
           <View style={styles.cropWrapper}>
             <Image source={{ uri: photoUri }} style={styles.preview} />
           </View>
@@ -150,7 +165,7 @@ setPhotoUri(resizedUri);
             disabled={loading}
           >
             <Text style={styles.btnText}>
-              {fingerprintDone ? "✓ EMPREINTE VALIDÉE" : "CAPTURER L'EMPREINTE"}
+              {fingerprintDone ? "✓ EMPREINTE CAPTURÉE" : "CAPTURER L'EMPREINTE"}
             </Text>
           </TouchableOpacity>
 
@@ -168,7 +183,7 @@ setPhotoUri(resizedUri);
               onPress={handleFinalSubmit}
               disabled={!fingerprintDone || loading}
             >
-              {loading ? <ActivityIndicator color="#fff" /> : <Text style={styles.btnConfirmText}>FINALISER</Text>}
+              {loading ? <ActivityIndicator color="#fff" /> : <Text style={styles.btnConfirmText}>ENRÔLER</Text>}
             </TouchableOpacity>
           </View>
         </View>
@@ -180,23 +195,26 @@ setPhotoUri(resizedUri);
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: "#000" },
   center: { flex: 1, justifyContent: "center", alignItems: "center" },
-  textInfo: { color: "#fff", marginBottom: 20 },
-  title: { fontSize: 22, fontWeight: "bold", marginBottom: 20, color: COLORS.primary },
+  textInfo: { color: "#fff", marginBottom: 20, textAlign: 'center' },
   overlay: { ...StyleSheet.absoluteFillObject, justifyContent: "center", alignItems: "center" },
-  faceGuide: { width: 260, height: 320, borderWidth: 3, borderColor: "#fff", borderRadius: 130, borderStyle: "dashed" },
-  guideText: { color: "#fff", marginTop: 20, backgroundColor: "rgba(0,0,0,0.6)", padding: 10, borderRadius: 5 },
-  snap: { position: "absolute", bottom: 50, width: 75, height: 75, borderRadius: 40, backgroundColor: "#fff", padding: 5 },
-  snapInner: { flex: 1, borderRadius: 35, backgroundColor: COLORS.primary },
-  reviewContainer: { flex: 1, backgroundColor: "#f8f9fa", padding: 25, alignItems: "center", justifyContent: "center" },
-  cropWrapper: { width: 220, height: 220, borderRadius: 110, overflow: "hidden", borderWidth: 4, borderColor: COLORS.primary, marginBottom: 30 },
-  preview: { width: "100%", height: "140%", top: -20 },
-  fingerprintBtn: { width: "100%", padding: 20, backgroundColor: "#34495e", borderRadius: 15, alignItems: "center", marginBottom: 25 },
-  btnSuccess: { backgroundColor: "#27ae60" },
-  btnText: { color: "#fff", fontWeight: "bold", fontSize: 16 },
+  topControls: { position: 'absolute', top: 50, flexDirection: 'row', justifyContent: 'space-between', width: '80%' },
+  iconBtn: { width: 50, height: 50, borderRadius: 25, backgroundColor: "rgba(0,0,0,0.5)", justifyContent: 'center', alignItems: 'center' },
+  iconText: { fontSize: 22, color: '#fff' },
+  faceGuide: { width: 260, height: 320, borderWidth: 2, borderColor: "rgba(255,255,255,0.8)", borderRadius: 130, borderStyle: "dashed" },
+  guideText: { color: "#fff", marginTop: 20, backgroundColor: "rgba(0,0,0,0.7)", padding: 8, borderRadius: 5 },
+  snap: { position: "absolute", bottom: 50, width: 80, height: 80, borderRadius: 40, backgroundColor: "rgba(255,255,255,0.3)", justifyContent: 'center', alignItems: 'center' },
+  snapInner: { width: 65, height: 65, borderRadius: 32.5, backgroundColor: "#fff" },
+  reviewContainer: { flex: 1, backgroundColor: "#F5F7FA", padding: 25, alignItems: "center", justifyContent: "center" },
+  title: { fontSize: 20, fontWeight: "bold", marginBottom: 20, color: COLORS.primary },
+  cropWrapper: { width: 200, height: 200, borderRadius: 100, overflow: "hidden", borderWidth: 4, borderColor: COLORS.primary, marginBottom: 30 },
+  preview: { width: "100%", height: "130%", top: -10 },
+  fingerprintBtn: { width: "100%", padding: 18, backgroundColor: "#2C3E50", borderRadius: 12, alignItems: "center", marginBottom: 20 },
+  btnSuccess: { backgroundColor: "#27AE60" },
+  btnText: { color: "#fff", fontWeight: "bold" },
   row: { flexDirection: "row", gap: 15 },
-  btnRetry: { flex: 1, padding: 18, borderRadius: 15, borderWidth: 1, borderColor: "#dcdde1", alignItems: "center", backgroundColor: "#fff" },
-  btnRetryText: { color: "#7f8c8d", fontWeight: "600" },
-  btnConfirm: { flex: 1, padding: 18, borderRadius: 15, backgroundColor: COLORS.primary, alignItems: "center" },
+  btnRetry: { flex: 1, padding: 16, borderRadius: 12, borderWidth: 1, borderColor: "#BDC3C7", alignItems: "center" },
+  btnRetryText: { color: "#7F8C8D", fontWeight: "600" },
+  btnConfirm: { flex: 1, padding: 16, borderRadius: 12, backgroundColor: COLORS.primary, alignItems: "center" },
   btnConfirmText: { color: "#fff", fontWeight: "bold" },
-  btnDisabled: { backgroundColor: "#bdc3c7" },
+  btnDisabled: { backgroundColor: "#BDC3C7" },
 });

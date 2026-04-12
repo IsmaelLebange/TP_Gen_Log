@@ -1,7 +1,7 @@
-export const BASE_URL = 'http://10.131.153.103:8001/api';
+export const BASE_URL = 'http://10.201.22.103:8001/api';
+export const MEDIA_BASE_URL = BASE_URL.replace('/api', '');
 
 export const ENDPOINTS = {
-    // Routes Main (Authentification) -> /api/main_auth/...
     login: '/main_auth/login/',
     register: '/main_auth/register/',
     logout: '/main_auth/logout/',
@@ -9,17 +9,18 @@ export const ENDPOINTS = {
     tokenVerify: '/main_token/verify/',
     partnerVerify: '/main_verify/',
     
-    // Routes Citoyen (Enrôlement) -> /api/citoyen_enrollment/...
     enrollment: '/citoyen_enrollment/',
     enrollmentComplete: '/citoyen_enrollment/complete/',
     biometric: '/citoyen_biometric/',
+    biometricPhoto: '/citoyen_biometric/?action=photo',
+    biometricVerifyPhoto: '/citoyen_biometric/?action=verify',
     documents: '/citoyen_documents/',
     qr: '/citoyen_qr/',
     credential: '/citoyen_credential/',
     passwordReset: '/citoyen_password-reset/',
     
-    // Routes Admin (Audit & Stats) -> /api/admin_validation/...
     validation: '/admin_validation/',
     stats: '/admin_stats/',
     audit: '/admin_audit/',
+    profile: '/citoyen_profile/',
 };
