@@ -2,7 +2,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from src.apps.api.providers.admin_provider import AdminProvider
 from src.apps.api.serializers.admin_serializers.validation_workflow_serializer import (
     DocumentRejectSerializer,
@@ -16,7 +16,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 class ValidationWorkflowController(APIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     @property
     def validation_service(self):

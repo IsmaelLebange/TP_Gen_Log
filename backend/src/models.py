@@ -88,6 +88,11 @@ class User(AbstractBaseUser, PermissionsMixin):
         CITOYEN = 'CITOYEN', 'Citoyen'
         AGENT = 'AGENT', 'Agent'
         ADMIN = 'ADMIN', 'Administrateur'
+        
+    class Sexe(models.TextChoices):
+        MASCULIN = 'MASCULIN', 'Masculin'
+        FEMININ = 'FEMININ', 'Féminin'
+        AUTRE = 'AUTRE', 'Autre'
     
     email = models.EmailField(unique=True)
     nin = models.CharField('NIN', max_length=20, unique=True)  # National ID Number
@@ -95,7 +100,9 @@ class User(AbstractBaseUser, PermissionsMixin):
     postnom = models.CharField(max_length=100, blank=True)  # Nouveau champ pour le postnom
     prenom = models.CharField(max_length=100)
     telephone = models.CharField(max_length=20, blank=True)
-    date_naissance = models.DateField(null=True, blank=True)
+    date_naissance = models.DateField(null=True, default=None)
+    lieu_naissance = models.CharField(max_length=100, blank=True)
+    sexe=models.CharField(max_length=15,choices=Sexe.choices,blank=True)
     role = models.CharField(max_length=20, choices=Role.choices, default=Role.CITOYEN)
     lieu_origine = models.ForeignKey(SecteurChefferie, on_delete=models.SET_NULL, null=True, blank=True, related_name='citoyens')
     nom_du_pere = models.CharField(max_length=100, blank=True)

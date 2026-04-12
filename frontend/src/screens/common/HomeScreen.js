@@ -100,7 +100,6 @@ export default function HomeScreen({ navigation }) {
               
               {/* Les boutons citoyens sont accessibles à tout le monde (admin aussi) */}
               <Button title="Mon espace citoyen" onPress={() => navigation.navigate('User', { screen: 'Dashboard' })} style={styles.dashboardButton} />
-              <Button title="Mon profil" onPress={() => navigation.navigate('User', { screen: 'Profile' })} style={styles.dashboardButton} variant="secondary" />
               
               {/* Bouton admin visible uniquement si rôle ADMIN */}
               {user?.role === 'ADMIN' && (

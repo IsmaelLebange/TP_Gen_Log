@@ -45,3 +45,11 @@ class CitoyenProvider:
             user_repo=UserRepository(),
             otp_service=MainProvider.get_otp_service()
         )
+    
+    @staticmethod
+    def get_profile_service():
+        from src.apps.services.citoyen_services.credential_service import ProfileService
+        return ProfileService(
+            citoyen_repo=CitoyenProvider.get_citoyen_repository(),
+            biometric_repo=CitoyenProvider.get_biometric_repository()
+        )

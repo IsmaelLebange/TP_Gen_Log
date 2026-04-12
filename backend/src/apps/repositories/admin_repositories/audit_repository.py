@@ -31,6 +31,14 @@ class AuditRepository(AuditRepositoryInterface):
     def get_recent_logs(self, hours: int = 24) -> List:
         since = datetime.now() - timedelta(hours=hours)
         return list(AuditLog.objects.filter(created_at__gte=since).order_by('-created_at'))
+    def get_by_province(self, province, limit = 100):
+        return list(AuditLog.objects.filter(province=province).order_by('-created_at')[:limit])
+    
+    def get_by_territoire(self, territoire, limit = 100):
+        return list(AuditLog.objects.filter(territoire=territoire).order_by('-created_at')[:limit])
+    
+    def get_by_secteur(self, secteur, limit = 100):
+        return list(AuditLog.objects.filter(secteur=secteur).order_by('-created_at')[:limit])
 
     def search_logs(self, query: str, limit: int = 100) -> List:
         return list(AuditLog.objects.filter(

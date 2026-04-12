@@ -29,8 +29,8 @@ class OTPRepositoryInterface(ABC):
 
 class OTPSenderInterface(ABC):
     @abstractmethod
-    def send(self, user: User, code: str) -> bool:
-        """Envoie le code OTP à l'utilisateur (SMS ou email)."""
+    def send(self, user: User, code: str = None, message: str = None) -> bool:
+        """Envoie le code OTP à l'utilisateur via le canal approprié."""
         pass
 
 

@@ -1,6 +1,10 @@
 from abc import ABC, abstractmethod
-from typing import Optional, List, TYPE_CHECKING
+from typing import Any, Dict, Optional, List, TYPE_CHECKING
 from django.contrib.auth import get_user_model
+from src.domain.entities.biometric import BiometricEntity
+from src.domain.entities.citoyen import Citoyen, EnrollmentData
+from src.domain.value_objects.nin import NIN
+from src.domain.value_objects.email import Email
 
 if TYPE_CHECKING:
     from django.contrib.auth.models import AbstractBaseUser as User
@@ -13,6 +17,11 @@ class CitoyenRepositoryInterface(ABC):
     @abstractmethod
     def get_by_id(self, citoyen_id: int) -> Optional["User"]:
         """Récupère un citoyen par son ID"""
+        pass
+    
+    @abstractmethod
+    def get_entity_by_id(self, citoyen_id: int) -> Optional[Citoyen]:
+        """Récupère un citoyen sous forme d'entité domaine (Citoyen)."""
         pass
 
     @abstractmethod
@@ -53,4 +62,16 @@ class CitoyenRepositoryInterface(ABC):
     @abstractmethod
     def update_biometric_complete(self, user_id: int, completed: bool) -> None:
         """Met à jour le statut de complétion biométrique d'un citoyen"""
+        pass
+    
+    
+
+
+class ProfileServiceInterface(ABC):
+    @abstractmethod
+    def get_profile(self, citoyen: Citoyen) -> Dict[str, Any]:
+        pass
+
+    @abstractmethod
+    def update_profile(self, citoyen: Citoyen, data: Dict[str, Any]) -> Dict[str, Any]:
         pass

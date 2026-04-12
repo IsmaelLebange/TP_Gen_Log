@@ -1,0 +1,879 @@
+code,secteur_chefferie
+Code,Secteur/Chefferie
+1,Kinshasa
+2,Kongo-Central
+2201,Territoire de Kasangulu
+2201401,Secteur de Kasangulu
+2201402,Secteur de Luila
+2201403,Secteur de Lukunga-Mputu
+2202,Territoire de Kimvula
+2202401,Secteur de Benga
+2202402,Secteur de Lubisi
+2202403,Secteur de Lula-Lumene
+2203,Territoire de Lukula
+2203401,Secteur de Fubu
+2203402,Secteur de Kakongo
+2203403,Secteur de Patu
+2203404,Secteur de Tsanga-Sud
+2203405,Secteur de Tsundi-Sud
+2204,Territoire de Luozi
+2204401,Secteur de Balari
+2204402,Secteur de Kenge
+2204403,Secteur de Kimbanza
+2204404,Secteur de Kimumba
+2204405,Secteur de Kinkenge
+2204406,Secteur de Kivunda
+2204407,Secteur de Mbanza Mona
+2204408,Secteur de Mbanza Mwembe
+2204409,Secteur de Mbanza Ngoyo
+2204410,Secteur de Mongo Luala
+2205,Territoire de Madimba
+2205401,Secteur de Kinkosi (Luidi)
+2205402,Secteur de Mfidi Malele
+2205403,Secteur de Mfuma-Kibambi
+2205404,Secteur de Ngeba
+2205405,Secteur de Ngufu
+2205406,Secteur de Wungu
+2206,Territoire de Mbanza-Ngungu
+2206401,Secteur de Boko
+2206402,Secteur de Gombe-Matadi
+2206403,Secteur de Gombe-Sud
+2206404,Secteur de Kivulu
+2206405,Secteur de Kwilu-Ngongo
+2206406,Secteur de Lunzadi
+2206407,Secteur de Ntimansi
+2207,Territoire de Moanda
+2206401,Secteur d'Assolongo
+2206402,Secteur de Boma-Bungu
+2206403,Secteur de la Mer
+2208,Territoire de Seke-Banza
+2208401,Secteur de Bundi
+2208402,Secteur d'Isangila
+2208403,Secteur de Lufu
+2208404,Secteur de Mbavu
+2208405,Secteur de Sumbi
+2209,Territoire de Songololo
+2209401,Secteur de Bamboma
+2209402,Secteur de Kimpese
+2209403,Secteur de Luima
+2209404,Secteur de Palabala
+2209405,Secteur de Wombo
+2210,Territoire de Tshela
+2210401,Secteur de Bula-Naku
+2210402,Secteur de Loango
+2210403,Secteur de Lubolo
+2210404,Secteur de Lubuzi
+2210405,Secteur de Maduda
+2210406,Secteur de Nganda-Tsundi
+2210407,Secteur de Nzobe Luzi
+2210408,Secteur de Tshela Banga
+3,Kwango
+3201,Territoire de Feshi
+3201401,Secteur de Feshi Maziamo
+3201402,Secteur de Ganaketi
+3201403,Secteur de Lobo
+3201404,Secteur de Mukoso
+3202,Territoire de Kahemba
+3202301,Chefferie de Muloshi
+3202302,Chefferie de  Mwa-Mushiko
+3202303,Chefferie de  Mwendjila
+3202401,Secteur de Bangu
+3202402,Secteur de Bindu
+3202403,Secteur de Kulindji
+3203,Territoire de Kasongo-Lunda
+3203301,Chefferie de Kasa
+3203302,Chefferie de Kasongo-Lunda
+3203401,Secteur de Kibunda
+3203402,Secteur de Kingulu
+3203403,Secteur de Kizamba
+3203404,Secteur de Mawanga
+3203405,Secteur de Panzi
+3203406,Secteur de Swa-Tenda
+3204,Territoire de Kenge
+3204301,Chefferie de Pelende-Nord
+3204401,Secteur de Bukanga-Lonzo
+3204402,Secteur de Dinga
+3204403,Secteur de Kolokoso
+3204404,Secteur de Mosamba
+3205,Territoire de Popokabaka
+3205401,Secteur de Lufuma
+3205402,Secteur de Popokabaka
+3205403,Secteur de Yonso
+4,Kwilu
+4201,Territoire de Bagata
+4201401,Secteur de Kidzweme
+4201402,Secteur de Kwango-Kasai
+4201403,Secteur de Kwilu-Ntober
+4201404,Secteur de Manzasay
+4201405,Secteur de Wamba-Fatundu
+4202,Territoire de Bulungu
+4202401,Secteur de Dwe
+4202402,Secteur d' Imbongo
+4202403,Secteur de Kilunda
+4202404,Secteur de Kipuka
+4202405,Secteur de Kwenge
+4202406,Secteur de Kwilu-Kimbata
+4202407,Secteur de Luniungu
+4202408,Secteur de Mikwi
+4202409,Secteur de Niadi-Nkara
+4202410,Secteur de Nko
+4203,Territoire de Gungu
+4203401,Secteur de Gungu
+4203402,Secteur de Kandale
+4203403,Secteur de Kilamba
+4203404,Secteur de Kilembe
+4203405,Secteur de Kisunzu
+4203406,Secteur de Kobo (Mosala)
+4203407,Secteur de Kondo
+4203408,Secteur de Lozo
+4203409,Secteur de Lukamba
+4203410,Secteur de Mudikalunga
+4203411,Secteur de Mungindu
+4203412,Secteur de Ngudi
+4204,Territoire d'Idiofa
+4204401,Secteur de Banga
+4204402,Secteur de Belo
+4204403,Secteur de Bulwem
+4204404,Secteur de Kalanganda
+4204405,Secteur de Kanga
+4204406,Secteur de Kapia
+4204407,Secteur de Kipuku
+4204408,Secteur de Madimbi
+4204409,Secteur de Mateko
+4204410,Secteur de Musanga-Idiofa
+4204411,Secteur de Sedzo
+4204412,Secteur de Yasa-Lokwa
+4205,Territoire de Masi-Manimba
+4205401,Secteur de Bindungi
+4205402,Secteur de Kibolo
+4205403,Secteur de Kinzenga
+4205404,Secteur de Kinzenzengo
+4205405,Secteur de Kitoy
+4205406,Secteur de Masi-Manimba
+4205407,Secteur de Mokamo
+4205408,Secteur de Mosango
+4205409,Secteur de Pay-Kongila
+4205410,Secteur de Sungu
+5,Mai-Ndombe
+6202403,Secteur de Lac Ntomba
+6203,Territoire de Bolomba
+6203301,Chefferie de Dianga
+6203401,Secteur de Bolomba
+6203402,Secteur de Busira
+6203403,Secteur de Losanganya
+6203404,Secteur de Mampoko
+6204,Territoire de Bomongo
+6204401,Secteur de Djamba
+6204402,Secteur de Ngiri
+6205,Territoire d'Ingende
+6205401,Secteur de Bokatola
+6205402,Secteur de Duali
+6205403,Secteur d'Eungu
+6206,Territoire de Lukolela
+6206401,Secteur de Banunu
+6206402,Secteur de Lusakani
+6206403,Secteur de Mpama
+6207,Territoire de Makanza
+6207401,Secteur de Bangala
+6207402,Secteur de Mweko (Moeko)
+6207403,Secteur de Ndobo
+7,Nord-Ubangi
+7201,Territoire de Bosobolo
+7201401,Secteur de Bandas
+7201402,Secteur de Bili
+7201403,Secteur de Bosobolo
+7202,Territoire de Businga
+7202401,Secteur de Bodangabo
+7202402,Secteur de Businga
+7202403,Secteur de Karawa
+7203,Territoire de Mobayi-Mbongo
+7203401,Secteur de Mobayi-Mbongo
+7203402,Secteur d'Oto-Mbanza
+7204,Territoire de Yakoma
+7204401,Secteur d'Abumombazi
+7204402,Secteur de Wapinda
+7204403,Secteur de Yakoma
+8,Sud-Ubangi
+8201,Territoire de Budjala
+8201401,Secteur de Banza
+8201402,Secteur de Bolingo
+8201403,Secteur de Mongala-Motima
+8201404,Secteur de Ndolo-Liboko
+8201405,Secteur de Ngombe-Ndoko (Likini)
+8202,Territoire de Gemena
+8202401,Secteur de Banga-Kungu
+8202402,Secteur de Bowase
+8202403,Secteur de Mbari
+8202404,Secteur de Nguya
+8203,Territoire de Kungu
+8203401,Secteur de Bomboma
+8203402,Secteur de Dongo
+8203403,Secteur de Lwa
+8203404,Secteur de Mwanda
+8203405,Secteur de Songo
+8204,Territoire de Libenge
+8204401,Secteur de Libenge-Centre
+8204402,Secteur de Libenge-Nord
+8204403,Secteur de Libenge-Sud
+9,Mongala
+9201,Territoire de Bongandanga
+9201401,Secteur de Bongandanga
+9201402,Secteur de Boso-Djano
+9201403,Secteur de Boso-Melo
+9201404,Secteur de Boso-Simba
+9202,Territoire de Bumba
+9202401,Secteur de Banda Yowa (Banda Yoka)
+9202402,Secteur d' Itimbiri
+9202403,Secteur de Loeka
+9202404,Secteur de Modjamboli
+9202405,Secteur de Molwa
+9202406,Secteur de Yandongi
+9203,Territoire de Lisala
+9203401,Secteur de Mongala Motima
+9203402,Secteur de Ngombe Doko
+9203403,Secteur de Ngombe Mobangi
+10,Tshuapa
+10201,Territoire de Befale
+10201401,Secteur de Befumbo
+10201402,Secteur de Duale
+10201403,Secteur de Lomako
+10202,Territoire de Boende
+10202401,Secteur de Bolua
+10202402,Secteur de Djera
+10202403,Secteur de Lofoy
+10202404,Secteur de Wini
+10203,Territoire de Bokungu
+10203301,Chefferie de Nkole
+10203401,Secteur de Lolaka
+10203402,Secteur de Loombo
+10203403,Secteur de Luando
+10203404,Secteur de Luay
+10204,Territoire de Djolu
+10204401,Secteur de Djolu
+10204402,Secteur de Lingomo
+10204403,Secteur de Luo
+10204404,Secteur de Yala
+10205,Territoire d' Ikela
+10205401,Secteur de Lofome
+10205402,Secteur de Loile
+10205403,Secteur de Lokina (Lokima)
+10205404,Secteur de Tshuapa
+10205405,Secteur de Tumbenga
+10206,Territoire de Monkoto
+10206401,Secteur de Bianga
+10206402,Secteur de Monkoto
+10206403,Secteur de Nongo
+11,Tshopo
+11201,Territoire de Bafwasende
+11201401,Secteur de Bafwandaka
+11201402,Secteur de Bakumu d'Angumu
+11201403,Secteur de Bakundumu
+11201404,Secteur de Barumbi-Opienge
+11201405,Secteur de Bekeni-Kondolole
+11201406,Secteur de Bemili
+11202,Territoire de Banalia
+11202301,Chefferie de Baboro
+11202401,Secteur de Baboa de Kole
+11202402,Secteur de Bamanga
+11202403,Secteur de Banalia-Bangba
+11202404,Secteur de Popoy
+11203,Territoire de Basoko
+11203301,Chefferie de Wahanga
+11203302,Chefferie de Yaliwasa
+11203303,Chefferie de Yamandundu
+11203401,Secteur de Bangelema
+11203402,Secteur de Bomenge
+11203403,Secteur de Lukutu (Lokutu)
+11203404,Secteur de Mobango Itimbiri
+11203405,Secteur de Turumbu
+11204,Territoire d'Isangi
+11204301,Chefferie de Baluolambila
+11204302,Chefferie de Bolomboki
+11204303,Chefferie de Kombe
+11204304,Chefferie de Liutua
+11204305,Chefferie de Yalihila (Yalikila)
+11204306,Chefferie de Yalikoka-Mboso
+11204401,Secteur de Bambelota
+11204402,Secteur de Lokombe (Lukombe)
+11204403,Secteur de Luete (Lueta)
+11204404,Secteur de Turumbu
+11204405,Secteur de Yalikandja-Yanonge
+11204406,Secteur de Yaokandja
+11204407,Secteur de Yawembe-Basoa
+11205,Territoire d'Opala
+11205301,Chefferie de Kembe
+11205302,Chefferie de Mongo
+11205303,Chefferie de Yalingo
+11205304,Chefferie de Yamaie (Yomaie)
+11205305,Chefferie de Yapandu
+11205306,Chefferie de Yeyango
+11205401,Secteur de Balinga-Lindja
+11205402,Secteur d'Iye
+11205403,Secteur de Lobaie
+11205404,Secteur de Tooli
+11205405,Secteur de Yawende-Loolo
+11206,Territoire d'Ubundu
+11206301,Chefferie de Kirundu
+11206401,Secteur de Bakumu d'Obiatuku
+11206402,Secteur de Bakumu-Kilinga
+11206403,Secteur de Bakumu-Mandombe
+11206404,Secteur de Bakumu-Mangongo
+11206405,Secteur de Mituku-Bamoya
+11206406,Secteur de Mituku-Basikate
+11206407,Secteur de Walengola-Babira
+11206408,Secteur de Walengola-Baleka
+11206409,Secteur de Walengola-Lilo
+11206410,Secteur de Walengola-Lowa
+11207,Territoire de Yahuma
+11207301,Chefferie de Mombesa
+11207401,Secteur de Bolinga
+11207402,Secteur de Bosoku (Bosoko)
+11207403,Secteur de Buma
+12,Bas-Uele
+12201,Territoire d'Aketi
+12201301,Chefferie d'Avuru-Duma
+12201302,Chefferie d'Avuru-Gatanga
+12201303,Chefferie de Bondongola
+12201304,Chefferie de Mobati-Boyele
+12201401,Secteur de Kolongwandi (Mongwandi)
+12201402,Secteur de Mabinza
+12201403,Secteur de Ngbongi (Bgongi)
+12201404,Secteur de Yoko
+12202,Territoire d'Ango
+12202301,Chefferie d'Ezo
+12202302,Chefferie de Mopoyi (Mopay)
+12202303,Chefferie de Ngindo
+12202304,Chefferie de Sasa
+12203,Territoire de Bambesa
+12203301,Chefferie de Bakete
+12203302,Chefferie de Bokapo
+12203303,Chefferie de Bokiba
+12203304,Chefferie de Bolungwa
+12203305,Chefferie de Makere 1
+12203306,Chefferie de Makere 2
+12203307,Chefferie de Bakere-Bakete
+12203308,Chefferie de Mange
+12203309,Chefferie de Mondongwale
+12204,Territoire de Bondo
+12204301,Chefferie de Boso
+12204302,Chefferie de Deni
+12204303,Chefferie de Duaru
+12204304,Chefferie de Gama
+12204305,Chefferie de Gaya
+12204306,Chef.de Gbiamange/Biamange (Gbamange)
+12204307,Chefferie de Goa (Goya)
+12204308,Chefferie de Kasa
+12204309,Chefferie de Mobenge-Mondila
+12204310,Chefferie de Soa
+12205,Territoire de Buta
+12205301,Chef. de Barisi-Mongingita-Bakango
+12205302,Chefferie de Bayeu Bogongea
+12205303,Chefferie de Bayeu Bogbama
+12205304,Chefferie de Mobati
+12205305,Chefferie de Mongazulu
+12205306,Chefferie de Nguru
+12206,Territoire de Poko
+12206301,Chefferie de Babena
+12206302,Chefferie de Bakengai-Avuru
+12206303,Chefferie de Gamu
+12206304,Chefferie de Kipate
+12206305,Chefferie de Kumendeni
+12206306,Chefferie de Mabanga
+12206307,Chefferie de Madi
+12206308,Chefferie de Malele
+12206309,Chefferie de Ngbaradi (Ngbarandi)
+12206310,Chefferie de Soronga
+12206311,Chefferie de Zune
+12206401,Secteur d'Abarambo
+12206402,Secteur de Kembisa
+13,Haut-Uele
+13201,Territoire de Dungu
+13201301,Chefferie de Malingindu
+13201302,Chefferie de Ndolomo (Duruma)
+13201303,Chefferie de Wando
+13202,Territoire de Faradje
+13202301,Chefferie de Dongo
+13202302,Chefferie de Kakwa-Lamada
+13202303,Chefferie de Logo-Bagela
+13202304,Chefferie de Logo-Doka
+13202305,Chefferie de Logo-Lolia
+13202306,Chefferie de Logo-Obeleba
+13202307,Chefferie de Logo-Ogambi
+13202308,Chefferie de Mondo
+13203,Territoire de Niangara
+13203301,Chefferie de Boemi
+13203302,Chefferie de Kereboro (Kerebobe)
+13203303,Chefferie de Kopa
+13203304,Chefferie de Mangbere (Mangbele)
+13203305,Chefferie de Mangbetu (Mangbetu-Mabisanga)
+13203306,Chefferie de Manziga (Manzinga)
+13203307,Chefferie d'Okoda (Okondo)
+13204,Territoire de Rungu
+13204301,Chefferie d'Azanga
+13204302,Chefferie de Mayogo-Mabozo
+13204303,"Chefferie de Mayogo-Magbay (Mayoyo-
+Magbele)"
+13204304,Chefferie de Mboli
+13204305,Chefferie de Medje-Mango
+13204306,Chefferie de Mongo-Masi (Mengo Mosi)
+13204307,Chefferie de Ndey
+13205,Territoire de Wamba
+13205301,Chefferie de Bafwagada (Bafwangada)
+13205302,Chefferie de Bafwakoy
+13205303,Chefferie de Maha
+13205304,Chefferie de Makoda
+13205305,Chefferie de Malamba
+13205306,Chefferie de Malika Toriko (Balika-Toriko)
+13205307,Chefferie de Malikala (Malika)
+13205308,Chefferie de Mangbele
+13205309,Chefferie de Timoniko
+13205310,Chefferie de Wadimbisa-Mabudu
+13205401,"Secteur de Mabudu Malika Babero/Babeyru 
+(Mmb)"
+13206,Territoire de Watsa
+13206301,Chefferie d' Andikofa
+13206302,Chefferie d' Andobi
+13206303,Chefferie d' Ateru
+13206304,Chefferie de Kebo
+13206305,Chefferie de Walese (Walesa)
+13206401,Secteur de Gombari
+13206402,Secteur de Kibali
+13206403,Secteur de Mangbutu
+13206404,Secteur de Mari-Minza
+14,Ituri
+14201,Territoire d'Aru
+14201301,Chefferie d'Alur
+14201302,Chefferie de Kakwa
+14201303,Chefferie de Kaliko-Omi
+14201304,Chefferie de Lu
+14201305,Chefferie de Nio-Kamule
+14201306,Chefferie d'Otso
+14201307,Chefferie de Zaki
+14201401,Secteur de Ndo-Kebo
+14202,Territoire de Djugu
+14202301,Chefferie de Bahema-Badjere
+14202302,Chefferie de Bahema-Banywagi
+14202303,Chefferie de Bahema-Nord
+14202304,Chefferie de Mabendi (Mabengi)
+14202305,Chefferie de Mambisa
+14202306,Chefferie de Ndo-Okebo
+14202401,Sec. de Banyali–Kilo (Baniari-Tchabi)
+14202402,Secteur de Walendu-Djatshi
+14202403,Secteur de Walendu-Pitshi
+14202404,Secteur de Walendu-Tatsi
+14203,Territoire d'Irumu
+14203301,Chefferie d'Andisoma
+14203302,Chefferie de Babelebe
+14203303,Chefferie de Baboa-Bakoe
+14203304,Chefferie de Bahema d'Irumu
+14203305,Chefferie de Bahema Mitego (Bahema Mitega)
+14203306,Chefferie de Bahema-Boga
+14203307,Chefferie de Baniari-Tchiabi
+14203308,Chefferie de Basili
+14203309,Chefferie de Mobala
+14203310,Chefferie de Walendu-Bindi
+14203311,Chefferie de Walese Vonkutu
+14203401,Secteur de Bahema Sud
+14204,Territoire de Mahagi
+14204301,Chefferie d'Alur-Djuganda
+14204302,Chefferie d'Anghal  1 & 2
+14204303,Chefferie de Djukoth 1 & 2
+14204304,Chefferie de Mokambo
+14204305,Chefferie de Pandoro
+14204306,Chefferie de Walendu-Watshi
+14204307,Chefferie de Wangongo
+14204308,Chefferie de War-Palara
+14205,Territoire de Mambasa
+14205301,Chefferie de Babila Babombi
+14205302,Chefferie de Babila-Bakwanza
+14205303,Chefferie de Bandaka
+14205304,Chefferie de Bombo-Bagumba (-Baguma)
+14205305,Chefferie de Mambasa
+14205306,Chefferie de Walese-Dese
+14205307,Chefferie de Walese-Karo (-Koro)
+15,Nord-Kivu
+15201,Territoire de Lubero
+15201301,Chefferie de Bamate
+15201302,Chefferie de Baswaga
+15201303,Chefferie de Batangi
+15201401,Secteur de Bapere
+15202,Territoire de Masisi
+15202301,Chefferie de Bahunde
+15202302,Chefferie de Bashali
+15202401,Secteur d'Osso (Banyungu)
+15202402,Secteur de Katoy
+15203,Territoire de Nyiragongo
+15203301,Chefferie de Bukumu
+15204,Territoire de Oicha (Ex-Beni)
+15204301,Chefferie de Bashu
+15204302,Chefferie de Watalinga
+15204401,Secteur de Beni-Mbau
+15204402,Secteur de Ruwenzori
+15205,Territoire de Rutshuru
+15205301,Chefferie de Bwisha
+15205302,Chefferie de Bwito
+15206,Territoire de Walikale
+15206401,Secteur de Bakano
+15206402,Secteur de Wanianga
+16,Sud-Kivu
+16201,Territoire de Fizi
+16101401,Secteur de Lulenge
+16101402,Secteur de Mutambala
+16101403,Secteur de Ngandja
+16101404,Secteur de Tanganyika
+16202,Territoire d'Idjwi
+16202301,Chefferie de Ntambuka
+16202302,Chefferie de Rubenga
+16203,Territoire de Kabare
+16202301,Chefferie de Kabare
+16202302,Chefferie de Nindja
+16204,Territoire de Kalehe
+16202301,Chefferie de Buhavu
+16202302,Chefferie de Buloho
+16205,Territoire de Mwenga
+16205301,Chefferie de Basile
+16205302,Chefferie de Burhinyi
+16205303,Chefferie de Luhwindja
+16205304,Chefferie de Luindi
+16205305,Chefferie de Wamuzimu
+16205401,Secteur d'Itombwe
+16206,Territoire de Shabunda
+16206301,Chefferie de Bakisi
+16206302,Chefferie de Wakabongo 1
+16207,Territoire d'Uvira
+16207301,Chefferie de Bafulero
+16207302,Chefferie de Bavira
+16207303,Chefferie de Plaine de la Ruzizi
+16208,Territoire de Walungu
+16208301,Chefferie de Kaziba
+16208302,Chefferie de Ngweshe
+17,Maniema
+17201,Territoire de Kabambare
+17201401,Secteur de Bahemba
+17201402,Secteur de Babuyu
+17201403,Secteur de Bahombo (Bangu-Bangu)
+17201404,Secteur de Lulindi
+17201405,Secteur de Salamabila
+17201406,Secteur de Wamaza
+17202,Territoire de Kailo
+17202301,Chefferie de Bangengele
+17202401,Secteur d'Ambwe
+17202402,Secteur de Balanga
+17202403,Secteur de Wasongola
+17203,Territoire de Kasongo
+17203301,Chefferie de Bakwange
+17203302,Chefferie de Basonge 1
+17203303,Chefferie de Benya Samba (Benia-Samba)
+17203304,Chefferie de Nonda
+17203305,Chefferie de Wagenia
+17203306,Chefferie de Wazula
+17203401,Secteur de Basonge 2 Mweho
+17203402,Secteur de Mamba Kasenga
+17203403,Secteur de Wazimba-wa-Maringa
+17203404,Secteur de Wazimba-wa-Mulu
+17204,Territoire de Kibombo
+17204301,Chefferie d'Aluba
+17204302,Chefferie d'Ankutshu
+17204303,Chefferie de Bahina
+17204304,Chefferie de Bakongola
+17204305,Chefferie de Matapa
+17205,Territoire de Lubutu
+17205401,Secteur d' Obokote
+17205402,Secteur de Bitule
+17206,Territoire de Pangi
+17206301,Chefferie de Babene
+17206401,Secteur de Beia
+17206402,Secteur d' Ikama
+17206403,Secteur de Wakabongo 2
+17207,Territoire de Punia
+17207401,Secteur de Babira-Bakwame
+17207402,Secteur de Baleka
+17207403,Secteur d' Ulindi
+18,Haut-Katanga
+18201,Territoire de Kambove
+18201301,Chefferie de Basanga
+18201401,Secteur de Lufira
+18201402,Secteur de Source du Congo
+18202,Territoire de Kasenga
+18202401,Secteur de Bakunda
+18202402,Secteur de Kafira
+18202403,Secteur de Kisamamba
+18202404,Secteur de Luapula
+18203,Territoire de Kipushi
+18203301,Chefferie de Kaponda
+18203302,Chefferie de Kinyama
+18203401,Secteur de Bukanda
+18204,Territoire de Mitwaba
+18204301,Chefferie de Kiona-Ngoie
+18204401,Secteur de Balomotwa
+18204402,Secteur de Bamweshi
+18205,Territoire de Pweto
+18205301,Chefferie de Kiona-Nzini
+18205302,Chefferie de Mwenge
+18205303,Chefferie de M'Pweto
+18205401,Secteur de Moero
+18206,Territoire de Sakania
+18206401,Secteur de Balala
+18206402,Secteur de Balamba
+18206403,Secteur de Baushi-Mwenda
+19,Haut-Lomami
+19201,Territoire de Bukama
+19201301,Chefferie de Butumba
+19201302,Chefferie de Kabondo-Dianda
+19201303,Chefferie de Kibanda
+19201304,Chefferie de Kinkondja
+19201401,Secteur de Kapamay
+19201402,Secteur de Lualaba
+19202,Territoire de Kabongo
+19202301,Chefferie de Kabongo
+19202302,Chefferie de Kayamba
+19202401,Secteur de Nord-Baluba
+19203,Territoire de Kamina
+19203301,Chefferie de Kasongo-Nyembo
+19203401,Secteur de Kinda
+19204,Territoire de Kaniama
+19204301,Chefferie de Mutombo-Mukulu
+19205,Territoire de Malemba-Nkulu
+19205301,Chefferie de Kayumba
+19205302,Chefferie de Mulongo
+19205303,Chefferie de Museka
+19205304,Chefferie de Nkulu
+19205401,Secteur de Badia
+19205402,Secteur de Mwanza
+20,Lualaba
+20201,Territoire de Dilolo
+20201301,Chefferie de Muyeye
+20201302,Chefferie de Mwaka Ndala
+20201303,Chefferie de Mwatshisenge
+20201304,Chefferie de Ndumba
+20201305,Chefferie de Saluseke
+20201306,Chefferie de Tshisangama
+20201401,Secteur de Luena
+20201402,Secteur de Lulua Lukoshi
+20201403,Secteur de Mutanda
+20202,Territoire de Kapanga
+20202301,Chefferie de Mwant-Yav
+20203,Territoire de Lubudi
+20203301,Chefferie de Bayeke
+20203302,Chefferie de Mazangule
+20203303,Chefferie de Mulumbu
+20203304,Chefferie de Mwana-Muadi
+20204,Territoire de Mutshatsha
+20204401,Secteur de Lufupa
+20204402,Secteur de Luilu
+20204403,Secteur de Mukuleshi
+20205,Territoire de Sandoa
+20205301,Chefferie de Kayembe Mukulu
+20205302,Chefferie de Lumanga
+20205303,Chefferie de Mbako
+20205304,Chefferie de Muteba
+20205305,Chefferie de Sakundundu
+20205306,Chefferie de Samutoma
+20205307,Chefferie de Tshibamba
+20205308,Chefferie de Tshipao
+21,Tanganyka
+21201,Territoire de Kabalo
+21201401,Secteur de Luela-Luvunguyi
+21201402,Secteur de Lukuswa
+21202,Territoire de Kalemie
+21202301,Chefferie de Benze
+21202302,Chefferie de Rutuku
+21202303,Chefferie de Tumbwe
+21203,Territoire de Kongolo
+21203301,Chefferie de Bayashi
+21203302,Chefferie de Lubunda
+21203303,Chefferie de Mambwe
+21203304,Chefferie de Muhona
+21203305,Chefferie de Nkuvu
+21203306,Chefferie de Nyembo
+21203307,Chefferie de Yambula
+21203401,Secteur de Baluba
+21203402,Secteur de Basonge
+21203403,Secteur de Munono
+21204,Territoire de Manono
+21204301,Chefferie de Bakongolo
+21204302,Chefferie de Kiluba
+21204401,Secteur de Kamalondo
+21204402,Secteur de Kiofwe
+21204403,Secteur de Luvua
+21204404,Secteur de Nyemba
+21205,Territoire de Moba
+21205301,Chefferie de Bena-Tanga
+21205302,Chefferie de Kansabala
+21205303,Chefferie de Kayabala
+21205304,Chefferie de Manda
+21205305,Chefferie de Nganie (Nganye)
+21205401,Secteur de Bena Kamanya
+21206,Territoire de Nyunzu
+21206401,Secteur de Nord-Lukuga
+21206402,Secteur de Sud-Lukuga
+22,Lomami
+22201,Territoire de Kabinda
+22201401,Secteur de Baluba-Lubangule
+22201402,Secteur de Kabinda
+22201403,Secteur de Ludimbi-Lukula
+22201404,Secteur de Lufubu-Lomami
+22201405,Secteur de Lukashi-Lualu
+22201406,Secteur de Vunayi
+22202,Territoire de Kamiji
+22202401,Secteur de Kamiji
+22202402,Secteur de Luekeshi
+22203,Territoire de Lubau
+22203401,Secteur de Bekalebwe
+22203402,Secteur de Kisengwa
+22203403,Secteur de Lubao
+22203404,Secteur de Tshofa
+22204,Territoire de Luilu
+22204301,Chefferie de Kanutshina (In-Kan)
+22204302,Chefferie de Katshisungu (Kanyoka de…)
+22204303,Chefferie de Mulundu (Kanyoka de Mulundu )
+22204401,Secteur de Kanda-Kanda
+22205,Territoire de Ngandajika
+22205301,Chefferie de Bakwa-Mulumba
+22205302,Chefferie de Bena-Kalambayi (Kalambayi)
+22205401,Secteur de Baluba-Shankadi
+22205402,Secteur de Ngandajika
+22205403,Secteur de Tshiyamba (Bena-Tshiyamba)
+23,Sankuru
+23201,Territoire de Katako-Kombe
+23201401,Secteur de Basambala
+23201402,Secteur de Batetela arabisés (Lomami)
+23201403,Secteur de Djalo
+23201404,Secteur de Lonya
+23201405,Secteur de Lukumbe
+23201406,Secteur de Ngandu Katako (Est/Ouest)
+23201407,Secteur d'Ukulungu
+23201408,Secteur de Watambulu-Nord
+23201409,Secteur de Watambulu-Sud
+23202,Territoire de Kole
+23202401,Secteur d'Atshuru
+23202402,Secteur de Bankutsu-Dibele
+23202403,Secteur de Bankutsu-Lukenie
+23202404,Secteur de Basho
+23202405,Secteur de Batetela-Dibele
+23202406,Secteur d'Ohindo
+23203,Territoire de Lodja
+23203401,Secteur d'Ahamba-Mange
+23203402,Secteur de Batetela-Lukenie
+23203403,Secteur de Kondo-Tshumbe
+23203404,Secteur de Lukfungu
+23203405,Secteur de Lutshimba-Eduo-Piete-Kolombe
+23203406,"Secteur de Nambelo-Lohembe (Nambelu-
+Luhembe)"
+23203407,Secteur d'Olemba
+23203408,Secteur de Vunge (Vungi)
+23203409,Secteur de Watambulu
+23204,Territoire de Lomela
+23204301,Chefferie de Djonga
+23204401,Secteur de Bahamba 1
+23204402,Secteur de Bahamba 2
+23204403,Secteur de Bakela
+23204404,Secteur de Batetela-Lomela
+23204405,Secteur d'Okutu
+23205,Territoire de Lubefu
+23205401,Secteur de Basonge
+23205402,Secteur de Mondja-Ngandu
+23205403,Secteur de Ndjovu
+23205404,Secteur de Ngandu-Wuma
+23206,Territoire de Lusambo
+23206401,Secteur de Basonge
+23206402,Secteur de Batetela
+23206403,Sec. de Entre Kunduye Mal (E.K.M.)
+23206404,Sec. de Entre Lubi Kunduye (E.L.K.)
+23206405,Secteur de Kashindi
+23206406,Secteur de Lubi
+23206407,Secteur de MPania-Mutombo
+23206408,Secteur de Sankuru
+24,Kasai Oriental
+24201,Territoire de Kabeya-Kamwanga
+24201401,Secteur de Kalela
+24201402,Secteur de Lac Munkamba
+24201403,Secteur de Mpemba
+24201404,Secteur de Ndomba
+24202,Territoire de Katanda
+24202401,Secteur de Baluba-Lubilandji
+24202402,Secteur de Bena-Tshitolo
+24202403,Secteur de Mutuayi
+24202404,Secteur de Nsangu
+24203,Territoire de Lupatapata
+24203401,Secteur de Kabala
+24203402,Secteur de Mudiba
+24203403,Secteur de Mukumbi
+24203404,Secteur de Mulenda
+24204,Territoire de Miabi
+24204401,Secteur de Kakangayi
+24204402,Secteur de Movo-Nkatshia
+24204403,Secteur de Tshijiba
+24204404,Secteur de Tshilundu
+24205,Territoire de Tshilenge
+24205301,Chefferie de Kampatshi
+24205401,Secteur de Kalelu
+24205402,Secteur de Kalonji-Sud
+24205403,Secteur de Lukalaba
+24205404,Secteur de Tshipuka (Tshouka)
+25,Kasai
+25201,Territoire de Dekese
+25201301,Chefferie de Dekese-Ikolombe-Isolu
+25201302,Chefferie de Yaelima
+25202,Territoire d'Ilebo
+25202401,Secteur de Basongo
+25202402,Secteur de Malu-Malu
+25202403,"Secteur de Mapangu (Ell: Entre Loange-
+Lumbundji)"
+25202404,Secteur de Sud-Banga
+25203,Territoire d'Ilebo
+25203401,Secteur de Bakwa-Nyambi
+25203402,Secteur de Bapende
+25203403,Secteur de Kasadi-Sadi
+25203404,Secteur de Kasai-Kabambaie
+25203405,Secteur de Kasai-Longatshimo
+25203406,Secteur de Kasai-Lunyeka
+25203407,Secteur de Lovua-Longatshimo
+25203408,Secteur de Lovua-Lushiku
+25203409,Secteur de Tshikapa
+25204,Territoire de Luebo
+25204401,Secteur de Luebo-Kabambaie
+25204402,Secteur de Luebo-Lulengele
+25204403,Secteur de Luebo-Wedi
+25204404,Secteur de NDjoko-Punda
+25205,Territoire de Mweka
+25205301,Chefferie de Bakuba
+26,Kasai Central
+26201,Territoire de Demba
+26201401,Secteur de Bena Mamba
+26201402,Secteur de Diofwa
+26201403,Secteur de Lombelo
+26201404,Secteur de Lusonge
+26201405,Secteur de Mwanza-Ngoma
+26201406,Secteur de Tshibote
+26201407,Secteur de Tshibungu
+26202,Territoire de Dibaya
+26202401,Secteur de Dibanda
+26202402,Secteur de Dibataie
+26202403,Secteur de Kamwandu
+26202404,Secteur de Kasangidi
+26202405,Secteur de Tshishilu
+26203,Territoire de Dimbelenge
+26203401,Secteur de Kunduyi
+26203402,Secteur de Lubi
+26203403,Secteur de Lubudi
+26203404,Secteur de Lukibu
+26203405,Secteur de Mashala
+26204,Territoire de Kazumba
+26204401,Secteur de Bashi-Mboie
+26204402,Secteur de Bena-Ngoshi (Mutefu)
+26204403,Secteur de Bulungu
+26204404,Secteur de Kafuba
+26204405,Secteur de Kavula
+26204406,Secteur de Matamba
+26204407,Secteur de Miao
+26204408,Secteur de Muswaswa
+26204409,Secteur de Tshitadi
+26205,Territoire de Luiza
+26205401,Secteur de Bambaie
+26205402,Secteur de Kabelekese
+26205403,Secteur de Kalunga
+26205404,Secteur de Loatshi
+26205405,Secteur de Lueta
+26205406,Secteur de Lusanza
+26205407,Secteur de Mbushimaie (Bushimaie)

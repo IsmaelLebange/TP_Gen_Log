@@ -1,0 +1,3634 @@
+{
+    "Kinshasa": {
+        "code": "1",
+        "territoires": {}
+    },
+    "Kongo-Central": {
+        "code": "2",
+        "territoires": {
+            "Kasangulu": {
+                "code": "2201",
+                "secteurs": {
+                    "Kasangulu": {
+                        "code": "2201401",
+                        "type": "SECTEUR"
+                    },
+                    "Luila": {
+                        "code": "2201402",
+                        "type": "SECTEUR"
+                    },
+                    "Lukunga-Mputu": {
+                        "code": "2201403",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kimvula": {
+                "code": "2202",
+                "secteurs": {
+                    "Benga": {
+                        "code": "2202401",
+                        "type": "SECTEUR"
+                    },
+                    "Lubisi": {
+                        "code": "2202402",
+                        "type": "SECTEUR"
+                    },
+                    "Lula-Lumene": {
+                        "code": "2202403",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Lukula": {
+                "code": "2203",
+                "secteurs": {
+                    "Fubu": {
+                        "code": "2203401",
+                        "type": "SECTEUR"
+                    },
+                    "Kakongo": {
+                        "code": "2203402",
+                        "type": "SECTEUR"
+                    },
+                    "Patu": {
+                        "code": "2203403",
+                        "type": "SECTEUR"
+                    },
+                    "Tsanga-Sud": {
+                        "code": "2203404",
+                        "type": "SECTEUR"
+                    },
+                    "Tsundi-Sud": {
+                        "code": "2203405",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Luozi": {
+                "code": "2204",
+                "secteurs": {
+                    "Balari": {
+                        "code": "2204401",
+                        "type": "SECTEUR"
+                    },
+                    "Kenge": {
+                        "code": "2204402",
+                        "type": "SECTEUR"
+                    },
+                    "Kimbanza": {
+                        "code": "2204403",
+                        "type": "SECTEUR"
+                    },
+                    "Kimumba": {
+                        "code": "2204404",
+                        "type": "SECTEUR"
+                    },
+                    "Kinkenge": {
+                        "code": "2204405",
+                        "type": "SECTEUR"
+                    },
+                    "Kivunda": {
+                        "code": "2204406",
+                        "type": "SECTEUR"
+                    },
+                    "Mbanza Mona": {
+                        "code": "2204407",
+                        "type": "SECTEUR"
+                    },
+                    "Mbanza Mwembe": {
+                        "code": "2204408",
+                        "type": "SECTEUR"
+                    },
+                    "Mbanza Ngoyo": {
+                        "code": "2204409",
+                        "type": "SECTEUR"
+                    },
+                    "Mongo Luala": {
+                        "code": "2204410",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Madimba": {
+                "code": "2205",
+                "secteurs": {
+                    "Kinkosi (Luidi)": {
+                        "code": "2205401",
+                        "type": "SECTEUR"
+                    },
+                    "Mfidi Malele": {
+                        "code": "2205402",
+                        "type": "SECTEUR"
+                    },
+                    "Mfuma-Kibambi": {
+                        "code": "2205403",
+                        "type": "SECTEUR"
+                    },
+                    "Ngeba": {
+                        "code": "2205404",
+                        "type": "SECTEUR"
+                    },
+                    "Ngufu": {
+                        "code": "2205405",
+                        "type": "SECTEUR"
+                    },
+                    "Wungu": {
+                        "code": "2205406",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Mbanza-Ngungu": {
+                "code": "2206",
+                "secteurs": {
+                    "Boko": {
+                        "code": "2206401",
+                        "type": "SECTEUR"
+                    },
+                    "Gombe-Matadi": {
+                        "code": "2206402",
+                        "type": "SECTEUR"
+                    },
+                    "Gombe-Sud": {
+                        "code": "2206403",
+                        "type": "SECTEUR"
+                    },
+                    "Kivulu": {
+                        "code": "2206404",
+                        "type": "SECTEUR"
+                    },
+                    "Kwilu-Ngongo": {
+                        "code": "2206405",
+                        "type": "SECTEUR"
+                    },
+                    "Lunzadi": {
+                        "code": "2206406",
+                        "type": "SECTEUR"
+                    },
+                    "Ntimansi": {
+                        "code": "2206407",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Moanda": {
+                "code": "2207",
+                "secteurs": {
+                    "Assolongo": {
+                        "code": "2206401",
+                        "type": "SECTEUR"
+                    },
+                    "Boma-Bungu": {
+                        "code": "2206402",
+                        "type": "SECTEUR"
+                    },
+                    "la Mer": {
+                        "code": "2206403",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Seke-Banza": {
+                "code": "2208",
+                "secteurs": {
+                    "Bundi": {
+                        "code": "2208401",
+                        "type": "SECTEUR"
+                    },
+                    "Isangila": {
+                        "code": "2208402",
+                        "type": "SECTEUR"
+                    },
+                    "Lufu": {
+                        "code": "2208403",
+                        "type": "SECTEUR"
+                    },
+                    "Mbavu": {
+                        "code": "2208404",
+                        "type": "SECTEUR"
+                    },
+                    "Sumbi": {
+                        "code": "2208405",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Songololo": {
+                "code": "2209",
+                "secteurs": {
+                    "Bamboma": {
+                        "code": "2209401",
+                        "type": "SECTEUR"
+                    },
+                    "Kimpese": {
+                        "code": "2209402",
+                        "type": "SECTEUR"
+                    },
+                    "Luima": {
+                        "code": "2209403",
+                        "type": "SECTEUR"
+                    },
+                    "Palabala": {
+                        "code": "2209404",
+                        "type": "SECTEUR"
+                    },
+                    "Wombo": {
+                        "code": "2209405",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Tshela": {
+                "code": "2210",
+                "secteurs": {
+                    "Bula-Naku": {
+                        "code": "2210401",
+                        "type": "SECTEUR"
+                    },
+                    "Loango": {
+                        "code": "2210402",
+                        "type": "SECTEUR"
+                    },
+                    "Lubolo": {
+                        "code": "2210403",
+                        "type": "SECTEUR"
+                    },
+                    "Lubuzi": {
+                        "code": "2210404",
+                        "type": "SECTEUR"
+                    },
+                    "Maduda": {
+                        "code": "2210405",
+                        "type": "SECTEUR"
+                    },
+                    "Nganda-Tsundi": {
+                        "code": "2210406",
+                        "type": "SECTEUR"
+                    },
+                    "Nzobe Luzi": {
+                        "code": "2210407",
+                        "type": "SECTEUR"
+                    },
+                    "Tshela Banga": {
+                        "code": "2210408",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Kwango": {
+        "code": "3",
+        "territoires": {
+            "Feshi": {
+                "code": "3201",
+                "secteurs": {
+                    "Feshi Maziamo": {
+                        "code": "3201401",
+                        "type": "SECTEUR"
+                    },
+                    "Ganaketi": {
+                        "code": "3201402",
+                        "type": "SECTEUR"
+                    },
+                    "Lobo": {
+                        "code": "3201403",
+                        "type": "SECTEUR"
+                    },
+                    "Mukoso": {
+                        "code": "3201404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kahemba": {
+                "code": "3202",
+                "secteurs": {
+                    "Muloshi": {
+                        "code": "3202301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mwa-Mushiko": {
+                        "code": "3202302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mwendjila": {
+                        "code": "3202303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bangu": {
+                        "code": "3202401",
+                        "type": "SECTEUR"
+                    },
+                    "Bindu": {
+                        "code": "3202402",
+                        "type": "SECTEUR"
+                    },
+                    "Kulindji": {
+                        "code": "3202403",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kasongo-Lunda": {
+                "code": "3203",
+                "secteurs": {
+                    "Kasa": {
+                        "code": "3203301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kasongo-Lunda": {
+                        "code": "3203302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kibunda": {
+                        "code": "3203401",
+                        "type": "SECTEUR"
+                    },
+                    "Kingulu": {
+                        "code": "3203402",
+                        "type": "SECTEUR"
+                    },
+                    "Kizamba": {
+                        "code": "3203403",
+                        "type": "SECTEUR"
+                    },
+                    "Mawanga": {
+                        "code": "3203404",
+                        "type": "SECTEUR"
+                    },
+                    "Panzi": {
+                        "code": "3203405",
+                        "type": "SECTEUR"
+                    },
+                    "Swa-Tenda": {
+                        "code": "3203406",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kenge": {
+                "code": "3204",
+                "secteurs": {
+                    "Pelende-Nord": {
+                        "code": "3204301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bukanga-Lonzo": {
+                        "code": "3204401",
+                        "type": "SECTEUR"
+                    },
+                    "Dinga": {
+                        "code": "3204402",
+                        "type": "SECTEUR"
+                    },
+                    "Kolokoso": {
+                        "code": "3204403",
+                        "type": "SECTEUR"
+                    },
+                    "Mosamba": {
+                        "code": "3204404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Popokabaka": {
+                "code": "3205",
+                "secteurs": {
+                    "Lufuma": {
+                        "code": "3205401",
+                        "type": "SECTEUR"
+                    },
+                    "Popokabaka": {
+                        "code": "3205402",
+                        "type": "SECTEUR"
+                    },
+                    "Yonso": {
+                        "code": "3205403",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Kwilu": {
+        "code": "4",
+        "territoires": {
+            "Bagata": {
+                "code": "4201",
+                "secteurs": {
+                    "Kidzweme": {
+                        "code": "4201401",
+                        "type": "SECTEUR"
+                    },
+                    "Kwango-Kasai": {
+                        "code": "4201402",
+                        "type": "SECTEUR"
+                    },
+                    "Kwilu-Ntober": {
+                        "code": "4201403",
+                        "type": "SECTEUR"
+                    },
+                    "Manzasay": {
+                        "code": "4201404",
+                        "type": "SECTEUR"
+                    },
+                    "Wamba-Fatundu": {
+                        "code": "4201405",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Bulungu": {
+                "code": "4202",
+                "secteurs": {
+                    "Dwe": {
+                        "code": "4202401",
+                        "type": "SECTEUR"
+                    },
+                    "Imbongo": {
+                        "code": "4202402",
+                        "type": "SECTEUR"
+                    },
+                    "Kilunda": {
+                        "code": "4202403",
+                        "type": "SECTEUR"
+                    },
+                    "Kipuka": {
+                        "code": "4202404",
+                        "type": "SECTEUR"
+                    },
+                    "Kwenge": {
+                        "code": "4202405",
+                        "type": "SECTEUR"
+                    },
+                    "Kwilu-Kimbata": {
+                        "code": "4202406",
+                        "type": "SECTEUR"
+                    },
+                    "Luniungu": {
+                        "code": "4202407",
+                        "type": "SECTEUR"
+                    },
+                    "Mikwi": {
+                        "code": "4202408",
+                        "type": "SECTEUR"
+                    },
+                    "Niadi-Nkara": {
+                        "code": "4202409",
+                        "type": "SECTEUR"
+                    },
+                    "Nko": {
+                        "code": "4202410",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Gungu": {
+                "code": "4203",
+                "secteurs": {
+                    "Gungu": {
+                        "code": "4203401",
+                        "type": "SECTEUR"
+                    },
+                    "Kandale": {
+                        "code": "4203402",
+                        "type": "SECTEUR"
+                    },
+                    "Kilamba": {
+                        "code": "4203403",
+                        "type": "SECTEUR"
+                    },
+                    "Kilembe": {
+                        "code": "4203404",
+                        "type": "SECTEUR"
+                    },
+                    "Kisunzu": {
+                        "code": "4203405",
+                        "type": "SECTEUR"
+                    },
+                    "Kobo (Mosala)": {
+                        "code": "4203406",
+                        "type": "SECTEUR"
+                    },
+                    "Kondo": {
+                        "code": "4203407",
+                        "type": "SECTEUR"
+                    },
+                    "Lozo": {
+                        "code": "4203408",
+                        "type": "SECTEUR"
+                    },
+                    "Lukamba": {
+                        "code": "4203409",
+                        "type": "SECTEUR"
+                    },
+                    "Mudikalunga": {
+                        "code": "4203410",
+                        "type": "SECTEUR"
+                    },
+                    "Mungindu": {
+                        "code": "4203411",
+                        "type": "SECTEUR"
+                    },
+                    "Ngudi": {
+                        "code": "4203412",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Idiofa": {
+                "code": "4204",
+                "secteurs": {
+                    "Banga": {
+                        "code": "4204401",
+                        "type": "SECTEUR"
+                    },
+                    "Belo": {
+                        "code": "4204402",
+                        "type": "SECTEUR"
+                    },
+                    "Bulwem": {
+                        "code": "4204403",
+                        "type": "SECTEUR"
+                    },
+                    "Kalanganda": {
+                        "code": "4204404",
+                        "type": "SECTEUR"
+                    },
+                    "Kanga": {
+                        "code": "4204405",
+                        "type": "SECTEUR"
+                    },
+                    "Kapia": {
+                        "code": "4204406",
+                        "type": "SECTEUR"
+                    },
+                    "Kipuku": {
+                        "code": "4204407",
+                        "type": "SECTEUR"
+                    },
+                    "Madimbi": {
+                        "code": "4204408",
+                        "type": "SECTEUR"
+                    },
+                    "Mateko": {
+                        "code": "4204409",
+                        "type": "SECTEUR"
+                    },
+                    "Musanga-Idiofa": {
+                        "code": "4204410",
+                        "type": "SECTEUR"
+                    },
+                    "Sedzo": {
+                        "code": "4204411",
+                        "type": "SECTEUR"
+                    },
+                    "Yasa-Lokwa": {
+                        "code": "4204412",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Masi-Manimba": {
+                "code": "4205",
+                "secteurs": {
+                    "Bindungi": {
+                        "code": "4205401",
+                        "type": "SECTEUR"
+                    },
+                    "Kibolo": {
+                        "code": "4205402",
+                        "type": "SECTEUR"
+                    },
+                    "Kinzenga": {
+                        "code": "4205403",
+                        "type": "SECTEUR"
+                    },
+                    "Kinzenzengo": {
+                        "code": "4205404",
+                        "type": "SECTEUR"
+                    },
+                    "Kitoy": {
+                        "code": "4205405",
+                        "type": "SECTEUR"
+                    },
+                    "Masi-Manimba": {
+                        "code": "4205406",
+                        "type": "SECTEUR"
+                    },
+                    "Mokamo": {
+                        "code": "4205407",
+                        "type": "SECTEUR"
+                    },
+                    "Mosango": {
+                        "code": "4205408",
+                        "type": "SECTEUR"
+                    },
+                    "Pay-Kongila": {
+                        "code": "4205409",
+                        "type": "SECTEUR"
+                    },
+                    "Sungu": {
+                        "code": "4205410",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Mai-Ndombe": {
+        "code": "5",
+        "territoires": {
+            "Bolomba": {
+                "code": "6203",
+                "secteurs": {
+                    "Dianga": {
+                        "code": "6203301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bolomba": {
+                        "code": "6203401",
+                        "type": "SECTEUR"
+                    },
+                    "Busira": {
+                        "code": "6203402",
+                        "type": "SECTEUR"
+                    },
+                    "Losanganya": {
+                        "code": "6203403",
+                        "type": "SECTEUR"
+                    },
+                    "Mampoko": {
+                        "code": "6203404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Bomongo": {
+                "code": "6204",
+                "secteurs": {
+                    "Djamba": {
+                        "code": "6204401",
+                        "type": "SECTEUR"
+                    },
+                    "Ngiri": {
+                        "code": "6204402",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Ingende": {
+                "code": "6205",
+                "secteurs": {
+                    "Bokatola": {
+                        "code": "6205401",
+                        "type": "SECTEUR"
+                    },
+                    "Duali": {
+                        "code": "6205402",
+                        "type": "SECTEUR"
+                    },
+                    "Eungu": {
+                        "code": "6205403",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Lukolela": {
+                "code": "6206",
+                "secteurs": {
+                    "Banunu": {
+                        "code": "6206401",
+                        "type": "SECTEUR"
+                    },
+                    "Lusakani": {
+                        "code": "6206402",
+                        "type": "SECTEUR"
+                    },
+                    "Mpama": {
+                        "code": "6206403",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Makanza": {
+                "code": "6207",
+                "secteurs": {
+                    "Bangala": {
+                        "code": "6207401",
+                        "type": "SECTEUR"
+                    },
+                    "Mweko (Moeko)": {
+                        "code": "6207402",
+                        "type": "SECTEUR"
+                    },
+                    "Ndobo": {
+                        "code": "6207403",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        },
+        "secteurs_directs": {
+            "Lac Ntomba": {
+                "code": "6202403",
+                "type": "SECTEUR"
+            }
+        }
+    },
+    "Nord-Ubangi": {
+        "code": "7",
+        "territoires": {
+            "Bosobolo": {
+                "code": "7201",
+                "secteurs": {
+                    "Bandas": {
+                        "code": "7201401",
+                        "type": "SECTEUR"
+                    },
+                    "Bili": {
+                        "code": "7201402",
+                        "type": "SECTEUR"
+                    },
+                    "Bosobolo": {
+                        "code": "7201403",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Businga": {
+                "code": "7202",
+                "secteurs": {
+                    "Bodangabo": {
+                        "code": "7202401",
+                        "type": "SECTEUR"
+                    },
+                    "Businga": {
+                        "code": "7202402",
+                        "type": "SECTEUR"
+                    },
+                    "Karawa": {
+                        "code": "7202403",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Mobayi-Mbongo": {
+                "code": "7203",
+                "secteurs": {
+                    "Mobayi-Mbongo": {
+                        "code": "7203401",
+                        "type": "SECTEUR"
+                    },
+                    "Oto-Mbanza": {
+                        "code": "7203402",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Yakoma": {
+                "code": "7204",
+                "secteurs": {
+                    "Abumombazi": {
+                        "code": "7204401",
+                        "type": "SECTEUR"
+                    },
+                    "Wapinda": {
+                        "code": "7204402",
+                        "type": "SECTEUR"
+                    },
+                    "Yakoma": {
+                        "code": "7204403",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Sud-Ubangi": {
+        "code": "8",
+        "territoires": {
+            "Budjala": {
+                "code": "8201",
+                "secteurs": {
+                    "Banza": {
+                        "code": "8201401",
+                        "type": "SECTEUR"
+                    },
+                    "Bolingo": {
+                        "code": "8201402",
+                        "type": "SECTEUR"
+                    },
+                    "Mongala-Motima": {
+                        "code": "8201403",
+                        "type": "SECTEUR"
+                    },
+                    "Ndolo-Liboko": {
+                        "code": "8201404",
+                        "type": "SECTEUR"
+                    },
+                    "Ngombe-Ndoko (Likini)": {
+                        "code": "8201405",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Gemena": {
+                "code": "8202",
+                "secteurs": {
+                    "Banga-Kungu": {
+                        "code": "8202401",
+                        "type": "SECTEUR"
+                    },
+                    "Bowase": {
+                        "code": "8202402",
+                        "type": "SECTEUR"
+                    },
+                    "Mbari": {
+                        "code": "8202403",
+                        "type": "SECTEUR"
+                    },
+                    "Nguya": {
+                        "code": "8202404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kungu": {
+                "code": "8203",
+                "secteurs": {
+                    "Bomboma": {
+                        "code": "8203401",
+                        "type": "SECTEUR"
+                    },
+                    "Dongo": {
+                        "code": "8203402",
+                        "type": "SECTEUR"
+                    },
+                    "Lwa": {
+                        "code": "8203403",
+                        "type": "SECTEUR"
+                    },
+                    "Mwanda": {
+                        "code": "8203404",
+                        "type": "SECTEUR"
+                    },
+                    "Songo": {
+                        "code": "8203405",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Libenge": {
+                "code": "8204",
+                "secteurs": {
+                    "Libenge-Centre": {
+                        "code": "8204401",
+                        "type": "SECTEUR"
+                    },
+                    "Libenge-Nord": {
+                        "code": "8204402",
+                        "type": "SECTEUR"
+                    },
+                    "Libenge-Sud": {
+                        "code": "8204403",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Mongala": {
+        "code": "9",
+        "territoires": {
+            "Bongandanga": {
+                "code": "9201",
+                "secteurs": {
+                    "Bongandanga": {
+                        "code": "9201401",
+                        "type": "SECTEUR"
+                    },
+                    "Boso-Djano": {
+                        "code": "9201402",
+                        "type": "SECTEUR"
+                    },
+                    "Boso-Melo": {
+                        "code": "9201403",
+                        "type": "SECTEUR"
+                    },
+                    "Boso-Simba": {
+                        "code": "9201404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Bumba": {
+                "code": "9202",
+                "secteurs": {
+                    "Banda Yowa (Banda Yoka)": {
+                        "code": "9202401",
+                        "type": "SECTEUR"
+                    },
+                    "Itimbiri": {
+                        "code": "9202402",
+                        "type": "SECTEUR"
+                    },
+                    "Loeka": {
+                        "code": "9202403",
+                        "type": "SECTEUR"
+                    },
+                    "Modjamboli": {
+                        "code": "9202404",
+                        "type": "SECTEUR"
+                    },
+                    "Molwa": {
+                        "code": "9202405",
+                        "type": "SECTEUR"
+                    },
+                    "Yandongi": {
+                        "code": "9202406",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Lisala": {
+                "code": "9203",
+                "secteurs": {
+                    "Mongala Motima": {
+                        "code": "9203401",
+                        "type": "SECTEUR"
+                    },
+                    "Ngombe Doko": {
+                        "code": "9203402",
+                        "type": "SECTEUR"
+                    },
+                    "Ngombe Mobangi": {
+                        "code": "9203403",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Tshuapa": {
+        "code": "10",
+        "territoires": {
+            "Befale": {
+                "code": "10201",
+                "secteurs": {
+                    "Befumbo": {
+                        "code": "10201401",
+                        "type": "SECTEUR"
+                    },
+                    "Duale": {
+                        "code": "10201402",
+                        "type": "SECTEUR"
+                    },
+                    "Lomako": {
+                        "code": "10201403",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Boende": {
+                "code": "10202",
+                "secteurs": {
+                    "Bolua": {
+                        "code": "10202401",
+                        "type": "SECTEUR"
+                    },
+                    "Djera": {
+                        "code": "10202402",
+                        "type": "SECTEUR"
+                    },
+                    "Lofoy": {
+                        "code": "10202403",
+                        "type": "SECTEUR"
+                    },
+                    "Wini": {
+                        "code": "10202404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Bokungu": {
+                "code": "10203",
+                "secteurs": {
+                    "Nkole": {
+                        "code": "10203301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Lolaka": {
+                        "code": "10203401",
+                        "type": "SECTEUR"
+                    },
+                    "Loombo": {
+                        "code": "10203402",
+                        "type": "SECTEUR"
+                    },
+                    "Luando": {
+                        "code": "10203403",
+                        "type": "SECTEUR"
+                    },
+                    "Luay": {
+                        "code": "10203404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Djolu": {
+                "code": "10204",
+                "secteurs": {
+                    "Djolu": {
+                        "code": "10204401",
+                        "type": "SECTEUR"
+                    },
+                    "Lingomo": {
+                        "code": "10204402",
+                        "type": "SECTEUR"
+                    },
+                    "Luo": {
+                        "code": "10204403",
+                        "type": "SECTEUR"
+                    },
+                    "Yala": {
+                        "code": "10204404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Ikela": {
+                "code": "10205",
+                "secteurs": {
+                    "Lofome": {
+                        "code": "10205401",
+                        "type": "SECTEUR"
+                    },
+                    "Loile": {
+                        "code": "10205402",
+                        "type": "SECTEUR"
+                    },
+                    "Lokina (Lokima)": {
+                        "code": "10205403",
+                        "type": "SECTEUR"
+                    },
+                    "Tshuapa": {
+                        "code": "10205404",
+                        "type": "SECTEUR"
+                    },
+                    "Tumbenga": {
+                        "code": "10205405",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Monkoto": {
+                "code": "10206",
+                "secteurs": {
+                    "Bianga": {
+                        "code": "10206401",
+                        "type": "SECTEUR"
+                    },
+                    "Monkoto": {
+                        "code": "10206402",
+                        "type": "SECTEUR"
+                    },
+                    "Nongo": {
+                        "code": "10206403",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Tshopo": {
+        "code": "11",
+        "territoires": {
+            "Bafwasende": {
+                "code": "11201",
+                "secteurs": {
+                    "Bafwandaka": {
+                        "code": "11201401",
+                        "type": "SECTEUR"
+                    },
+                    "Bakumu d'Angumu": {
+                        "code": "11201402",
+                        "type": "SECTEUR"
+                    },
+                    "Bakundumu": {
+                        "code": "11201403",
+                        "type": "SECTEUR"
+                    },
+                    "Barumbi-Opienge": {
+                        "code": "11201404",
+                        "type": "SECTEUR"
+                    },
+                    "Bekeni-Kondolole": {
+                        "code": "11201405",
+                        "type": "SECTEUR"
+                    },
+                    "Bemili": {
+                        "code": "11201406",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Banalia": {
+                "code": "11202",
+                "secteurs": {
+                    "Baboro": {
+                        "code": "11202301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Baboa de Kole": {
+                        "code": "11202401",
+                        "type": "SECTEUR"
+                    },
+                    "Bamanga": {
+                        "code": "11202402",
+                        "type": "SECTEUR"
+                    },
+                    "Banalia-Bangba": {
+                        "code": "11202403",
+                        "type": "SECTEUR"
+                    },
+                    "Popoy": {
+                        "code": "11202404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Basoko": {
+                "code": "11203",
+                "secteurs": {
+                    "Wahanga": {
+                        "code": "11203301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Yaliwasa": {
+                        "code": "11203302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Yamandundu": {
+                        "code": "11203303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bangelema": {
+                        "code": "11203401",
+                        "type": "SECTEUR"
+                    },
+                    "Bomenge": {
+                        "code": "11203402",
+                        "type": "SECTEUR"
+                    },
+                    "Lukutu (Lokutu)": {
+                        "code": "11203403",
+                        "type": "SECTEUR"
+                    },
+                    "Mobango Itimbiri": {
+                        "code": "11203404",
+                        "type": "SECTEUR"
+                    },
+                    "Turumbu": {
+                        "code": "11203405",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Isangi": {
+                "code": "11204",
+                "secteurs": {
+                    "Baluolambila": {
+                        "code": "11204301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bolomboki": {
+                        "code": "11204302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kombe": {
+                        "code": "11204303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Liutua": {
+                        "code": "11204304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Yalihila (Yalikila)": {
+                        "code": "11204305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Yalikoka-Mboso": {
+                        "code": "11204306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bambelota": {
+                        "code": "11204401",
+                        "type": "SECTEUR"
+                    },
+                    "Lokombe (Lukombe)": {
+                        "code": "11204402",
+                        "type": "SECTEUR"
+                    },
+                    "Luete (Lueta)": {
+                        "code": "11204403",
+                        "type": "SECTEUR"
+                    },
+                    "Turumbu": {
+                        "code": "11204404",
+                        "type": "SECTEUR"
+                    },
+                    "Yalikandja-Yanonge": {
+                        "code": "11204405",
+                        "type": "SECTEUR"
+                    },
+                    "Yaokandja": {
+                        "code": "11204406",
+                        "type": "SECTEUR"
+                    },
+                    "Yawembe-Basoa": {
+                        "code": "11204407",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Opala": {
+                "code": "11205",
+                "secteurs": {
+                    "Kembe": {
+                        "code": "11205301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mongo": {
+                        "code": "11205302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Yalingo": {
+                        "code": "11205303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Yamaie (Yomaie)": {
+                        "code": "11205304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Yapandu": {
+                        "code": "11205305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Yeyango": {
+                        "code": "11205306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Balinga-Lindja": {
+                        "code": "11205401",
+                        "type": "SECTEUR"
+                    },
+                    "Iye": {
+                        "code": "11205402",
+                        "type": "SECTEUR"
+                    },
+                    "Lobaie": {
+                        "code": "11205403",
+                        "type": "SECTEUR"
+                    },
+                    "Tooli": {
+                        "code": "11205404",
+                        "type": "SECTEUR"
+                    },
+                    "Yawende-Loolo": {
+                        "code": "11205405",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Ubundu": {
+                "code": "11206",
+                "secteurs": {
+                    "Kirundu": {
+                        "code": "11206301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bakumu d'Obiatuku": {
+                        "code": "11206401",
+                        "type": "SECTEUR"
+                    },
+                    "Bakumu-Kilinga": {
+                        "code": "11206402",
+                        "type": "SECTEUR"
+                    },
+                    "Bakumu-Mandombe": {
+                        "code": "11206403",
+                        "type": "SECTEUR"
+                    },
+                    "Bakumu-Mangongo": {
+                        "code": "11206404",
+                        "type": "SECTEUR"
+                    },
+                    "Mituku-Bamoya": {
+                        "code": "11206405",
+                        "type": "SECTEUR"
+                    },
+                    "Mituku-Basikate": {
+                        "code": "11206406",
+                        "type": "SECTEUR"
+                    },
+                    "Walengola-Babira": {
+                        "code": "11206407",
+                        "type": "SECTEUR"
+                    },
+                    "Walengola-Baleka": {
+                        "code": "11206408",
+                        "type": "SECTEUR"
+                    },
+                    "Walengola-Lilo": {
+                        "code": "11206409",
+                        "type": "SECTEUR"
+                    },
+                    "Walengola-Lowa": {
+                        "code": "11206410",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Yahuma": {
+                "code": "11207",
+                "secteurs": {
+                    "Mombesa": {
+                        "code": "11207301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bolinga": {
+                        "code": "11207401",
+                        "type": "SECTEUR"
+                    },
+                    "Bosoku (Bosoko)": {
+                        "code": "11207402",
+                        "type": "SECTEUR"
+                    },
+                    "Buma": {
+                        "code": "11207403",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Bas-Uele": {
+        "code": "12",
+        "territoires": {
+            "Aketi": {
+                "code": "12201",
+                "secteurs": {
+                    "Avuru-Duma": {
+                        "code": "12201301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Avuru-Gatanga": {
+                        "code": "12201302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bondongola": {
+                        "code": "12201303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mobati-Boyele": {
+                        "code": "12201304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kolongwandi (Mongwandi)": {
+                        "code": "12201401",
+                        "type": "SECTEUR"
+                    },
+                    "Mabinza": {
+                        "code": "12201402",
+                        "type": "SECTEUR"
+                    },
+                    "Ngbongi (Bgongi)": {
+                        "code": "12201403",
+                        "type": "SECTEUR"
+                    },
+                    "Yoko": {
+                        "code": "12201404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Ango": {
+                "code": "12202",
+                "secteurs": {
+                    "Ezo": {
+                        "code": "12202301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mopoyi (Mopay)": {
+                        "code": "12202302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Ngindo": {
+                        "code": "12202303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Sasa": {
+                        "code": "12202304",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Bambesa": {
+                "code": "12203",
+                "secteurs": {
+                    "Bakete": {
+                        "code": "12203301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bokapo": {
+                        "code": "12203302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bokiba": {
+                        "code": "12203303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bolungwa": {
+                        "code": "12203304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Makere 1": {
+                        "code": "12203305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Makere 2": {
+                        "code": "12203306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bakere-Bakete": {
+                        "code": "12203307",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mange": {
+                        "code": "12203308",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mondongwale": {
+                        "code": "12203309",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Bondo": {
+                "code": "12204",
+                "secteurs": {
+                    "Boso": {
+                        "code": "12204301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Deni": {
+                        "code": "12204302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Duaru": {
+                        "code": "12204303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Gama": {
+                        "code": "12204304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Gaya": {
+                        "code": "12204305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Chef.de Gbiamange/Biamange (Gbamange)": {
+                        "code": "12204306",
+                        "type": "SECTEUR"
+                    },
+                    "Goa (Goya)": {
+                        "code": "12204307",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kasa": {
+                        "code": "12204308",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mobenge-Mondila": {
+                        "code": "12204309",
+                        "type": "CHEFFERIE"
+                    },
+                    "Soa": {
+                        "code": "12204310",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Buta": {
+                "code": "12205",
+                "secteurs": {
+                    "Chef. de Barisi-Mongingita-Bakango": {
+                        "code": "12205301",
+                        "type": "SECTEUR"
+                    },
+                    "Bayeu Bogongea": {
+                        "code": "12205302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bayeu Bogbama": {
+                        "code": "12205303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mobati": {
+                        "code": "12205304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mongazulu": {
+                        "code": "12205305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Nguru": {
+                        "code": "12205306",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Poko": {
+                "code": "12206",
+                "secteurs": {
+                    "Babena": {
+                        "code": "12206301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bakengai-Avuru": {
+                        "code": "12206302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Gamu": {
+                        "code": "12206303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kipate": {
+                        "code": "12206304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kumendeni": {
+                        "code": "12206305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mabanga": {
+                        "code": "12206306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Madi": {
+                        "code": "12206307",
+                        "type": "CHEFFERIE"
+                    },
+                    "Malele": {
+                        "code": "12206308",
+                        "type": "CHEFFERIE"
+                    },
+                    "Ngbaradi (Ngbarandi)": {
+                        "code": "12206309",
+                        "type": "CHEFFERIE"
+                    },
+                    "Soronga": {
+                        "code": "12206310",
+                        "type": "CHEFFERIE"
+                    },
+                    "Zune": {
+                        "code": "12206311",
+                        "type": "CHEFFERIE"
+                    },
+                    "Abarambo": {
+                        "code": "12206401",
+                        "type": "SECTEUR"
+                    },
+                    "Kembisa": {
+                        "code": "12206402",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Haut-Uele": {
+        "code": "13",
+        "territoires": {
+            "Dungu": {
+                "code": "13201",
+                "secteurs": {
+                    "Malingindu": {
+                        "code": "13201301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Ndolomo (Duruma)": {
+                        "code": "13201302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Wando": {
+                        "code": "13201303",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Faradje": {
+                "code": "13202",
+                "secteurs": {
+                    "Dongo": {
+                        "code": "13202301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kakwa-Lamada": {
+                        "code": "13202302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Logo-Bagela": {
+                        "code": "13202303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Logo-Doka": {
+                        "code": "13202304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Logo-Lolia": {
+                        "code": "13202305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Logo-Obeleba": {
+                        "code": "13202306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Logo-Ogambi": {
+                        "code": "13202307",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mondo": {
+                        "code": "13202308",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Niangara": {
+                "code": "13203",
+                "secteurs": {
+                    "Boemi": {
+                        "code": "13203301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kereboro (Kerebobe)": {
+                        "code": "13203302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kopa": {
+                        "code": "13203303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mangbere (Mangbele)": {
+                        "code": "13203304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mangbetu (Mangbetu-Mabisanga)": {
+                        "code": "13203305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Manziga (Manzinga)": {
+                        "code": "13203306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Okoda (Okondo)": {
+                        "code": "13203307",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Rungu": {
+                "code": "13204",
+                "secteurs": {
+                    "Azanga": {
+                        "code": "13204301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mayogo-Mabozo": {
+                        "code": "13204302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mayogo-Magbay (Mayoyo-\nMagbele)": {
+                        "code": "13204303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mboli": {
+                        "code": "13204304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Medje-Mango": {
+                        "code": "13204305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mongo-Masi (Mengo Mosi)": {
+                        "code": "13204306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Ndey": {
+                        "code": "13204307",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Wamba": {
+                "code": "13205",
+                "secteurs": {
+                    "Bafwagada (Bafwangada)": {
+                        "code": "13205301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bafwakoy": {
+                        "code": "13205302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Maha": {
+                        "code": "13205303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Makoda": {
+                        "code": "13205304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Malamba": {
+                        "code": "13205305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Malika Toriko (Balika-Toriko)": {
+                        "code": "13205306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Malikala (Malika)": {
+                        "code": "13205307",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mangbele": {
+                        "code": "13205308",
+                        "type": "CHEFFERIE"
+                    },
+                    "Timoniko": {
+                        "code": "13205309",
+                        "type": "CHEFFERIE"
+                    },
+                    "Wadimbisa-Mabudu": {
+                        "code": "13205310",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mabudu Malika Babero/Babeyru \n(Mmb)": {
+                        "code": "13205401",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Watsa": {
+                "code": "13206",
+                "secteurs": {
+                    "Andikofa": {
+                        "code": "13206301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Andobi": {
+                        "code": "13206302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Ateru": {
+                        "code": "13206303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kebo": {
+                        "code": "13206304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Walese (Walesa)": {
+                        "code": "13206305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Gombari": {
+                        "code": "13206401",
+                        "type": "SECTEUR"
+                    },
+                    "Kibali": {
+                        "code": "13206402",
+                        "type": "SECTEUR"
+                    },
+                    "Mangbutu": {
+                        "code": "13206403",
+                        "type": "SECTEUR"
+                    },
+                    "Mari-Minza": {
+                        "code": "13206404",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Ituri": {
+        "code": "14",
+        "territoires": {
+            "Aru": {
+                "code": "14201",
+                "secteurs": {
+                    "Alur": {
+                        "code": "14201301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kakwa": {
+                        "code": "14201302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kaliko-Omi": {
+                        "code": "14201303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Lu": {
+                        "code": "14201304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Nio-Kamule": {
+                        "code": "14201305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Otso": {
+                        "code": "14201306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Zaki": {
+                        "code": "14201307",
+                        "type": "CHEFFERIE"
+                    },
+                    "Ndo-Kebo": {
+                        "code": "14201401",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Djugu": {
+                "code": "14202",
+                "secteurs": {
+                    "Bahema-Badjere": {
+                        "code": "14202301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bahema-Banywagi": {
+                        "code": "14202302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bahema-Nord": {
+                        "code": "14202303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mabendi (Mabengi)": {
+                        "code": "14202304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mambisa": {
+                        "code": "14202305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Ndo-Okebo": {
+                        "code": "14202306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Sec. de Banyali–Kilo (Baniari-Tchabi)": {
+                        "code": "14202401",
+                        "type": "SECTEUR"
+                    },
+                    "Walendu-Djatshi": {
+                        "code": "14202402",
+                        "type": "SECTEUR"
+                    },
+                    "Walendu-Pitshi": {
+                        "code": "14202403",
+                        "type": "SECTEUR"
+                    },
+                    "Walendu-Tatsi": {
+                        "code": "14202404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Irumu": {
+                "code": "14203",
+                "secteurs": {
+                    "Andisoma": {
+                        "code": "14203301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Babelebe": {
+                        "code": "14203302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Baboa-Bakoe": {
+                        "code": "14203303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bahema d'Irumu": {
+                        "code": "14203304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bahema Mitego (Bahema Mitega)": {
+                        "code": "14203305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bahema-Boga": {
+                        "code": "14203306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Baniari-Tchiabi": {
+                        "code": "14203307",
+                        "type": "CHEFFERIE"
+                    },
+                    "Basili": {
+                        "code": "14203308",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mobala": {
+                        "code": "14203309",
+                        "type": "CHEFFERIE"
+                    },
+                    "Walendu-Bindi": {
+                        "code": "14203310",
+                        "type": "CHEFFERIE"
+                    },
+                    "Walese Vonkutu": {
+                        "code": "14203311",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bahema Sud": {
+                        "code": "14203401",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Mahagi": {
+                "code": "14204",
+                "secteurs": {
+                    "Alur-Djuganda": {
+                        "code": "14204301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Anghal  1 & 2": {
+                        "code": "14204302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Djukoth 1 & 2": {
+                        "code": "14204303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mokambo": {
+                        "code": "14204304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Pandoro": {
+                        "code": "14204305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Walendu-Watshi": {
+                        "code": "14204306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Wangongo": {
+                        "code": "14204307",
+                        "type": "CHEFFERIE"
+                    },
+                    "War-Palara": {
+                        "code": "14204308",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Mambasa": {
+                "code": "14205",
+                "secteurs": {
+                    "Babila Babombi": {
+                        "code": "14205301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Babila-Bakwanza": {
+                        "code": "14205302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bandaka": {
+                        "code": "14205303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bombo-Bagumba (-Baguma)": {
+                        "code": "14205304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mambasa": {
+                        "code": "14205305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Walese-Dese": {
+                        "code": "14205306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Walese-Karo (-Koro)": {
+                        "code": "14205307",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            }
+        }
+    },
+    "Nord-Kivu": {
+        "code": "15",
+        "territoires": {
+            "Lubero": {
+                "code": "15201",
+                "secteurs": {
+                    "Bamate": {
+                        "code": "15201301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Baswaga": {
+                        "code": "15201302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Batangi": {
+                        "code": "15201303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bapere": {
+                        "code": "15201401",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Masisi": {
+                "code": "15202",
+                "secteurs": {
+                    "Bahunde": {
+                        "code": "15202301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bashali": {
+                        "code": "15202302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Osso (Banyungu)": {
+                        "code": "15202401",
+                        "type": "SECTEUR"
+                    },
+                    "Katoy": {
+                        "code": "15202402",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Nyiragongo": {
+                "code": "15203",
+                "secteurs": {
+                    "Bukumu": {
+                        "code": "15203301",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Oicha (Ex-Beni)": {
+                "code": "15204",
+                "secteurs": {
+                    "Bashu": {
+                        "code": "15204301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Watalinga": {
+                        "code": "15204302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Beni-Mbau": {
+                        "code": "15204401",
+                        "type": "SECTEUR"
+                    },
+                    "Ruwenzori": {
+                        "code": "15204402",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Rutshuru": {
+                "code": "15205",
+                "secteurs": {
+                    "Bwisha": {
+                        "code": "15205301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bwito": {
+                        "code": "15205302",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Walikale": {
+                "code": "15206",
+                "secteurs": {
+                    "Bakano": {
+                        "code": "15206401",
+                        "type": "SECTEUR"
+                    },
+                    "Wanianga": {
+                        "code": "15206402",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Sud-Kivu": {
+        "code": "16",
+        "territoires": {
+            "Fizi": {
+                "code": "16201",
+                "secteurs": {
+                    "Lulenge": {
+                        "code": "16101401",
+                        "type": "SECTEUR"
+                    },
+                    "Mutambala": {
+                        "code": "16101402",
+                        "type": "SECTEUR"
+                    },
+                    "Ngandja": {
+                        "code": "16101403",
+                        "type": "SECTEUR"
+                    },
+                    "Tanganyika": {
+                        "code": "16101404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Idjwi": {
+                "code": "16202",
+                "secteurs": {
+                    "Ntambuka": {
+                        "code": "16202301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Rubenga": {
+                        "code": "16202302",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Kabare": {
+                "code": "16203",
+                "secteurs": {
+                    "Kabare": {
+                        "code": "16202301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Nindja": {
+                        "code": "16202302",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Kalehe": {
+                "code": "16204",
+                "secteurs": {
+                    "Buhavu": {
+                        "code": "16202301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Buloho": {
+                        "code": "16202302",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Mwenga": {
+                "code": "16205",
+                "secteurs": {
+                    "Basile": {
+                        "code": "16205301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Burhinyi": {
+                        "code": "16205302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Luhwindja": {
+                        "code": "16205303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Luindi": {
+                        "code": "16205304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Wamuzimu": {
+                        "code": "16205305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Itombwe": {
+                        "code": "16205401",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Shabunda": {
+                "code": "16206",
+                "secteurs": {
+                    "Bakisi": {
+                        "code": "16206301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Wakabongo 1": {
+                        "code": "16206302",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Uvira": {
+                "code": "16207",
+                "secteurs": {
+                    "Bafulero": {
+                        "code": "16207301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bavira": {
+                        "code": "16207302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Plaine de la Ruzizi": {
+                        "code": "16207303",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Walungu": {
+                "code": "16208",
+                "secteurs": {
+                    "Kaziba": {
+                        "code": "16208301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Ngweshe": {
+                        "code": "16208302",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            }
+        }
+    },
+    "Maniema": {
+        "code": "17",
+        "territoires": {
+            "Kabambare": {
+                "code": "17201",
+                "secteurs": {
+                    "Bahemba": {
+                        "code": "17201401",
+                        "type": "SECTEUR"
+                    },
+                    "Babuyu": {
+                        "code": "17201402",
+                        "type": "SECTEUR"
+                    },
+                    "Bahombo (Bangu-Bangu)": {
+                        "code": "17201403",
+                        "type": "SECTEUR"
+                    },
+                    "Lulindi": {
+                        "code": "17201404",
+                        "type": "SECTEUR"
+                    },
+                    "Salamabila": {
+                        "code": "17201405",
+                        "type": "SECTEUR"
+                    },
+                    "Wamaza": {
+                        "code": "17201406",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kailo": {
+                "code": "17202",
+                "secteurs": {
+                    "Bangengele": {
+                        "code": "17202301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Ambwe": {
+                        "code": "17202401",
+                        "type": "SECTEUR"
+                    },
+                    "Balanga": {
+                        "code": "17202402",
+                        "type": "SECTEUR"
+                    },
+                    "Wasongola": {
+                        "code": "17202403",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kasongo": {
+                "code": "17203",
+                "secteurs": {
+                    "Bakwange": {
+                        "code": "17203301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Basonge 1": {
+                        "code": "17203302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Benya Samba (Benia-Samba)": {
+                        "code": "17203303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Nonda": {
+                        "code": "17203304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Wagenia": {
+                        "code": "17203305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Wazula": {
+                        "code": "17203306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Basonge 2 Mweho": {
+                        "code": "17203401",
+                        "type": "SECTEUR"
+                    },
+                    "Mamba Kasenga": {
+                        "code": "17203402",
+                        "type": "SECTEUR"
+                    },
+                    "Wazimba-wa-Maringa": {
+                        "code": "17203403",
+                        "type": "SECTEUR"
+                    },
+                    "Wazimba-wa-Mulu": {
+                        "code": "17203404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kibombo": {
+                "code": "17204",
+                "secteurs": {
+                    "Aluba": {
+                        "code": "17204301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Ankutshu": {
+                        "code": "17204302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bahina": {
+                        "code": "17204303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bakongola": {
+                        "code": "17204304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Matapa": {
+                        "code": "17204305",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Lubutu": {
+                "code": "17205",
+                "secteurs": {
+                    "Obokote": {
+                        "code": "17205401",
+                        "type": "SECTEUR"
+                    },
+                    "Bitule": {
+                        "code": "17205402",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Pangi": {
+                "code": "17206",
+                "secteurs": {
+                    "Babene": {
+                        "code": "17206301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Beia": {
+                        "code": "17206401",
+                        "type": "SECTEUR"
+                    },
+                    "Ikama": {
+                        "code": "17206402",
+                        "type": "SECTEUR"
+                    },
+                    "Wakabongo 2": {
+                        "code": "17206403",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Punia": {
+                "code": "17207",
+                "secteurs": {
+                    "Babira-Bakwame": {
+                        "code": "17207401",
+                        "type": "SECTEUR"
+                    },
+                    "Baleka": {
+                        "code": "17207402",
+                        "type": "SECTEUR"
+                    },
+                    "Ulindi": {
+                        "code": "17207403",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Haut-Katanga": {
+        "code": "18",
+        "territoires": {
+            "Kambove": {
+                "code": "18201",
+                "secteurs": {
+                    "Basanga": {
+                        "code": "18201301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Lufira": {
+                        "code": "18201401",
+                        "type": "SECTEUR"
+                    },
+                    "Source du Congo": {
+                        "code": "18201402",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kasenga": {
+                "code": "18202",
+                "secteurs": {
+                    "Bakunda": {
+                        "code": "18202401",
+                        "type": "SECTEUR"
+                    },
+                    "Kafira": {
+                        "code": "18202402",
+                        "type": "SECTEUR"
+                    },
+                    "Kisamamba": {
+                        "code": "18202403",
+                        "type": "SECTEUR"
+                    },
+                    "Luapula": {
+                        "code": "18202404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kipushi": {
+                "code": "18203",
+                "secteurs": {
+                    "Kaponda": {
+                        "code": "18203301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kinyama": {
+                        "code": "18203302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bukanda": {
+                        "code": "18203401",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Mitwaba": {
+                "code": "18204",
+                "secteurs": {
+                    "Kiona-Ngoie": {
+                        "code": "18204301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Balomotwa": {
+                        "code": "18204401",
+                        "type": "SECTEUR"
+                    },
+                    "Bamweshi": {
+                        "code": "18204402",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Pweto": {
+                "code": "18205",
+                "secteurs": {
+                    "Kiona-Nzini": {
+                        "code": "18205301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mwenge": {
+                        "code": "18205302",
+                        "type": "CHEFFERIE"
+                    },
+                    "M'Pweto": {
+                        "code": "18205303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Moero": {
+                        "code": "18205401",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Sakania": {
+                "code": "18206",
+                "secteurs": {
+                    "Balala": {
+                        "code": "18206401",
+                        "type": "SECTEUR"
+                    },
+                    "Balamba": {
+                        "code": "18206402",
+                        "type": "SECTEUR"
+                    },
+                    "Baushi-Mwenda": {
+                        "code": "18206403",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Haut-Lomami": {
+        "code": "19",
+        "territoires": {
+            "Bukama": {
+                "code": "19201",
+                "secteurs": {
+                    "Butumba": {
+                        "code": "19201301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kabondo-Dianda": {
+                        "code": "19201302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kibanda": {
+                        "code": "19201303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kinkondja": {
+                        "code": "19201304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kapamay": {
+                        "code": "19201401",
+                        "type": "SECTEUR"
+                    },
+                    "Lualaba": {
+                        "code": "19201402",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kabongo": {
+                "code": "19202",
+                "secteurs": {
+                    "Kabongo": {
+                        "code": "19202301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kayamba": {
+                        "code": "19202302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Nord-Baluba": {
+                        "code": "19202401",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kamina": {
+                "code": "19203",
+                "secteurs": {
+                    "Kasongo-Nyembo": {
+                        "code": "19203301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kinda": {
+                        "code": "19203401",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kaniama": {
+                "code": "19204",
+                "secteurs": {
+                    "Mutombo-Mukulu": {
+                        "code": "19204301",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Malemba-Nkulu": {
+                "code": "19205",
+                "secteurs": {
+                    "Kayumba": {
+                        "code": "19205301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mulongo": {
+                        "code": "19205302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Museka": {
+                        "code": "19205303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Nkulu": {
+                        "code": "19205304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Badia": {
+                        "code": "19205401",
+                        "type": "SECTEUR"
+                    },
+                    "Mwanza": {
+                        "code": "19205402",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Lualaba": {
+        "code": "20",
+        "territoires": {
+            "Dilolo": {
+                "code": "20201",
+                "secteurs": {
+                    "Muyeye": {
+                        "code": "20201301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mwaka Ndala": {
+                        "code": "20201302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mwatshisenge": {
+                        "code": "20201303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Ndumba": {
+                        "code": "20201304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Saluseke": {
+                        "code": "20201305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Tshisangama": {
+                        "code": "20201306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Luena": {
+                        "code": "20201401",
+                        "type": "SECTEUR"
+                    },
+                    "Lulua Lukoshi": {
+                        "code": "20201402",
+                        "type": "SECTEUR"
+                    },
+                    "Mutanda": {
+                        "code": "20201403",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kapanga": {
+                "code": "20202",
+                "secteurs": {
+                    "Mwant-Yav": {
+                        "code": "20202301",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Lubudi": {
+                "code": "20203",
+                "secteurs": {
+                    "Bayeke": {
+                        "code": "20203301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mazangule": {
+                        "code": "20203302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mulumbu": {
+                        "code": "20203303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mwana-Muadi": {
+                        "code": "20203304",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Mutshatsha": {
+                "code": "20204",
+                "secteurs": {
+                    "Lufupa": {
+                        "code": "20204401",
+                        "type": "SECTEUR"
+                    },
+                    "Luilu": {
+                        "code": "20204402",
+                        "type": "SECTEUR"
+                    },
+                    "Mukuleshi": {
+                        "code": "20204403",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Sandoa": {
+                "code": "20205",
+                "secteurs": {
+                    "Kayembe Mukulu": {
+                        "code": "20205301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Lumanga": {
+                        "code": "20205302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mbako": {
+                        "code": "20205303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Muteba": {
+                        "code": "20205304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Sakundundu": {
+                        "code": "20205305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Samutoma": {
+                        "code": "20205306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Tshibamba": {
+                        "code": "20205307",
+                        "type": "CHEFFERIE"
+                    },
+                    "Tshipao": {
+                        "code": "20205308",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            }
+        }
+    },
+    "Tanganyka": {
+        "code": "21",
+        "territoires": {
+            "Kabalo": {
+                "code": "21201",
+                "secteurs": {
+                    "Luela-Luvunguyi": {
+                        "code": "21201401",
+                        "type": "SECTEUR"
+                    },
+                    "Lukuswa": {
+                        "code": "21201402",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kalemie": {
+                "code": "21202",
+                "secteurs": {
+                    "Benze": {
+                        "code": "21202301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Rutuku": {
+                        "code": "21202302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Tumbwe": {
+                        "code": "21202303",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Kongolo": {
+                "code": "21203",
+                "secteurs": {
+                    "Bayashi": {
+                        "code": "21203301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Lubunda": {
+                        "code": "21203302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mambwe": {
+                        "code": "21203303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Muhona": {
+                        "code": "21203304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Nkuvu": {
+                        "code": "21203305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Nyembo": {
+                        "code": "21203306",
+                        "type": "CHEFFERIE"
+                    },
+                    "Yambula": {
+                        "code": "21203307",
+                        "type": "CHEFFERIE"
+                    },
+                    "Baluba": {
+                        "code": "21203401",
+                        "type": "SECTEUR"
+                    },
+                    "Basonge": {
+                        "code": "21203402",
+                        "type": "SECTEUR"
+                    },
+                    "Munono": {
+                        "code": "21203403",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Manono": {
+                "code": "21204",
+                "secteurs": {
+                    "Bakongolo": {
+                        "code": "21204301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kiluba": {
+                        "code": "21204302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kamalondo": {
+                        "code": "21204401",
+                        "type": "SECTEUR"
+                    },
+                    "Kiofwe": {
+                        "code": "21204402",
+                        "type": "SECTEUR"
+                    },
+                    "Luvua": {
+                        "code": "21204403",
+                        "type": "SECTEUR"
+                    },
+                    "Nyemba": {
+                        "code": "21204404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Moba": {
+                "code": "21205",
+                "secteurs": {
+                    "Bena-Tanga": {
+                        "code": "21205301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kansabala": {
+                        "code": "21205302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kayabala": {
+                        "code": "21205303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Manda": {
+                        "code": "21205304",
+                        "type": "CHEFFERIE"
+                    },
+                    "Nganie (Nganye)": {
+                        "code": "21205305",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bena Kamanya": {
+                        "code": "21205401",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Nyunzu": {
+                "code": "21206",
+                "secteurs": {
+                    "Nord-Lukuga": {
+                        "code": "21206401",
+                        "type": "SECTEUR"
+                    },
+                    "Sud-Lukuga": {
+                        "code": "21206402",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Lomami": {
+        "code": "22",
+        "territoires": {
+            "Kabinda": {
+                "code": "22201",
+                "secteurs": {
+                    "Baluba-Lubangule": {
+                        "code": "22201401",
+                        "type": "SECTEUR"
+                    },
+                    "Kabinda": {
+                        "code": "22201402",
+                        "type": "SECTEUR"
+                    },
+                    "Ludimbi-Lukula": {
+                        "code": "22201403",
+                        "type": "SECTEUR"
+                    },
+                    "Lufubu-Lomami": {
+                        "code": "22201404",
+                        "type": "SECTEUR"
+                    },
+                    "Lukashi-Lualu": {
+                        "code": "22201405",
+                        "type": "SECTEUR"
+                    },
+                    "Vunayi": {
+                        "code": "22201406",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kamiji": {
+                "code": "22202",
+                "secteurs": {
+                    "Kamiji": {
+                        "code": "22202401",
+                        "type": "SECTEUR"
+                    },
+                    "Luekeshi": {
+                        "code": "22202402",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Lubau": {
+                "code": "22203",
+                "secteurs": {
+                    "Bekalebwe": {
+                        "code": "22203401",
+                        "type": "SECTEUR"
+                    },
+                    "Kisengwa": {
+                        "code": "22203402",
+                        "type": "SECTEUR"
+                    },
+                    "Lubao": {
+                        "code": "22203403",
+                        "type": "SECTEUR"
+                    },
+                    "Tshofa": {
+                        "code": "22203404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Luilu": {
+                "code": "22204",
+                "secteurs": {
+                    "Kanutshina (In-Kan)": {
+                        "code": "22204301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Katshisungu (Kanyoka de…)": {
+                        "code": "22204302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Mulundu (Kanyoka de Mulundu )": {
+                        "code": "22204303",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kanda-Kanda": {
+                        "code": "22204401",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Ngandajika": {
+                "code": "22205",
+                "secteurs": {
+                    "Bakwa-Mulumba": {
+                        "code": "22205301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bena-Kalambayi (Kalambayi)": {
+                        "code": "22205302",
+                        "type": "CHEFFERIE"
+                    },
+                    "Baluba-Shankadi": {
+                        "code": "22205401",
+                        "type": "SECTEUR"
+                    },
+                    "Ngandajika": {
+                        "code": "22205402",
+                        "type": "SECTEUR"
+                    },
+                    "Tshiyamba (Bena-Tshiyamba)": {
+                        "code": "22205403",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Sankuru": {
+        "code": "23",
+        "territoires": {
+            "Katako-Kombe": {
+                "code": "23201",
+                "secteurs": {
+                    "Basambala": {
+                        "code": "23201401",
+                        "type": "SECTEUR"
+                    },
+                    "Batetela arabisés (Lomami)": {
+                        "code": "23201402",
+                        "type": "SECTEUR"
+                    },
+                    "Djalo": {
+                        "code": "23201403",
+                        "type": "SECTEUR"
+                    },
+                    "Lonya": {
+                        "code": "23201404",
+                        "type": "SECTEUR"
+                    },
+                    "Lukumbe": {
+                        "code": "23201405",
+                        "type": "SECTEUR"
+                    },
+                    "Ngandu Katako (Est/Ouest)": {
+                        "code": "23201406",
+                        "type": "SECTEUR"
+                    },
+                    "Ukulungu": {
+                        "code": "23201407",
+                        "type": "SECTEUR"
+                    },
+                    "Watambulu-Nord": {
+                        "code": "23201408",
+                        "type": "SECTEUR"
+                    },
+                    "Watambulu-Sud": {
+                        "code": "23201409",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kole": {
+                "code": "23202",
+                "secteurs": {
+                    "Atshuru": {
+                        "code": "23202401",
+                        "type": "SECTEUR"
+                    },
+                    "Bankutsu-Dibele": {
+                        "code": "23202402",
+                        "type": "SECTEUR"
+                    },
+                    "Bankutsu-Lukenie": {
+                        "code": "23202403",
+                        "type": "SECTEUR"
+                    },
+                    "Basho": {
+                        "code": "23202404",
+                        "type": "SECTEUR"
+                    },
+                    "Batetela-Dibele": {
+                        "code": "23202405",
+                        "type": "SECTEUR"
+                    },
+                    "Ohindo": {
+                        "code": "23202406",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Lodja": {
+                "code": "23203",
+                "secteurs": {
+                    "Ahamba-Mange": {
+                        "code": "23203401",
+                        "type": "SECTEUR"
+                    },
+                    "Batetela-Lukenie": {
+                        "code": "23203402",
+                        "type": "SECTEUR"
+                    },
+                    "Kondo-Tshumbe": {
+                        "code": "23203403",
+                        "type": "SECTEUR"
+                    },
+                    "Lukfungu": {
+                        "code": "23203404",
+                        "type": "SECTEUR"
+                    },
+                    "Lutshimba-Eduo-Piete-Kolombe": {
+                        "code": "23203405",
+                        "type": "SECTEUR"
+                    },
+                    "Nambelo-Lohembe (Nambelu-\nLuhembe)": {
+                        "code": "23203406",
+                        "type": "SECTEUR"
+                    },
+                    "Olemba": {
+                        "code": "23203407",
+                        "type": "SECTEUR"
+                    },
+                    "Vunge (Vungi)": {
+                        "code": "23203408",
+                        "type": "SECTEUR"
+                    },
+                    "Watambulu": {
+                        "code": "23203409",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Lomela": {
+                "code": "23204",
+                "secteurs": {
+                    "Djonga": {
+                        "code": "23204301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Bahamba 1": {
+                        "code": "23204401",
+                        "type": "SECTEUR"
+                    },
+                    "Bahamba 2": {
+                        "code": "23204402",
+                        "type": "SECTEUR"
+                    },
+                    "Bakela": {
+                        "code": "23204403",
+                        "type": "SECTEUR"
+                    },
+                    "Batetela-Lomela": {
+                        "code": "23204404",
+                        "type": "SECTEUR"
+                    },
+                    "Okutu": {
+                        "code": "23204405",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Lubefu": {
+                "code": "23205",
+                "secteurs": {
+                    "Basonge": {
+                        "code": "23205401",
+                        "type": "SECTEUR"
+                    },
+                    "Mondja-Ngandu": {
+                        "code": "23205402",
+                        "type": "SECTEUR"
+                    },
+                    "Ndjovu": {
+                        "code": "23205403",
+                        "type": "SECTEUR"
+                    },
+                    "Ngandu-Wuma": {
+                        "code": "23205404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Lusambo": {
+                "code": "23206",
+                "secteurs": {
+                    "Basonge": {
+                        "code": "23206401",
+                        "type": "SECTEUR"
+                    },
+                    "Batetela": {
+                        "code": "23206402",
+                        "type": "SECTEUR"
+                    },
+                    "Sec. de Entre Kunduye Mal (E.K.M.)": {
+                        "code": "23206403",
+                        "type": "SECTEUR"
+                    },
+                    "Sec. de Entre Lubi Kunduye (E.L.K.)": {
+                        "code": "23206404",
+                        "type": "SECTEUR"
+                    },
+                    "Kashindi": {
+                        "code": "23206405",
+                        "type": "SECTEUR"
+                    },
+                    "Lubi": {
+                        "code": "23206406",
+                        "type": "SECTEUR"
+                    },
+                    "MPania-Mutombo": {
+                        "code": "23206407",
+                        "type": "SECTEUR"
+                    },
+                    "Sankuru": {
+                        "code": "23206408",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Kasai Oriental": {
+        "code": "24",
+        "territoires": {
+            "Kabeya-Kamwanga": {
+                "code": "24201",
+                "secteurs": {
+                    "Kalela": {
+                        "code": "24201401",
+                        "type": "SECTEUR"
+                    },
+                    "Lac Munkamba": {
+                        "code": "24201402",
+                        "type": "SECTEUR"
+                    },
+                    "Mpemba": {
+                        "code": "24201403",
+                        "type": "SECTEUR"
+                    },
+                    "Ndomba": {
+                        "code": "24201404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Katanda": {
+                "code": "24202",
+                "secteurs": {
+                    "Baluba-Lubilandji": {
+                        "code": "24202401",
+                        "type": "SECTEUR"
+                    },
+                    "Bena-Tshitolo": {
+                        "code": "24202402",
+                        "type": "SECTEUR"
+                    },
+                    "Mutuayi": {
+                        "code": "24202403",
+                        "type": "SECTEUR"
+                    },
+                    "Nsangu": {
+                        "code": "24202404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Lupatapata": {
+                "code": "24203",
+                "secteurs": {
+                    "Kabala": {
+                        "code": "24203401",
+                        "type": "SECTEUR"
+                    },
+                    "Mudiba": {
+                        "code": "24203402",
+                        "type": "SECTEUR"
+                    },
+                    "Mukumbi": {
+                        "code": "24203403",
+                        "type": "SECTEUR"
+                    },
+                    "Mulenda": {
+                        "code": "24203404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Miabi": {
+                "code": "24204",
+                "secteurs": {
+                    "Kakangayi": {
+                        "code": "24204401",
+                        "type": "SECTEUR"
+                    },
+                    "Movo-Nkatshia": {
+                        "code": "24204402",
+                        "type": "SECTEUR"
+                    },
+                    "Tshijiba": {
+                        "code": "24204403",
+                        "type": "SECTEUR"
+                    },
+                    "Tshilundu": {
+                        "code": "24204404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Tshilenge": {
+                "code": "24205",
+                "secteurs": {
+                    "Kampatshi": {
+                        "code": "24205301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Kalelu": {
+                        "code": "24205401",
+                        "type": "SECTEUR"
+                    },
+                    "Kalonji-Sud": {
+                        "code": "24205402",
+                        "type": "SECTEUR"
+                    },
+                    "Lukalaba": {
+                        "code": "24205403",
+                        "type": "SECTEUR"
+                    },
+                    "Tshipuka (Tshouka)": {
+                        "code": "24205404",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    },
+    "Kasai": {
+        "code": "25",
+        "territoires": {
+            "Dekese": {
+                "code": "25201",
+                "secteurs": {
+                    "Dekese-Ikolombe-Isolu": {
+                        "code": "25201301",
+                        "type": "CHEFFERIE"
+                    },
+                    "Yaelima": {
+                        "code": "25201302",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            },
+            "Ilebo": {
+                "code": "25203",
+                "secteurs": {
+                    "Bakwa-Nyambi": {
+                        "code": "25203401",
+                        "type": "SECTEUR"
+                    },
+                    "Bapende": {
+                        "code": "25203402",
+                        "type": "SECTEUR"
+                    },
+                    "Kasadi-Sadi": {
+                        "code": "25203403",
+                        "type": "SECTEUR"
+                    },
+                    "Kasai-Kabambaie": {
+                        "code": "25203404",
+                        "type": "SECTEUR"
+                    },
+                    "Kasai-Longatshimo": {
+                        "code": "25203405",
+                        "type": "SECTEUR"
+                    },
+                    "Kasai-Lunyeka": {
+                        "code": "25203406",
+                        "type": "SECTEUR"
+                    },
+                    "Lovua-Longatshimo": {
+                        "code": "25203407",
+                        "type": "SECTEUR"
+                    },
+                    "Lovua-Lushiku": {
+                        "code": "25203408",
+                        "type": "SECTEUR"
+                    },
+                    "Tshikapa": {
+                        "code": "25203409",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Luebo": {
+                "code": "25204",
+                "secteurs": {
+                    "Luebo-Kabambaie": {
+                        "code": "25204401",
+                        "type": "SECTEUR"
+                    },
+                    "Luebo-Lulengele": {
+                        "code": "25204402",
+                        "type": "SECTEUR"
+                    },
+                    "Luebo-Wedi": {
+                        "code": "25204403",
+                        "type": "SECTEUR"
+                    },
+                    "NDjoko-Punda": {
+                        "code": "25204404",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Mweka": {
+                "code": "25205",
+                "secteurs": {
+                    "Bakuba": {
+                        "code": "25205301",
+                        "type": "CHEFFERIE"
+                    }
+                }
+            }
+        }
+    },
+    "Kasai Central": {
+        "code": "26",
+        "territoires": {
+            "Demba": {
+                "code": "26201",
+                "secteurs": {
+                    "Bena Mamba": {
+                        "code": "26201401",
+                        "type": "SECTEUR"
+                    },
+                    "Diofwa": {
+                        "code": "26201402",
+                        "type": "SECTEUR"
+                    },
+                    "Lombelo": {
+                        "code": "26201403",
+                        "type": "SECTEUR"
+                    },
+                    "Lusonge": {
+                        "code": "26201404",
+                        "type": "SECTEUR"
+                    },
+                    "Mwanza-Ngoma": {
+                        "code": "26201405",
+                        "type": "SECTEUR"
+                    },
+                    "Tshibote": {
+                        "code": "26201406",
+                        "type": "SECTEUR"
+                    },
+                    "Tshibungu": {
+                        "code": "26201407",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Dibaya": {
+                "code": "26202",
+                "secteurs": {
+                    "Dibanda": {
+                        "code": "26202401",
+                        "type": "SECTEUR"
+                    },
+                    "Dibataie": {
+                        "code": "26202402",
+                        "type": "SECTEUR"
+                    },
+                    "Kamwandu": {
+                        "code": "26202403",
+                        "type": "SECTEUR"
+                    },
+                    "Kasangidi": {
+                        "code": "26202404",
+                        "type": "SECTEUR"
+                    },
+                    "Tshishilu": {
+                        "code": "26202405",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Dimbelenge": {
+                "code": "26203",
+                "secteurs": {
+                    "Kunduyi": {
+                        "code": "26203401",
+                        "type": "SECTEUR"
+                    },
+                    "Lubi": {
+                        "code": "26203402",
+                        "type": "SECTEUR"
+                    },
+                    "Lubudi": {
+                        "code": "26203403",
+                        "type": "SECTEUR"
+                    },
+                    "Lukibu": {
+                        "code": "26203404",
+                        "type": "SECTEUR"
+                    },
+                    "Mashala": {
+                        "code": "26203405",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Kazumba": {
+                "code": "26204",
+                "secteurs": {
+                    "Bashi-Mboie": {
+                        "code": "26204401",
+                        "type": "SECTEUR"
+                    },
+                    "Bena-Ngoshi (Mutefu)": {
+                        "code": "26204402",
+                        "type": "SECTEUR"
+                    },
+                    "Bulungu": {
+                        "code": "26204403",
+                        "type": "SECTEUR"
+                    },
+                    "Kafuba": {
+                        "code": "26204404",
+                        "type": "SECTEUR"
+                    },
+                    "Kavula": {
+                        "code": "26204405",
+                        "type": "SECTEUR"
+                    },
+                    "Matamba": {
+                        "code": "26204406",
+                        "type": "SECTEUR"
+                    },
+                    "Miao": {
+                        "code": "26204407",
+                        "type": "SECTEUR"
+                    },
+                    "Muswaswa": {
+                        "code": "26204408",
+                        "type": "SECTEUR"
+                    },
+                    "Tshitadi": {
+                        "code": "26204409",
+                        "type": "SECTEUR"
+                    }
+                }
+            },
+            "Luiza": {
+                "code": "26205",
+                "secteurs": {
+                    "Bambaie": {
+                        "code": "26205401",
+                        "type": "SECTEUR"
+                    },
+                    "Kabelekese": {
+                        "code": "26205402",
+                        "type": "SECTEUR"
+                    },
+                    "Kalunga": {
+                        "code": "26205403",
+                        "type": "SECTEUR"
+                    },
+                    "Loatshi": {
+                        "code": "26205404",
+                        "type": "SECTEUR"
+                    },
+                    "Lueta": {
+                        "code": "26205405",
+                        "type": "SECTEUR"
+                    },
+                    "Lusanza": {
+                        "code": "26205406",
+                        "type": "SECTEUR"
+                    },
+                    "Mbushimaie (Bushimaie)": {
+                        "code": "26205407",
+                        "type": "SECTEUR"
+                    }
+                }
+            }
+        }
+    }
+}

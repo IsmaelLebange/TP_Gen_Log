@@ -50,7 +50,7 @@ class CitoyenProfileSerializer(serializers.ModelSerializer):
         model = User
         fields = [
             'id', 'nin', 'email', 'nom', 'postnom', 'prenom', 'full_name', 
-            'age', 'province_origine', 'territoire_origine', 'secteur_origine','nom_du_pere', 'nom_de_la_mere', 'date_naissance','telephone', 'adresse_province', 'adresse_commune', 'adresse_quartier', 'adresse_avenue', 'adresse_numero'
+            'age', 'province_origine', 'territoire_origine', 'secteur_origine','nom_du_pere', 'nom_de_la_mere', 'date_naissance','lieu_naissance','telephone', 'adresse_province', 'adresse_commune', 'adresse_quartier', 'adresse_avenue', 'adresse_numero'
         ]
 
     def get_full_name(self, obj):

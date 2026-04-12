@@ -33,10 +33,20 @@ class AuditService:
     def get_recent(self, hours: int = 24) -> List[Dict]:
         logs = self.repo.get_recent_logs(hours)
         return [self._serialize(log) for log in logs]
+    def get_by_province(self, province: str, limit: int = 100) -> List[Dict]:
+        logs=self.repo.get_logs_by_province(province,limit)
+        return [self._serialize(log) for log in logs]
+    def get_by_territoire(self, territoire: str, limit: int = 100) -> List[Dict]:
+        logs=self.repo.get_logs_by_territoire(territoire,limit)
+        return [self._serialize(log) for log in logs]
+    def get_by_secteur(self, secteur: str, limit: int = 100) -> List[Dict]:
+        logs=self.repo.get_logs_by_secteur(secteur,limit)
+        return [self._serialize(log) for log in logs]
 
     def search(self, query: str, limit: int = 100) -> List[Dict]:
         logs = self.repo.search_logs(query, limit)
         return [self._serialize(log) for log in logs]
+    
 
     def _serialize(self, log) -> Dict:
         return {

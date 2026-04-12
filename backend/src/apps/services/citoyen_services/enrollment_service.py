@@ -15,7 +15,7 @@ class EnrollmentService:
     Service d'enrôlement d'un nouveau citoyen respectant le DDD.
     """
 
-    def __init__(self, citoyen_repo):
+    def __init__(self, citoyen_repo: CitoyenRepositoryInterface):
         self.citoyen_repo = citoyen_repo
 
     def enroler(self, citoyen: Citoyen)-> Citoyen:
@@ -50,30 +50,51 @@ class EnrollmentService:
             # La transaction s'annule (Rollback) automatiquement ici
             raise e
     def get_my_qr_code(self, user_id: int) -> dict:
-        """
-        Récupère les infos et génère le QR Code en Base64.
-        """
-        # CORRECTION : On utilise self.citoyen_repo (défini dans le __init__)
         user = self.citoyen_repo.get_by_id(user_id)
-        
         if not user:
-            logger.error(f"Tentative de génération QR pour user_id {user_id} inexistant")
             raise ValueError("Utilisateur non trouvé")
-            
-        # Construction de la data (NIN + Infos de base)
-        # On utilise getattr pour le postnom au cas où il est optionnel
+
+        # Récupérer la photo biométrique la plus récente (type 'face')
+        photo_url = None
+        biometric = user.biometric_data.filter(biometric_type='face', is_active=True).first()
+        if biometric and biometric.image:
+            photo_url = biometric.image.url  # ex: /media/biometrics/2026/04/10/photo.jpg
+
         postnom = getattr(user, 'postnom', '')
         data = f"NIN:{user.nin}|NOM:{user.nom}|PRENOM:{user.prenom}|POSTNOM:{postnom}"
-        
-        # Appel à l'utilitaire
         qr_base64 = QRCodeService.generate_base64(data)
-        
+
+        # ... récupération adresse, origine, parents (comme avant)
+        adresse_str = ""
+        if hasattr(user, 'adresse_actuelle') and user.adresse_actuelle:
+            adr = user.adresse_actuelle
+            adresse_str = f"{adr.avenue} {adr.numero}, {adr.quartier}, {adr.commune}"
+            if adr.province:
+                adresse_str += f", {adr.province.nom}"
+
+        origine_str = ""
+        if user.lieu_origine:
+            secteur = user.lieu_origine
+            territoire = secteur.territoire
+            province = territoire.province
+            origine_str = f"{secteur.nom} / {territoire.nom} / {province.nom}"
+
         return {
             'nin': user.nin,
             'qr_code': qr_base64,
-            'owner': f"{user.prenom} {user.nom}"
-        }
-    
+            'owner': f"{user.prenom} {user.nom}",
+            'nom': user.nom,
+            'prenom': user.prenom,
+            'postnom': postnom,
+            'sexe': user.sexe if hasattr(user, 'sexe') else None,
+            'date_naissance': user.date_naissance.isoformat() if user.date_naissance else None,
+            'lieu_naissance': user.lieu_naissance if hasattr(user, 'lieu_naissance') else None,
+            'lieu_origine': origine_str,
+            'adresse': adresse_str,
+            'nom_pere': user.nom_du_pere,
+            'nom_mere': user.nom_de_la_mere,
+            'photo_url': photo_url,   # <-- ajout de la photo
+        }  
     def complete_biometric_if_done(self, user_id: int) -> None:
         from src.apps.api.providers.citoyen_provider import CitoyenProvider
         biometric_service = CitoyenProvider.get_biometric_service()

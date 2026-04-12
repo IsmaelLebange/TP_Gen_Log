@@ -1,14 +1,14 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from src.apps.api.providers.admin_provider import AdminProvider
 from src.apps.api.serializers.admin_serializers.audit_serializers import (
     AuditLogSerializer, AuditFilterSerializer
 )
 
 class AuditController(APIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     @property
     def audit_service(self):
@@ -18,7 +18,8 @@ class AuditController(APIView):
         # Vérifier les droits
         if request.user.role not in ['ADMIN', 'AGENT']:
             return Response({'error': 'Permission refusée'}, status=403)
-
+        
+        
         serializer = AuditFilterSerializer(data=request.query_params)
         if not serializer.is_valid():
             return Response(serializer.errors, status=400)
@@ -35,6 +36,12 @@ class AuditController(APIView):
             logs = self.audit_service.get_by_date_range(data['start_date'], data['end_date'])
         elif data.get('hours'):
             logs = self.audit_service.get_recent(data['hours'])
+        elif data.get('province'):
+            logs = self.audit_service.get_by_province(data['province'], data.get('limit', 100))
+        elif data.get('territoire'):
+            logs = self.audit_service.get_by_territoire(data['territoire'], data.get('limit', 100))
+        elif data.get('secteur'):
+            logs = self.audit_service.get_by_secteur(data['secteur'], data.get('limit', 100))
         else:
             logs = self.audit_service.get_recent(24)
 

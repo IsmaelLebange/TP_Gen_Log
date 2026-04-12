@@ -34,22 +34,40 @@ class BiometricRepository(BiometricRepositoryInterface):
         return [self._to_entity(inst) for inst in instances]
 
     def save(self, entity: BiometricEntity) -> BiometricEntity:
-        # Convertir l'entité en dictionnaire pour mise à jour ou création
+        from django.core.files.base import ContentFile
+        import base64
+        import uuid
+
         data = {
             'citoyen_id': entity.citoyen_id,
             'biometric_type': entity.biometric_type.value,
             'template': pickle.dumps(entity.template.features),
-            'image': entity.image_path,
             'is_active': entity.is_active,
         }
+
+        # Gestion de l'image à partir du base64
+        if entity.image_base64:
+            # Séparer le préfixe (data:image/jpeg;base64,)
+            if ',' in entity.image_base64:
+                format, imgstr = entity.image_base64.split(';base64,')
+                ext = format.split('/')[-1]  # jpeg, png, etc.
+            else:
+                imgstr = entity.image_base64
+                ext = 'jpg'
+            img_data = base64.b64decode(imgstr)
+            filename = f"face_{entity.citoyen_id}_{uuid.uuid4().hex}.{ext}"
+            data['image'] = ContentFile(img_data, name=filename)
+
         if entity.id:
-            # Mise à jour
             BiometricData.objects.filter(id=entity.id).update(**data)
             instance = BiometricData.objects.get(id=entity.id)
         else:
-            # Création
             instance = BiometricData.objects.create(**data)
-        return self._to_entity(instance)
+
+        # Mettre à jour l'entité avec l'ID et le chemin de l'image
+        entity.id = instance.id
+        entity.image_path = instance.image.name if instance.image else None
+        return entity
 
     def delete(self, entity: BiometricEntity) -> None:
         # Soft delete

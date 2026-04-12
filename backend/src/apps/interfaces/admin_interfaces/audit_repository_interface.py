@@ -33,7 +33,15 @@ class AuditRepositoryInterface(ABC):
     def get_recent_logs(self, hours: int = 24) -> List:
         """Récupère les logs récents"""
         pass
-
+    def get_by_province(self, province: str, limit: int = 100) -> List:
+        """Récupère les logs pour une province"""
+        pass
+    def get_by_territoire(self, territoire: str, limit: int = 100) -> List:
+        """Récupère les logs pour un territoire"""
+        pass
+    def get_by_secteur(self, secteur: str, limit: int = 100) -> List:
+        """Récupère les logs pour un secteur"""
+        pass
     @abstractmethod
     def search_logs(self, query: str, limit: int = 100) -> List:
         """Recherche dans les logs"""

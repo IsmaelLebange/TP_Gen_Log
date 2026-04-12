@@ -34,6 +34,7 @@ class Citoyen:
     postnom: str
     prenom: str
     date_naissance: date
+    lieu_naissance: str
     sexe: str 
     lieu_origine_code: str 
     email: Email
@@ -85,6 +86,7 @@ class Citoyen:
             postnom=data.get('postnom', '').upper(),
             prenom=data.get('prenom', '').capitalize(),
             date_naissance=d_naiss,
+            lieu_naissance=data.get('lieu_naissance', '').upper(),
             sexe=data.get('sexe'),
             lieu_origine_code=code_secteur, # Utilise le code technique récupéré
             email=Email(data.get('email')),

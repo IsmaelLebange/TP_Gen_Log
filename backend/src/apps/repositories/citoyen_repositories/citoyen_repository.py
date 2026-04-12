@@ -2,11 +2,12 @@ import logging
 from typing import Optional, List, TYPE_CHECKING
 from datetime import date
 from django.contrib.auth import get_user_model
+from src.domain.entities.biometric import BiometricEntity
 from src.apps.interfaces.citoyen_interfaces.citoyen_repository_interface import CitoyenRepositoryInterface
 from src.domain.entities.citoyen import Citoyen, EnrollmentData
 from src.domain.value_objects.nin import NIN
 from src.domain.value_objects.email import Email
-from src.models import SecteurChefferie
+from src.models import BiometricData, SecteurChefferie
 
 
 logger = logging.getLogger(__name__)    
@@ -25,7 +26,46 @@ class DjangoCitoyenRepository(CitoyenRepositoryInterface):
             return User.objects.get(id=citoyen_id, is_active=True)
         except User.DoesNotExist:
             return None
+    # src/apps/repositories/citoyen_repositories/citoyen_repository.py
 
+    def get_entity_by_id(self, citoyen_id: int) -> Optional[Citoyen]:
+        try:
+            user = User.objects.get(id=citoyen_id, is_active=True)
+        except User.DoesNotExist:
+            return None
+
+        # Récupérer l'adresse
+        adresse = getattr(user, 'adresse_actuelle', None)
+        adresse_province = adresse.province.nom if adresse and adresse.province else None
+        adresse_commune = adresse.commune if adresse else None
+        adresse_quartier = adresse.quartier if adresse else None
+        adresse_avenue = adresse.avenue if adresse else None
+        adresse_numero = adresse.numero if adresse else None
+
+        lieu_origine_code = user.lieu_origine.code if user.lieu_origine else None
+
+        return Citoyen(
+            id=user.id,
+            email=Email(user.email),
+            nin=NIN(user.nin),
+            nom=user.nom,
+            prenom=user.prenom,
+            postnom=user.postnom,
+            sexe=user.sexe,
+            date_naissance=user.date_naissance,
+            lieu_naissance=user.lieu_naissance,
+            telephone=user.telephone,
+            nom_du_pere=user.nom_du_pere,
+            nom_de_la_mere=user.nom_de_la_mere,
+            mot_de_passe=user.password,  # ← Ajout obligatoire
+            lieu_origine_code=lieu_origine_code,
+            adresse_province=adresse_province,
+            adresse_commune=adresse_commune,
+            adresse_quartier=adresse_quartier,
+            adresse_avenue=adresse_avenue,
+            adresse_numero=adresse_numero,
+        )
+    
     def get_by_email(self, email: Email) -> Optional["AbstractBaseUser"]:
         """Recherche par Value Object Email"""
         try:
@@ -44,42 +84,34 @@ class DjangoCitoyenRepository(CitoyenRepositoryInterface):
 
     def trouver_code_secteur(self, nom_secteur: str, nom_territoire: str) -> str:
         if not nom_secteur or not nom_territoire:
-            return "0000000" # Valeur par défaut pour éviter de bloquer le TP
+            return "0000000"
 
-        nom_s = str(nom_secteur).strip()
-        nom_t = str(nom_territoire).strip()
-
-        """
         try:
-            # Recherche souple
+            # Recherche précise en ignorant la casse
             secteur = SecteurChefferie.objects.filter(
-                nom__icontains=nom_s,
-                territoire__nom__icontains=nom_t
+                nom__iexact=nom_secteur.strip(),
+                territoire__nom__iexact=nom_territoire.strip()
             ).first()
 
             if secteur:
-                print(f"✅ Secteur trouvé : {secteur.nom} (Code: {secteur.code})")
-                print(f"   - Territoire associé : {secteur.territoire.nom}")
                 return secteur.code
             
-            # SI PAS TROUVÉ : Au lieu de crash, on log et on renvoie un code générique
-            # pour que tu puisses avancer ton projet de Master
-            logger.warning(f"Localisation non trouvée en base : {nom_s} / {nom_t}")
-            return "9999999" 
-
+            logger.warning(f"⚠️ Localisation introuvable: {nom_secteur} / {nom_territoire}")
+            return "0000000" 
         except Exception as e:
-            # Log l'erreur réelle dans ton terminal VS Code (important !)
-            print(f"DEBUG ERROR GEO: {str(e)}") 
+            print(f"❌ Erreur Géo: {e}") 
             return "0000000"
-        """ 
-        return "0000000" # Valeur par défaut pour éviter de bloquer le TP
+
     def save(self, citoyen_entity: Citoyen) -> Citoyen:
         from src.models import User, Adresse, Province, SecteurChefferie
 
-        # Récupérer le secteur d'origine (pour lieu_origine)
+        # Récupération de l'objet Secteur pour la FK
         secteur_obj = None
         if citoyen_entity.secteur_origine:
-            secteur_obj = SecteurChefferie.objects.filter(nom__iexact=citoyen_entity.secteur_origine).first()
+            secteur_obj = SecteurChefferie.objects.filter(
+                nom__iexact=citoyen_entity.secteur_origine,
+                territoire__nom__iexact=citoyen_entity.territoire_origine
+            ).first()
 
         user, created = User.objects.update_or_create(
             email=str(citoyen_entity.email),
@@ -88,12 +120,15 @@ class DjangoCitoyenRepository(CitoyenRepositoryInterface):
                 'prenom': citoyen_entity.prenom,
                 'nom': citoyen_entity.nom,
                 'postnom': citoyen_entity.postnom,
+                'sexe': citoyen_entity.sexe,
                 'date_naissance': citoyen_entity.date_naissance,
+                'lieu_naissance': citoyen_entity.lieu_naissance,
                 'lieu_origine': secteur_obj,
                 'nom_du_pere': citoyen_entity.nom_du_pere,
                 'nom_de_la_mere': citoyen_entity.nom_de_la_mere,
                 'telephone': citoyen_entity.telephone or '',
                 'is_active': True,
+                'biometric_completed': False # Sera mis à True au final
             }
         )
 
@@ -144,23 +179,10 @@ class DjangoCitoyenRepository(CitoyenRepositoryInterface):
             date_naissance__lte=date_naissance_max
         ))
     
-    def save_new_citoyen(self, data: EnrollmentData) -> "AbstractBaseUser":
-        """Ancienne méthode si tu utilises encore la Dataclass"""
-        return User.objects.create_user(
-            email=data.email,
-            mot_de_passe=data.mot_de_passe,
-            nom=data.nom,
-            postnom=data.postnom,
-            prenom=data.prenom,
-            nin=data.nin,
-            date_naissance=data.date_naissance,
-            telephone=data.telephone,
-            adresse=data.adresse,
-            province_origine=data.province_origine,
-            territoire_origine=data.territoire_origine,
-            secteur_origine=data.secteur_origine
-        )
+    
         
     def update_biometric_complete(self, user_id: int, completed: bool) -> None:
         from src.models import User
         User.objects.filter(id=user_id).update(biometric_completed=completed)
+        
+    

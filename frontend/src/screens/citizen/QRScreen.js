@@ -14,14 +14,21 @@ export default function QRScreen({ navigation }) {
   const [qrData, setQrData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(null);
 
   const loadQR = async () => {
     try {
       const data = await fetchQRCode();
       setQrData(data);
+      setErrorMessage(null);
     } catch (err) {
-      Alert.alert('Erreur', 'Impossible de charger la carte d’identité');
       console.log(err);
+      // Gestion des erreurs renvoyées par le backend
+      if (err.error) {
+        setErrorMessage(err.error);
+      } else {
+        setErrorMessage('Impossible de charger la carte d’identité');
+      }
     } finally {
       setLoading(false);
       setRefreshing(false);
@@ -29,6 +36,11 @@ export default function QRScreen({ navigation }) {
   };
 
   useFocusEffect(useCallback(() => { loadQR(); }, []));
+
+  const onRefresh = () => {
+    setRefreshing(true);
+    loadQR();
+  };
 
   const generatePDF = async () => {
     if (!qrData) return;
@@ -169,8 +181,31 @@ export default function QRScreen({ navigation }) {
     }
   };
 
-  if (loading) return <ActivityIndicator size="large" color={COLORS.primary} style={{ flex: 1 }} />;
+  if (loading) {
+    return <ActivityIndicator size="large" color={COLORS.primary} style={{ flex: 1 }} />;
+  }
 
+  // Affichage du message d'attente si erreur (non validé ou biométrie manquante)
+  if (errorMessage) {
+    return (
+      <View style={{ flex: 1, backgroundColor: '#E1E8EE' }}>
+        <Header title="Carte d'Identité Nationale" showBack onBack={() => navigation.goBack()} />
+        <View style={styles.messageContainer}>
+          <Text style={styles.messageIcon}>⏳</Text>
+          <Text style={styles.messageTitle}>En attente de validation</Text>
+          <Text style={styles.messageText}>
+            {errorMessage === 'Biométrie non complétée' 
+              ? 'Votre enrôlement biométrique n’est pas encore terminé. Veuillez compléter la capture de votre visage.'
+              : 'Votre compte n’a pas encore été validé par l’administration. Une fois vos documents vérifiés et votre identité confirmée, vous pourrez générer votre carte d’identité nationale.'}
+          </Text>
+          <Button title="Réessayer" onPress={loadQR} style={styles.retryButton} />
+        </View>
+        <Footer />
+      </View>
+    );
+  }
+
+  // Données disponibles → afficher la carte
   const {
     nin,
     qr_code,
@@ -296,4 +331,15 @@ const styles = StyleSheet.create({
   dateValue: { fontSize: 7, fontWeight: 'bold' },
   sigText: { fontSize: 5, fontStyle: 'italic', textAlign: 'center', marginTop: 5 },
   btn: { width: '100%', marginTop: 20 },
+  messageContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+    marginTop: 50,
+  },
+  messageIcon: { fontSize: 64, marginBottom: 20 },
+  messageTitle: { fontSize: 20, fontWeight: 'bold', color: COLORS.primary, marginBottom: 10 },
+  messageText: { fontSize: 16, textAlign: 'center', color: '#555', marginBottom: 30 },
+  retryButton: { width: '80%' },
 });

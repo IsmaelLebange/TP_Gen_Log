@@ -280,3 +280,10 @@ class BiometricService:
         else:
             # pour face/iris, c'est une liste plate (histogramme)
             return np.array(features)
+        
+    def add_photo(self, citoyen_id: int, image_base64: str) -> Dict[str, Any]:
+        # Désactiver toute photo active existante du même type
+        existing = self.repository.get_active_by_citoyen(citoyen_id)
+        if existing and existing.biometric_type.value == 'face':
+            self.repository.delete(existing)  # soft delete : is_active=False
+        return self.enroll(citoyen_id, 'face', image_base64)

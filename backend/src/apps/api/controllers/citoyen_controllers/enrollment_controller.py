@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import AllowAny, IsAuthenticated
 
+from src.apps.api.providers.main_provider import MainProvider
 from src.domain.value_objects.biometrics import BiometricType
 from src.apps.api.providers.citoyen_provider import CitoyenProvider
 from src.apps.api.serializers.citoyen_serializers.enrollment_serializer import EnrollmentCompleteSerializer, EnrollmentSerializer
@@ -97,7 +98,6 @@ class EnrollmentCompleteController(APIView):
                 # D. Enrôlement Biométrique IMMÉDIAT
                 # On utilise l'ID que Django vient de générer
                 service_bio = CitoyenProvider.get_biometric_service()
-                print(f"✅biometric type serializerb: {serializer.validated_data.get('biometric_type')}")
                 res_bio = service_bio.enroll(
                     citoyen_id=citoyen_sauvegarde.id,
                     biometric_type=BiometricType(serializer.validated_data.get('biometric_type')),
@@ -115,8 +115,25 @@ class EnrollmentCompleteController(APIView):
                 service_civil.update_biometric_complete(citoyen_sauvegarde.id, True)
                 print(f"✅ Enrôlement complet pour le citoyen ID: {citoyen_sauvegarde.id}")
                 # On retourne le profil complet avec le NIN
-                return Response(citoyen_sauvegarde.to_dict(), status=status.HTTP_201_CREATED)
-            # --- FIN DE LA TRANSACTION ---
+                service_civil.update_biometric_complete(citoyen_sauvegarde.id, True) # Marque le citoyen comme ayant complété la biométrie
+                email_sender = MainProvider.get_otp_sender('email')
+                message = (
+                    f"Bonjour {citoyen_sauvegarde.prenom},\n\n"
+                    f"Votre enrôlement dans le SEIP est validé.\n"
+                    f"Votre NIN : {citoyen_sauvegarde.nin}\n\n"
+                    "Cordialement."
+                )
+                email_sender.send(user=citoyen_sauvegarde, message=message)
+                return  Response({
+                            'success': True,
+                            'nin': citoyen_sauvegarde.nin,
+                            'nom': citoyen_sauvegarde.nom,
+                            'postnom': getattr(citoyen_sauvegarde, 'postnom', ''),
+                            'prenom': citoyen_sauvegarde.prenom,
+                            'sexe': citoyen_sauvegarde.sexe,
+                            'message': 'Enrôlement réussi'
+                        }, status=status.HTTP_201_CREATED)
+                # --- FIN DE LA TRANSACTION ---
 
         except ValueError as e:
             # Ici, le citoyen n'est PAS créé en base de données (Rollback)
@@ -136,6 +153,12 @@ class QRController(APIView):
         if not user.biometric_completed:
             return Response(
                 {'error': 'Biométrie non complétée. Veuillez enrôler votre visage et empreinte.'},
+                status=403
+            )
+        
+        if not user.is_validated:
+            return Response(
+                {'error': 'Enrôlement en attente de validation. Veuillez patienter.'},
                 status=403
             )
         service = CitoyenProvider.get_enrollment_service()

@@ -1,6 +1,7 @@
 # src/apps/main/providers.py
 import os
 from django.utils.module_loading import import_string
+from src.apps.interfaces.main_interfaces.otp_interface import OTPSenderInterface
 from src.apps.repositories.main_repositories.partner_repository import PartenaireRepository
 from src.apps.repositories.main_repositories.user_repository import UserRepository
 from src.apps.repositories.main_repositories.otp_repository import OTPRepository
@@ -27,8 +28,10 @@ class MainProvider:
         return OTPRepository()
 
     @staticmethod
-    def get_otp_sender():
-        return OTPSenderEmail() 
+    def get_otp_sender(type: str = "email") -> OTPSenderInterface:
+        if type == "sms":
+            return OTPSenderSms()
+        return OTPSenderEmail()
 
     @staticmethod
     def get_otp_service():

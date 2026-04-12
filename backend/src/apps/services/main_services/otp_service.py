@@ -5,6 +5,7 @@ from django.core.mail import send_mail
 from django.conf import settings
 from src.apps.interfaces.main_interfaces.otp_interface import OTPRepositoryInterface
 from src.apps.interfaces.main_interfaces.user_repository_interface import UserRepositoryInterface
+import threading
 
 
 # src/apps/services/main_services/otp_service.py
@@ -12,47 +13,62 @@ class OTPSenderSms(OTPSenderInterface):
     def __init__(self):
         self.sms_gateway = SmsGateway()
 
-    def send(self, user, code: str) -> bool:
+    def send(self, user, code: str = None, message: str = None) -> bool:
         if not user.telephone:
             return False
-        message = f"Votre code de vérification est: {code}"
-        return self.sms_gateway.send_sms(user.telephone, message)
+        if message:
+            content = message
+        else:
+            content = f"Votre code de vérification est: {code}"
+        return self.sms_gateway.send_sms(user.telephone, content)
     
 
+
 class OTPSenderEmail(OTPSenderInterface):
-    def send(self, user, code: str) -> bool:
+    def send(self, user, code: str = None, message: str = None) -> bool:
+        """
+        Envoie un email de manière asynchrone (non bloquante).
+        Retourne True si le thread a été démarré, False en cas d'erreur immédiate.
+        """
         try:
-            subject = "🛡️ Alerte de sécurité - Connexion SEIP"
-            
-            # On personnalise le message avec les données du user
-            message = (
-                f"Bonjour {user.prenom} {user.nom},\n\n"
-                f"Une nouvelle connexion a été détectée sur votre compte Agent SEIP.\n"
-                f"Votre code de session actuel est : {code}\n\n"
-                "Si vous n'êtes pas à l'origine de cette action, veuillez contacter l'administrateur.\n\n"
-                "Système d'Identification Électronique de la Population."
+            if message:
+                final_message = message
+                subject = "📧 Notification SEIP"
+            else:
+                subject = "🛡️ Alerte de sécurité - Connexion SEIP"
+                final_message = (
+                    f"Bonjour {user.prenom} {user.nom},\n\n"
+                    f"Votre code de vérification est : {code}\n\n"
+                    "Si vous n'êtes pas à l'origine, contactez l'administrateur.\n\n"
+                    "Système d'Identification Électronique de la Population."
+                )
+
+            # Lance l'envoi dans un thread séparé
+            thread = threading.Thread(
+                target=self._send_email_thread,
+                args=(subject, final_message, user.email)
             )
-            
-            # send_mail va puiser les infos (HOST, PORT, USER, PASSWORD) 
-            # directement dans ton fichier settings.py que tu viens de modifier.
+            thread.start()
+            return True
+        except Exception as e:
+            print(f"❌ Erreur lors du démarrage du thread email : {str(e)}")
+            return False
+
+    def _send_email_thread(self, subject, message, recipient_email):
+        """
+        Méthode exécutée dans le thread pour envoyer réellement l'email.
+        """
+        try:
             send_mail(
                 subject=subject,
                 message=message,
                 from_email=settings.DEFAULT_FROM_EMAIL,
-                recipient_list=[user.email],
-                fail_silently=False, 
+                recipient_list=[recipient_email],
+                fail_silently=False,
             )
-            
-            print(f"✅ Mail de sécurité envoyé avec succès à : {user.email}")
-            return True
-            
+            print(f"✅ Email envoyé à : {recipient_email}")
         except Exception as e:
-            # Si le mot de passe de 16 caractères est faux ou pas d'internet, 
-            # l'erreur s'affichera ici dans ton terminal Ubuntu.
-            print(f"❌ Erreur SMTP critique : {str(e)}")
-            return False
-
-# src/apps/services/main_services/otp_service.py
+            print(f"❌ Erreur SMTP (thread) : {str(e)}")
 class OTPService:
     
     def __init__(self,

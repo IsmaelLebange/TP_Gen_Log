@@ -1,3 +1,5 @@
+from typing import Any, Dict
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -5,6 +7,9 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 
+from src.domain.exceptions.biometric_exceptions import BiometricAlreadyExistsError
+from src.domain.value_objects.biometrics import BiometricType
+from src.models import BiometricData
 from src.apps.api.providers.citoyen_provider import CitoyenProvider
 from src.apps.api.serializers.citoyen_serializers.biometric_serializer import (
     BiometricEnrollSerializer,
@@ -33,7 +38,9 @@ class BiometricController(APIView):
         if action == 'enroll':
             return self._enroll(request)
         elif action == 'verify':
-            return self._verify(request)
+            return self.verify(request)
+        elif action == 'photo':
+            return self.add_photo(request)
         return Response({'error': 'Action non valide'}, status=status.HTTP_400_BAD_REQUEST)
 
     def get(self, request):
@@ -66,7 +73,7 @@ class BiometricController(APIView):
             return Response(result, status=201)
         return Response(result, status=status.HTTP_400_BAD_REQUEST)
 
-    def _verify(self, request):
+    def verify(self, request):
         serializer = BiometricVerifySerializer(data=request.data)
         if not serializer.is_valid():
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
@@ -84,3 +91,16 @@ class BiometricController(APIView):
     def _delete(self, request):
         result = self.biometric_service.delete(citoyen_id=request.user.id)
         return Response(result, status=status.HTTP_200_OK)
+
+    
+            
+    def add_photo(self, citoyen_id: int, image_base64: str) -> Dict[str, Any]:
+        existing = self.repository.get_active_by_citoyen(citoyen_id)
+        if existing and existing.biometric_type.value == 'face':
+            self.repository.delete(existing)  # désactive l'ancien
+        result = self.enroll(citoyen_id, 'face', image_base64)
+        if result.get('success'):
+            from src.apps.api.providers.citoyen_provider import CitoyenProvider
+            enrollment_service = CitoyenProvider.get_enrollment_service()
+            enrollment_service.update_biometric_complete(citoyen_id, True)
+        return result

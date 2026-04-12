@@ -13,12 +13,19 @@ class StatisticsService(StatisticsServiceInterface):
         now = timezone.now()
         thirty_days_ago = now - timedelta(days=30)
         one_year_ago = now - timedelta(days=365)
+        today = now.date()  
 
         # 1. Démographie
-        total_citoyens = User.objects.count()
+        total_citoyens = User.objects.filter(role=User.Role.CITOYEN).count()
+        pending_documents = Document.objects.filter(statut=Document.Statut.EN_ATTENTE).count()
         total_citoyens_mois = User.objects.filter(date_joined__gte=thirty_days_ago).count()
-        # Répartition par sexe (si champ 'sexe' existe, sinon on peut utiliser autre chose)
-        # Supposons que User a un champ 'sexe' (M/F)
+        today_validations = Document.objects.filter(
+            statut=Document.Statut.VALIDE,
+            date_validation__date=today
+        ).count()
+        active_agents = User.objects.filter(role=User.Role.AGENT, is_active=True).count()
+        admin_count = User.objects.filter(role=User.Role.ADMIN, is_active=True).count()
+        
         sexe_repartition = User.objects.values('sexe').annotate(count=Count('id'))
 
         # 2. Répartition par âge (catégories : 0-18, 19-35, 36-60, 60+)
@@ -87,7 +94,14 @@ class StatisticsService(StatisticsServiceInterface):
         ]
 
         return {
+            
             'total_citoyens': total_citoyens,
+            'pending_documents': pending_documents,
+            'today_validations': today_validations,
+            'active_agents': active_agents,
+            'admin_count': admin_count,
+            # autres champs optionnels
+            'total_citoyens_30d': 0,
             'total_citoyens_30d': total_citoyens_mois,
             'sexe_repartition': list(sexe_repartition),
             'age_repartition': age_categories,
